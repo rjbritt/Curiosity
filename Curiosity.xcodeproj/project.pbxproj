@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1FC0EE0E20ED4A73AC768ABC /* libPods-Curiosity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1844F48898D043FD89743073 /* libPods-Curiosity.a */; };
+		2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1019C67799002CA7ED /* MyParticle.sks */; };
+		2F2DBB1319C67799002CA7ED /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1119C67799002CA7ED /* spark.png */; };
 		2F68C18119AC15C1006EB529 /* MainSlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */; };
 		2F68C18219AC15C1006EB529 /* MainSlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */; };
 		2F68C19219AC1859006EB529 /* CuriosityDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C19019AC1859006EB529 /* CuriosityDataModel.xcdatamodeld */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		1844F48898D043FD89743073 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		2F2DBB1119C67799002CA7ED /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		2F68C17F19AC156A006EB529 /* ObjC-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjC-BridgingHeader.h"; sourceTree = "<group>"; };
 		2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSlidingViewController.swift; sourceTree = "<group>"; };
 		2F68C19119AC1859006EB529 /* CuriosityDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CuriosityDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		2FBB755619AC12D300203EF8 = {
 			isa = PBXGroup;
 			children = (
+				2F2DBB1019C67799002CA7ED /* MyParticle.sks */,
+				2F2DBB1119C67799002CA7ED /* spark.png */,
 				2FBB756119AC12D300203EF8 /* Curiosity */,
 				2FBB757819AC12D300203EF8 /* CuriosityTests */,
 				2FBB756019AC12D300203EF8 /* Products */,
@@ -265,9 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2DBB1319C67799002CA7ED /* spark.png in Resources */,
 				2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */,
 				2FBB756719AC12D300203EF8 /* GameScene.sks in Resources */,
 				2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */,
+				2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
