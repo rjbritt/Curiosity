@@ -1,22 +1,10 @@
 PODS:
-  - ECSlidingViewController (2.0.3)
   - KCOrderedAccessorFix (0.0.1)
-  - RCDraggableButton (0.4)
-  - UIAlertView+Blocks (0.8.1)
-  - UIView+DragDrop (0.0.2)
 
 DEPENDENCIES:
-  - ECSlidingViewController (~> 2.0.2)
   - KCOrderedAccessorFix
-  - RCDraggableButton (~> 0.1)
-  - UIAlertView+Blocks
-  - UIView+DragDrop
 
 SPEC CHECKSUMS:
-  ECSlidingViewController: e79fe856bfb1a99a39c995377a1943e50f7647eb
   KCOrderedAccessorFix: d177d657cbe2b3b070540d6b1652e8534c8bceae
-  RCDraggableButton: b9bd67cc1623fde0ac4190baed9dcc847dc3081b
-  UIAlertView+Blocks: 0b749f1f7bd5131ff2233b30a406c1585a7171b2
-  UIView+DragDrop: 537aead6ff1caf6487e756bf88e14c031f1ee8c9
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.4

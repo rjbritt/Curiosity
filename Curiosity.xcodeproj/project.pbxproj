@@ -8,25 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1FC0EE0E20ED4A73AC768ABC /* libPods-Curiosity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1844F48898D043FD89743073 /* libPods-Curiosity.a */; };
+		2F03AC1D1A0EFEB9002D075D /* Curiosity.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F03AC1C1A0EFEB9002D075D /* Curiosity.png */; };
 		2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1019C67799002CA7ED /* MyParticle.sks */; };
 		2F2DBB1319C67799002CA7ED /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1119C67799002CA7ED /* spark.png */; };
-		2F68C18119AC15C1006EB529 /* MainSlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */; };
-		2F68C18219AC15C1006EB529 /* MainSlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */; };
-		2F68C19219AC1859006EB529 /* CuriosityDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C19019AC1859006EB529 /* CuriosityDataModel.xcdatamodeld */; };
-		2F68C19319AC1859006EB529 /* CuriosityDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C19019AC1859006EB529 /* CuriosityDataModel.xcdatamodeld */; };
 		2F68C19519AC1E6F006EB529 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F68C19419AC1E6F006EB529 /* CoreData.framework */; };
-		2F68C1AA19AC1F6B006EB529 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1A919AC1F6B006EB529 /* Actor.swift */; };
-		2F68C1AB19AC1F6B006EB529 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1A919AC1F6B006EB529 /* Actor.swift */; };
-		2F68C1AD19AC1F6C006EB529 /* InteractiveSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1AC19AC1F6C006EB529 /* InteractiveSceneElement.swift */; };
-		2F68C1AE19AC1F6C006EB529 /* InteractiveSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1AC19AC1F6C006EB529 /* InteractiveSceneElement.swift */; };
-		2F68C1B019AC1F6C006EB529 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1AF19AC1F6C006EB529 /* Environment.swift */; };
-		2F68C1B119AC1F6C006EB529 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1AF19AC1F6C006EB529 /* Environment.swift */; };
-		2F68C1B319AC1F6C006EB529 /* EnvironmentSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1B219AC1F6C006EB529 /* EnvironmentSceneElement.swift */; };
-		2F68C1B419AC1F6C006EB529 /* EnvironmentSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1B219AC1F6C006EB529 /* EnvironmentSceneElement.swift */; };
-		2F68C1B619AC1F6C006EB529 /* InteractiveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1B519AC1F6C006EB529 /* InteractiveScene.swift */; };
-		2F68C1B719AC1F6C006EB529 /* InteractiveScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1B519AC1F6C006EB529 /* InteractiveScene.swift */; };
-		2F68C1B919AC1F6C006EB529 /* ActorSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1B819AC1F6C006EB529 /* ActorSceneElement.swift */; };
-		2F68C1BA19AC1F6C006EB529 /* ActorSceneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68C1B819AC1F6C006EB529 /* ActorSceneElement.swift */; };
+		2F890F101A0F0CB80047A76D /* Tree top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F890F0F1A0F0CB80047A76D /* Tree top.png */; };
 		2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756419AC12D300203EF8 /* AppDelegate.swift */; };
 		2FBB756719AC12D300203EF8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756619AC12D300203EF8 /* GameScene.sks */; };
 		2FBB756919AC12D300203EF8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756819AC12D300203EF8 /* GameScene.swift */; };
@@ -34,6 +20,7 @@
 		2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756C19AC12D300203EF8 /* Main.storyboard */; };
 		2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756F19AC12D300203EF8 /* Images.xcassets */; };
 		2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */; };
+		2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */; };
 		E515950B26D54C449A912F82 /* libPods-CuriosityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */; };
 /* End PBXBuildFile section */
 
@@ -49,18 +36,13 @@
 
 /* Begin PBXFileReference section */
 		1844F48898D043FD89743073 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DD13A8FB60357DFFF6210A /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F03AC1C1A0EFEB9002D075D /* Curiosity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Curiosity.png; path = Curiosity/Curiosity.png; sourceTree = "<group>"; };
 		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2F2DBB1119C67799002CA7ED /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		2F68C17F19AC156A006EB529 /* ObjC-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjC-BridgingHeader.h"; sourceTree = "<group>"; };
-		2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSlidingViewController.swift; sourceTree = "<group>"; };
-		2F68C19119AC1859006EB529 /* CuriosityDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CuriosityDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2F68C19419AC1E6F006EB529 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2F68C1A919AC1F6B006EB529 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actor.swift; path = Model/NSManagedObjectSubclasses/Actor.swift; sourceTree = "<group>"; };
-		2F68C1AC19AC1F6C006EB529 /* InteractiveSceneElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractiveSceneElement.swift; path = Model/NSManagedObjectSubclasses/InteractiveSceneElement.swift; sourceTree = "<group>"; };
-		2F68C1AF19AC1F6C006EB529 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = Model/NSManagedObjectSubclasses/Environment.swift; sourceTree = "<group>"; };
-		2F68C1B219AC1F6C006EB529 /* EnvironmentSceneElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnvironmentSceneElement.swift; path = Model/NSManagedObjectSubclasses/EnvironmentSceneElement.swift; sourceTree = "<group>"; };
-		2F68C1B519AC1F6C006EB529 /* InteractiveScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractiveScene.swift; path = Model/NSManagedObjectSubclasses/InteractiveScene.swift; sourceTree = "<group>"; };
-		2F68C1B819AC1F6C006EB529 /* ActorSceneElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActorSceneElement.swift; path = Model/NSManagedObjectSubclasses/ActorSceneElement.swift; sourceTree = "<group>"; };
+		2F890F0F1A0F0CB80047A76D /* Tree top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tree top.png"; sourceTree = "<group>"; };
 		2FBB755F19AC12D300203EF8 /* Curiosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curiosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB756319AC12D300203EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FBB756419AC12D300203EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +54,11 @@
 		2FBB757519AC12D300203EF8 /* CuriosityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuriosityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB757A19AC12D300203EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
+		2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A17E837DDD6C481082FE3EBF /* Pods-Curiosity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curiosity.xcconfig"; path = "Pods/Pods-Curiosity.xcconfig"; sourceTree = "<group>"; };
-		E166DCB736134FEA8AE9838F /* Pods-CuriosityTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.xcconfig"; path = "Pods/Pods-CuriosityTests.xcconfig"; sourceTree = "<group>"; };
+		50B9EF99F721ED9F198D014E /* Pods-Curiosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curiosity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Curiosity/Pods-Curiosity.release.xcconfig"; sourceTree = "<group>"; };
+		64E3B1334E4DB4698341BECF /* Pods-CuriosityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8D27766BEA39922E2B3CBCA /* Pods-Curiosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curiosity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Curiosity/Pods-Curiosity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */,
 				2F68C19519AC1E6F006EB529 /* CoreData.framework in Frameworks */,
 				1FC0EE0E20ED4A73AC768ABC /* libPods-Curiosity.a in Frameworks */,
 			);
@@ -101,13 +86,6 @@
 		2F68C18319AC15D6006EB529 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2F68C19019AC1859006EB529 /* CuriosityDataModel.xcdatamodeld */,
-				2F68C1B819AC1F6C006EB529 /* ActorSceneElement.swift */,
-				2F68C1B519AC1F6C006EB529 /* InteractiveScene.swift */,
-				2F68C1B219AC1F6C006EB529 /* EnvironmentSceneElement.swift */,
-				2F68C1AF19AC1F6C006EB529 /* Environment.swift */,
-				2F68C1AC19AC1F6C006EB529 /* InteractiveSceneElement.swift */,
-				2F68C1A919AC1F6B006EB529 /* Actor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -116,13 +94,14 @@
 			isa = PBXGroup;
 			children = (
 				2F2DBB1019C67799002CA7ED /* MyParticle.sks */,
+				2F03AC1C1A0EFEB9002D075D /* Curiosity.png */,
 				2F2DBB1119C67799002CA7ED /* spark.png */,
+				2F890F0F1A0F0CB80047A76D /* Tree top.png */,
 				2FBB756119AC12D300203EF8 /* Curiosity */,
 				2FBB757819AC12D300203EF8 /* CuriosityTests */,
 				2FBB756019AC12D300203EF8 /* Products */,
-				A17E837DDD6C481082FE3EBF /* Pods-Curiosity.xcconfig */,
 				9881B86DC8D64E27B39DECCC /* Frameworks */,
-				E166DCB736134FEA8AE9838F /* Pods-CuriosityTests.xcconfig */,
+				D7C7928C11A4E70CBCF08F88 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +123,6 @@
 				2FBB756619AC12D300203EF8 /* GameScene.sks */,
 				2FBB756819AC12D300203EF8 /* GameScene.swift */,
 				2FBB756A19AC12D300203EF8 /* GameViewController.swift */,
-				2F68C18019AC15C1006EB529 /* MainSlidingViewController.swift */,
 				2FBB756C19AC12D300203EF8 /* Main.storyboard */,
 				2FBB756F19AC12D300203EF8 /* Images.xcassets */,
 				2FBB756219AC12D300203EF8 /* Supporting Files */,
@@ -180,11 +158,23 @@
 		9881B86DC8D64E27B39DECCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */,
 				2F68C19419AC1E6F006EB529 /* CoreData.framework */,
 				1844F48898D043FD89743073 /* libPods-Curiosity.a */,
 				44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7C7928C11A4E70CBCF08F88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8D27766BEA39922E2B3CBCA /* Pods-Curiosity.debug.xcconfig */,
+				50B9EF99F721ED9F198D014E /* Pods-Curiosity.release.xcconfig */,
+				64E3B1334E4DB4698341BECF /* Pods-CuriosityTests.debug.xcconfig */,
+				25DD13A8FB60357DFFF6210A /* Pods-CuriosityTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +225,12 @@
 		2FBB755719AC12D300203EF8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Ryan Britt";
 				TargetAttributes = {
 					2FBB755E19AC12D300203EF8 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 5SHT6D4V49;
 					};
 					2FBB757419AC12D300203EF8 = {
 						CreatedOnToolsVersion = 6.0;
@@ -272,10 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2DBB1319C67799002CA7ED /* spark.png in Resources */,
+				2F890F101A0F0CB80047A76D /* Tree top.png in Resources */,
 				2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */,
 				2FBB756719AC12D300203EF8 /* GameScene.sks in Resources */,
 				2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */,
 				2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */,
+				2F03AC1D1A0EFEB9002D075D /* Curiosity.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CuriosityTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B36A9095F5C345C08B649FF1 /* Check Pods Manifest.lock */ = {
@@ -346,7 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Curiosity-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Curiosity/Pods-Curiosity-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -356,17 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F68C19219AC1859006EB529 /* CuriosityDataModel.xcdatamodeld in Sources */,
-				2F68C1B019AC1F6C006EB529 /* Environment.swift in Sources */,
-				2F68C18119AC15C1006EB529 /* MainSlidingViewController.swift in Sources */,
 				2FBB756919AC12D300203EF8 /* GameScene.swift in Sources */,
-				2F68C1AA19AC1F6B006EB529 /* Actor.swift in Sources */,
 				2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */,
 				2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */,
-				2F68C1B619AC1F6C006EB529 /* InteractiveScene.swift in Sources */,
-				2F68C1AD19AC1F6C006EB529 /* InteractiveSceneElement.swift in Sources */,
-				2F68C1B319AC1F6C006EB529 /* EnvironmentSceneElement.swift in Sources */,
-				2F68C1B919AC1F6C006EB529 /* ActorSceneElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,15 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F68C18219AC15C1006EB529 /* MainSlidingViewController.swift in Sources */,
-				2F68C1B119AC1F6C006EB529 /* Environment.swift in Sources */,
-				2F68C19319AC1859006EB529 /* CuriosityDataModel.xcdatamodeld in Sources */,
-				2F68C1BA19AC1F6C006EB529 /* ActorSceneElement.swift in Sources */,
-				2F68C1AE19AC1F6C006EB529 /* InteractiveSceneElement.swift in Sources */,
 				2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */,
-				2F68C1B719AC1F6C006EB529 /* InteractiveScene.swift in Sources */,
-				2F68C1AB19AC1F6B006EB529 /* Actor.swift in Sources */,
-				2F68C1B419AC1F6C006EB529 /* EnvironmentSceneElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,33 +466,39 @@
 		};
 		2FBB758019AC12D300203EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A17E837DDD6C481082FE3EBF /* Pods-Curiosity.xcconfig */;
+			baseConfigurationReference = E8D27766BEA39922E2B3CBCA /* Pods-Curiosity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Curiosity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjC-BridgingHeader.h";
 			};
 			name = Debug;
 		};
 		2FBB758119AC12D300203EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A17E837DDD6C481082FE3EBF /* Pods-Curiosity.xcconfig */;
+			baseConfigurationReference = 50B9EF99F721ED9F198D014E /* Pods-Curiosity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Curiosity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjC-BridgingHeader.h";
 			};
 			name = Release;
 		};
 		2FBB758319AC12D300203EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E166DCB736134FEA8AE9838F /* Pods-CuriosityTests.xcconfig */;
+			baseConfigurationReference = 64E3B1334E4DB4698341BECF /* Pods-CuriosityTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -530,6 +513,7 @@
 				INFOPLIST_FILE = CuriosityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjC-BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Curiosity.app/Curiosity";
@@ -538,7 +522,7 @@
 		};
 		2FBB758419AC12D300203EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E166DCB736134FEA8AE9838F /* Pods-CuriosityTests.xcconfig */;
+			baseConfigurationReference = 25DD13A8FB60357DFFF6210A /* Pods-CuriosityTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -549,6 +533,7 @@
 				INFOPLIST_FILE = CuriosityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjC-BridgingHeader.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Curiosity.app/Curiosity";
 			};
@@ -585,20 +570,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2F68C19019AC1859006EB529 /* CuriosityDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2F68C19119AC1859006EB529 /* CuriosityDataModel.xcdatamodel */,
-			);
-			currentVersion = 2F68C19119AC1859006EB529 /* CuriosityDataModel.xcdatamodel */;
-			name = CuriosityDataModel.xcdatamodeld;
-			path = Model/CuriosityDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2FBB755719AC12D300203EF8 /* Project object */;
 }
