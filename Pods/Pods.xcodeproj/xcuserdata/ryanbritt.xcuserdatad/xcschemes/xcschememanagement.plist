@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Curiosity-A3ParallaxScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Curiosity-KCOrderedAccessorFix.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Curiosity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CuriosityTests-A3ParallaxScrollView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1455EF7BF89C652FA58C7009</key>
+		<key>059FE1DB941768A5EEED415B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2D8357681F310DD605C91AB4</key>
+		<key>5F79641E92F6AA185C60FD4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>757A64619CAFA24BC3B5C22C</key>
+		<key>6DF75899ED9086E24742659E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8EFCC79789CC2CAD0C7AE8B</key>
+		<key>A3C1BF376EBC1478FFF70E55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBB7F2839CFDF981FB9A5DB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ED4EBFC1E01E11550AB73240</key>
 		<dict>
 			<key>primary</key>
 			<true/>

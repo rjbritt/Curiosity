@@ -11,15 +11,21 @@
 		2F03AC1D1A0EFEB9002D075D /* Curiosity.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F03AC1C1A0EFEB9002D075D /* Curiosity.png */; };
 		2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1019C67799002CA7ED /* MyParticle.sks */; };
 		2F2DBB1319C67799002CA7ED /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1119C67799002CA7ED /* spark.png */; };
+		2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
+		2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F68C19519AC1E6F006EB529 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F68C19419AC1E6F006EB529 /* CoreData.framework */; };
 		2F890F101A0F0CB80047A76D /* Tree top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F890F0F1A0F0CB80047A76D /* Tree top.png */; };
+		2F921E831A29512400A23878 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E811A29512400A23878 /* hills.png */; };
+		2F921E841A29512400A23878 /* flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E821A29512400A23878 /* flowers.png */; };
+		2F921E881A29539100A23878 /* blueDayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E871A29539100A23878 /* blueDayBackground.png */; };
 		2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756419AC12D300203EF8 /* AppDelegate.swift */; };
-		2FBB756719AC12D300203EF8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756619AC12D300203EF8 /* GameScene.sks */; };
+		2FBB756719AC12D300203EF8 /* Test Scene 1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756619AC12D300203EF8 /* Test Scene 1.sks */; };
 		2FBB756919AC12D300203EF8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756819AC12D300203EF8 /* GameScene.swift */; };
 		2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756A19AC12D300203EF8 /* GameViewController.swift */; };
 		2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756C19AC12D300203EF8 /* Main.storyboard */; };
 		2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756F19AC12D300203EF8 /* Images.xcassets */; };
 		2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */; };
+		2FC4DA391A198F4A002167F3 /* Curiosity 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC4DA381A198F4A002167F3 /* Curiosity 2.png */; };
 		2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */; };
 		E515950B26D54C449A912F82 /* libPods-CuriosityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */; };
 /* End PBXBuildFile section */
@@ -40,13 +46,18 @@
 		2F03AC1C1A0EFEB9002D075D /* Curiosity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Curiosity.png; path = Curiosity/Curiosity.png; sourceTree = "<group>"; };
 		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2F2DBB1119C67799002CA7ED /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		2F68C17F19AC156A006EB529 /* ObjC-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjC-BridgingHeader.h"; sourceTree = "<group>"; };
+		2F3C2E531A28E6CA00A293EA /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBParallaxScrolling.h; path = Curiosity/PBParallaxScrolling.h; sourceTree = "<group>"; };
+		2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBParallaxScrolling.m; path = Curiosity/PBParallaxScrolling.m; sourceTree = "<group>"; };
+		2F3C2E571A28FD8500A293EA /* ObjC-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-BridgingHeader.h"; sourceTree = "<group>"; };
 		2F68C19419AC1E6F006EB529 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2F890F0F1A0F0CB80047A76D /* Tree top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tree top.png"; sourceTree = "<group>"; };
+		2F921E811A29512400A23878 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
+		2F921E821A29512400A23878 /* flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowers.png; sourceTree = "<group>"; };
+		2F921E871A29539100A23878 /* blueDayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueDayBackground.png; sourceTree = "<group>"; };
 		2FBB755F19AC12D300203EF8 /* Curiosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curiosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB756319AC12D300203EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FBB756419AC12D300203EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FBB756619AC12D300203EF8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		2FBB756619AC12D300203EF8 /* Test Scene 1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Test Scene 1.sks"; sourceTree = "<group>"; };
 		2FBB756819AC12D300203EF8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2FBB756A19AC12D300203EF8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2FBB756D19AC12D300203EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +65,7 @@
 		2FBB757519AC12D300203EF8 /* CuriosityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuriosityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB757A19AC12D300203EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
+		2FC4DA381A198F4A002167F3 /* Curiosity 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Curiosity 2.png"; sourceTree = "<group>"; };
 		2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B9EF99F721ED9F198D014E /* Pods-Curiosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curiosity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Curiosity/Pods-Curiosity.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +95,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3C2E581A29008600A293EA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2F921E871A29539100A23878 /* blueDayBackground.png */,
+				2F921E811A29512400A23878 /* hills.png */,
+				2F921E821A29512400A23878 /* flowers.png */,
+				2FC4DA381A198F4A002167F3 /* Curiosity 2.png */,
+				2F03AC1C1A0EFEB9002D075D /* Curiosity.png */,
+				2F2DBB1119C67799002CA7ED /* spark.png */,
+				2F890F0F1A0F0CB80047A76D /* Tree top.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		2F68C18319AC15D6006EB529 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,10 +119,10 @@
 		2FBB755619AC12D300203EF8 = {
 			isa = PBXGroup;
 			children = (
+				2F3C2E571A28FD8500A293EA /* ObjC-BridgingHeader.h */,
+				2F3C2E581A29008600A293EA /* Images */,
+				2FED954C1A283F3B006FA1C0 /* External API */,
 				2F2DBB1019C67799002CA7ED /* MyParticle.sks */,
-				2F03AC1C1A0EFEB9002D075D /* Curiosity.png */,
-				2F2DBB1119C67799002CA7ED /* spark.png */,
-				2F890F0F1A0F0CB80047A76D /* Tree top.png */,
 				2FBB756119AC12D300203EF8 /* Curiosity */,
 				2FBB757819AC12D300203EF8 /* CuriosityTests */,
 				2FBB756019AC12D300203EF8 /* Products */,
@@ -117,10 +143,9 @@
 		2FBB756119AC12D300203EF8 /* Curiosity */ = {
 			isa = PBXGroup;
 			children = (
-				2F68C17F19AC156A006EB529 /* ObjC-BridgingHeader.h */,
 				2F68C18319AC15D6006EB529 /* Model */,
 				2FBB756419AC12D300203EF8 /* AppDelegate.swift */,
-				2FBB756619AC12D300203EF8 /* GameScene.sks */,
+				2FBB756619AC12D300203EF8 /* Test Scene 1.sks */,
 				2FBB756819AC12D300203EF8 /* GameScene.swift */,
 				2FBB756A19AC12D300203EF8 /* GameViewController.swift */,
 				2FBB756C19AC12D300203EF8 /* Main.storyboard */,
@@ -153,6 +178,15 @@
 				2FBB757A19AC12D300203EF8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FED954C1A283F3B006FA1C0 /* External API */ = {
+			isa = PBXGroup;
+			children = (
+				2F3C2E531A28E6CA00A293EA /* PBParallaxScrolling.h */,
+				2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */,
+			);
+			name = "External API";
 			sourceTree = "<group>";
 		};
 		9881B86DC8D64E27B39DECCC /* Frameworks */ = {
@@ -263,11 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2DBB1319C67799002CA7ED /* spark.png in Resources */,
+				2F921E881A29539100A23878 /* blueDayBackground.png in Resources */,
 				2F890F101A0F0CB80047A76D /* Tree top.png in Resources */,
 				2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */,
-				2FBB756719AC12D300203EF8 /* GameScene.sks in Resources */,
+				2F921E831A29512400A23878 /* hills.png in Resources */,
+				2FBB756719AC12D300203EF8 /* Test Scene 1.sks in Resources */,
 				2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */,
+				2FC4DA391A198F4A002167F3 /* Curiosity 2.png in Resources */,
 				2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */,
+				2F921E841A29512400A23878 /* flowers.png in Resources */,
 				2F03AC1D1A0EFEB9002D075D /* Curiosity.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */,
 				2FBB756919AC12D300203EF8 /* GameScene.swift in Sources */,
 				2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */,
 				2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */,
@@ -359,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */,
 				2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjC-BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -493,6 +534,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjC-BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
