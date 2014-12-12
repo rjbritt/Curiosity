@@ -18,10 +18,12 @@
 		2F921E831A29512400A23878 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E811A29512400A23878 /* hills.png */; };
 		2F921E841A29512400A23878 /* flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E821A29512400A23878 /* flowers.png */; };
 		2F921E881A29539100A23878 /* blueDayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E871A29539100A23878 /* blueDayBackground.png */; };
+		2FAC04EB1A33BCB000254EBE /* CuriosityCharControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC04EA1A33BCB000254EBE /* CuriosityCharControls.swift */; };
+		2FB0625C1A367E00002C812E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0625B1A367E00002C812E /* Character.swift */; };
 		2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756419AC12D300203EF8 /* AppDelegate.swift */; };
 		2FBB756719AC12D300203EF8 /* Test Scene 1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756619AC12D300203EF8 /* Test Scene 1.sks */; };
-		2FBB756919AC12D300203EF8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756819AC12D300203EF8 /* GameScene.swift */; };
-		2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756A19AC12D300203EF8 /* GameViewController.swift */; };
+		2FBB756919AC12D300203EF8 /* CuriosityScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756819AC12D300203EF8 /* CuriosityScene.swift */; };
+		2FBB756B19AC12D300203EF8 /* CuriosityGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756A19AC12D300203EF8 /* CuriosityGameVC.swift */; };
 		2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756C19AC12D300203EF8 /* Main.storyboard */; };
 		2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBB756F19AC12D300203EF8 /* Images.xcassets */; };
 		2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */; };
@@ -54,12 +56,14 @@
 		2F921E811A29512400A23878 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
 		2F921E821A29512400A23878 /* flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowers.png; sourceTree = "<group>"; };
 		2F921E871A29539100A23878 /* blueDayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueDayBackground.png; sourceTree = "<group>"; };
+		2FAC04EA1A33BCB000254EBE /* CuriosityCharControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriosityCharControls.swift; sourceTree = "<group>"; };
+		2FB0625B1A367E00002C812E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2FBB755F19AC12D300203EF8 /* Curiosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curiosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB756319AC12D300203EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FBB756419AC12D300203EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FBB756619AC12D300203EF8 /* Test Scene 1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Test Scene 1.sks"; sourceTree = "<group>"; };
-		2FBB756819AC12D300203EF8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		2FBB756A19AC12D300203EF8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2FBB756819AC12D300203EF8 /* CuriosityScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityScene.swift; sourceTree = "<group>"; };
+		2FBB756A19AC12D300203EF8 /* CuriosityGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityGameVC.swift; sourceTree = "<group>"; };
 		2FBB756D19AC12D300203EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FBB756F19AC12D300203EF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FBB757519AC12D300203EF8 /* CuriosityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuriosityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,7 @@
 		2F68C18319AC15D6006EB529 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FB0625B1A367E00002C812E /* Character.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -146,8 +151,9 @@
 				2F68C18319AC15D6006EB529 /* Model */,
 				2FBB756419AC12D300203EF8 /* AppDelegate.swift */,
 				2FBB756619AC12D300203EF8 /* Test Scene 1.sks */,
-				2FBB756819AC12D300203EF8 /* GameScene.swift */,
-				2FBB756A19AC12D300203EF8 /* GameViewController.swift */,
+				2FBB756819AC12D300203EF8 /* CuriosityScene.swift */,
+				2FAC04EA1A33BCB000254EBE /* CuriosityCharControls.swift */,
+				2FBB756A19AC12D300203EF8 /* CuriosityGameVC.swift */,
 				2FBB756C19AC12D300203EF8 /* Main.storyboard */,
 				2FBB756F19AC12D300203EF8 /* Images.xcassets */,
 				2FBB756219AC12D300203EF8 /* Supporting Files */,
@@ -388,9 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */,
-				2FBB756919AC12D300203EF8 /* GameScene.swift in Sources */,
-				2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */,
+				2FBB756919AC12D300203EF8 /* CuriosityScene.swift in Sources */,
+				2FBB756B19AC12D300203EF8 /* CuriosityGameVC.swift in Sources */,
+				2FB0625C1A367E00002C812E /* Character.swift in Sources */,
 				2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */,
+				2FAC04EB1A33BCB000254EBE /* CuriosityCharControls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

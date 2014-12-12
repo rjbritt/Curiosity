@@ -17,7 +17,7 @@ extension SKNode {
             var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData!)
             
             archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as GameScene
+            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as CuriosityScene
             archiver.finishDecoding()
             return scene
         } else {
@@ -27,12 +27,12 @@ extension SKNode {
     
 }
 
-class GameViewController: UIViewController {
+class CuriosityGameVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene.unarchiveFromFile("Test Scene 1") as? GameScene {
+        if let scene = CuriosityScene.unarchiveFromFile("Test Scene 1") as? CuriosityScene {
             // Configure the view.
             let skView = self.view as SKView
             skView.showsFPS = true
