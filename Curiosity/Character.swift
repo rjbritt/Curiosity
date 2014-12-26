@@ -56,12 +56,6 @@ class Character: SKSpriteNode
                 switch name
                 {
                 case "Curiosity":
-                    charSprite = Character(texture: SKTexture(imageNamed: "Curiosity 2"))
-                    charSprite?.physicsBody = SKPhysicsBody(texture: charSprite!.texture, size: charSprite!.size)
-                    charSprite?.physicsBody?.affectedByGravity = true
-                    charSprite?.physicsBody?.allowsRotation = true
-                    charSprite?.position = CGPointMake(0.0, 0.0)
-                    charSprite?.physicsBody?.mass = 0.2
                     charSprite?.jumpXMovementConstant = 3.0
                     charSprite?.torqueConstant = 7.0
                     charSprite?.jumpConstant = 150.0

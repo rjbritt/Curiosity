@@ -51,9 +51,9 @@ class CuriosityScene: SKScene
             })
         }
         
-        let tempNode = childNodeWithName("//Curiosity") as? SKSpriteNode
-        characterSpriteNode = Character.presetCharacterNamed("Curiosity")//presetCharacterFromChildNode(tempNode)
-        tempNode?.removeFromParent()
+        characterSpriteNode = childNodeWithName("//Curiosity") as? Character
+//        characterSpriteNode = Character.presetCharacterFromChildNode(tempNode)
+//        tempNode?.removeFromParent()
         
         
         if let world = childNodeWithName("//WORLD")
