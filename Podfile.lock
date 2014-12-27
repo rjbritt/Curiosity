@@ -1,0 +1,10 @@
+PODS:
+  - KCOrderedAccessorFix (0.0.1)
+
+DEPENDENCIES:
+  - KCOrderedAccessorFix
+
+SPEC CHECKSUMS:
+  KCOrderedAccessorFix: d177d657cbe2b3b070540d6b1652e8534c8bceae
+
+COCOAPODS: 0.34.4
