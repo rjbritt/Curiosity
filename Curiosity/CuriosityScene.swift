@@ -16,32 +16,36 @@ class CuriosityScene: SKScene
     //MARK: Private instance variables
     private var motionManager = CMMotionManager();
     private var queue = NSOperationQueue();
-    
     private let framerate = 60.0 //Frames planned to deliver per second.
-    var cloudBackground:PBParallaxScrolling?
-    var parallaxBackground:PBParallaxScrolling?
+
     
     //MARK: Public instance variables
+    var cloudBackground:PBParallaxScrolling?
+    var parallaxBackground:PBParallaxScrolling?
     var characterSpriteNode:Character?
     var cameraNode:SKNode?
 
 
     //MARK: View Lifecycle Methods
     override func didMoveToView(view: SKView)
-    {        
-        /* Setup your scene here */
+    {
         
+        //Initializes a parallax background that will move with the character.
         let parallaxImages:NSArray = NSArray(objects:UIImage(named: "flowers")!,UIImage(named: "hills")!)
         let size = UIImage(named:"blueDayBackground")!.size
+        
         parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImages, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:3.0, andSpeedDecrease:1.0)
       
+        //Initializes a cloud parallax background that will always move
         cloudBackground = PBParallaxScrolling(backgrounds: NSArray(object:UIImage(named: "blueDayBackground")!), size: size, direction: kPBParallaxBackgroundDirectionRight, fastestSpeed: 1.0, andSpeedDecrease: 1.0)
         cloudBackground?.zPosition = parallaxBackground!.zPosition - 1
         
+        //Initializes and sets the swipe gesture recognizer that will cause the character to jump
         var swipeRecognizer:UISwipeGestureRecognizer =  UISwipeGestureRecognizer(target: self, action:"jump")
         swipeRecognizer.direction = UISwipeGestureRecognizerDirection.Up
         view.addGestureRecognizer(swipeRecognizer)
         
+        //Starts the accelerometer updating to hand the acceleration X and Y to the character.
         if(!motionManager.accelerometerActive)
         {
             motionManager.accelerometerUpdateInterval = (1/self.framerate)
@@ -51,17 +55,20 @@ class CuriosityScene: SKScene
             })
         }
         
-        characterSpriteNode = childNodeWithName("//Curiosity") as? Character
-//        characterSpriteNode = Character.presetCharacterFromChildNode(tempNode)
-//        tempNode?.removeFromParent()
-        
+        //Create the initial Character
+        characterSpriteNode = Character.presetCharacter("Curiosity")
         
         if let world = childNodeWithName("//WORLD")
         {
             parallaxBackground?.anchorPoint = CGPointMake(0,0)
-            world.addChild(parallaxBackground!)
-            world.addChild(cloudBackground!)
-            world.addChild(characterSpriteNode!)
+            if let parallax = parallaxBackground
+            { world.addChild(parallax) }
+            
+            if let cloud = cloudBackground
+            { world.addChild(cloud) }
+            
+            if let character = characterSpriteNode
+            { world.addChild(character) }
         }
         cameraNode = childNodeWithName("//CAMERA")
         cameraNode?.position.y = self.size.height/2
@@ -76,11 +83,9 @@ class CuriosityScene: SKScene
         /* Called before each frame is rendered */
         if let character = characterSpriteNode
         {
-            let deltaX = CGFloat(character.accelerationX * character.jumpXMovementConstant)
+            character.move()
             
-            let torqueX = character.torqueToApplyForCharacterWithVelocity(character.physicsBody!.velocity)
-            
-            if(character.physicsBody!.velocity.dx > 0.1)
+            if(physicsBody!.velocity.dx > 0.1)
             {
                 self.parallaxBackground?.direction = kPBParallaxBackgroundDirectionLeft
                 self.parallaxBackground?.update(currentTime)
@@ -92,15 +97,8 @@ class CuriosityScene: SKScene
                 self.parallaxBackground?.update(currentTime)
             }
             
-            if (character.isJumping)
-            {
-                character.physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
-            }
-            else if !character.isJumping
-            {
-                character.physicsBody?.applyTorque(torqueX)
-            }
-            
+            // Aligns the parallax background position with the cameraNode position that way the 
+            // background follows along with the camera.
             self.parallaxBackground?.position.x = cameraNode!.position.x
             self.cloudBackground?.position.x = cameraNode!.position.x
             self.cloudBackground?.update(currentTime)
@@ -113,8 +111,10 @@ class CuriosityScene: SKScene
         {
             if let camera = cameraNode
             {
+                //Moves the camera along with the character
                 camera.position.x = characterSKNode.position.x
                 
+                //verically moves the camera up if the character is above the top of the initial viewport.
                 if(characterSKNode.position.y >= self.size.height)
                 {
                     let move = SKAction.moveToY(characterSKNode.position.y, duration: 1)
@@ -122,6 +122,8 @@ class CuriosityScene: SKScene
                 }
                 else
                 {
+                    //Moves the camera back down to a neutral Y height if the character is below the top
+                    // of the initial viewport.
                     if(camera.position.y != self.size.height/2)
                     {
                         let move = SKAction.moveToY(self.size.height/2, duration: 0.5)
@@ -129,11 +131,22 @@ class CuriosityScene: SKScene
                     }                    
                 }
                 
+                //Centers the view on the camera node.
                 self.centerOnNode(camera)
             }
         }
 
     }
+    
+    /**
+    Local method simply to call the character jump method.
+    */
+    func jump()
+    {
+        characterSpriteNode?.jump()
+    }
+    
+    
     
     //MARK: Accessory Methods
 

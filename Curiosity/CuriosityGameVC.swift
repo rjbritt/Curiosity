@@ -13,10 +13,7 @@ extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
         if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
             var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)
-            //.dataWithContentsOfFile(path, options: .DataReadingMappedIfSafe, error: nil)
-           
             var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData!)
-            archiver.delegate = CuriosityUnarchiverDelegate()
             archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
             let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as CuriosityScene
             archiver.finishDecoding()
@@ -27,24 +24,6 @@ extension SKNode {
         }
     }
     
-}
-
-class CuriosityUnarchiverDelegate: NSObject, NSKeyedUnarchiverDelegate
-{
-    func unarchiver(unarchiver: NSKeyedUnarchiver, didDecodeObject object: AnyObject?) -> AnyObject? {
-        if let curObject:AnyObject = object
-        {
-            if curObject.isMemberOfClass(SKSpriteNode)
-            {
-                let spriteNode = curObject as SKSpriteNode
-                if spriteNode.name == "Curiosity"
-                {
-                    return object as Character?
-                }
-            }
-        }
-        return object
-    }
 }
 
 class CuriosityGameVC: UIViewController {

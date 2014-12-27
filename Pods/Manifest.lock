@@ -1,13 +1,10 @@
 PODS:
-  - A3ParallaxScrollView (1.0.2)
   - KCOrderedAccessorFix (0.0.1)
 
 DEPENDENCIES:
-  - A3ParallaxScrollView
   - KCOrderedAccessorFix
 
 SPEC CHECKSUMS:
-  A3ParallaxScrollView: c3ff4549671fcc9045ab6540ae0a14af69d4eab6
   KCOrderedAccessorFix: d177d657cbe2b3b070540d6b1652e8534c8bceae
 
 COCOAPODS: 0.34.4

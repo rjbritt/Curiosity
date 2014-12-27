@@ -1,5 +1,6 @@
 //
 //  Character.swift
+//  Characters designed to be used to play Curiosity.
 //  Curiosity
 //
 //  Created by Ryan Britt on 12/8/14.
@@ -10,6 +11,11 @@ import UIKit
 
 class Character: SKSpriteNode
 {
+    //Ideas: enum for valid characters, listening var to determine what character is currently in play
+    //      Allow for double jump
+    
+    
+    
     var jumpXMovementConstant:Double = 0 //Determines the amount of movement allowed midair while jumping
     var torqueConstant:Double = 0 //Determines the amount of torque applied during movement
     var jumpConstant:CGFloat = 0 //Determines the amount of vertical impulse applied during a jump
@@ -30,91 +36,79 @@ class Character: SKSpriteNode
             return true
         }
     
-    convenience init(fromSKSpriteNode:SKSpriteNode)
-    {
-        self.init(texture: fromSKSpriteNode.texture, color: fromSKSpriteNode.color, size: fromSKSpriteNode.size)
-        self.name = fromSKSpriteNode.name
-        self.position = fromSKSpriteNode.position
-        self.zPosition = fromSKSpriteNode.zPosition
-        self.physicsBody = fromSKSpriteNode.physicsBody
-        
-    }
-    
-    class func presetCharacterFromChildNode(charSpriteNode:SKSpriteNode?) -> Character?
+    class func presetCharacter(name:String) -> Character?
     {
         var charSprite:Character?
-        
-        if let character = charSpriteNode
-        {
-            charSprite = Character(fromSKSpriteNode: character)
-        }
-        
-        if let name = charSpriteNode?.name
-        {
-                // Initialize preset characters with their unique "personality" which will affect their playstyle.
-                // All presets are temporarily set to the same as that of Curiosity.
-                switch name
-                {
-                case "Curiosity":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                case "Excite":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                case "Anx":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                case "Adam":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                case "Amora":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                case "Pragma":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                case "Uto":
-                    charSprite?.jumpXMovementConstant = 3.0
-                    charSprite?.torqueConstant = 7.0
-                    charSprite?.jumpConstant = 150.0
-                    charSprite?.ascendingJumpVelocityThreshold = 30.0
-                    charSprite?.descendingJumpVelocityThreshold = -120.0
-                    
-                default:
-                    break
-                }
 
+        // Initialize preset characters with their unique "personality" which will affect their playstyle.
+        // All presets are temporarily set to the same as that of Curiosity.
+        switch name
+        {
+        case "Curiosity":
+            charSprite = Character(texture: SKTexture(imageNamed: "Curiosity 2"))
+            charSprite?.physicsBody = SKPhysicsBody(texture: charSprite!.texture, size: charSprite!.size)
+            charSprite?.physicsBody?.mass = 0.2
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        case "Excite":
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        case "Anx":
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        case "Adam":
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        case "Amora":
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        case "Pragma":
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        case "Uto":
+            charSprite?.jumpXMovementConstant = 3.0
+            charSprite?.torqueConstant = 7.0
+            charSprite?.jumpConstant = 150.0
+            charSprite?.ascendingJumpVelocityThreshold = 30.0
+            charSprite?.descendingJumpVelocityThreshold = -120.0
+            
+        default:
+            break
         }
+        
+        charSprite?.physicsBody?.affectedByGravity = true
+        charSprite?.physicsBody?.allowsRotation = true
+        charSprite?.position = CGPointMake(0, charSprite!.size.height)
         
         return charSprite
     }
     
     /**
-    Method to perform the physics related to a jump
+    Commands the character to perform the physics related to a jump
     */
     func jump()
     {
@@ -146,5 +140,28 @@ class Character: SKSpriteNode
         }
         
         return torque
+    }
+    
+    /**
+    Commands the character to move for one frame. As the applied effects are part of the physics engine, these
+    effects are not guaranteed to only last for the length of one frame.
+    */
+    func move()
+    {
+        let deltaX = CGFloat(accelerationX * jumpXMovementConstant)
+        
+        let torqueX = torqueToApplyForCharacterWithVelocity(physicsBody!.velocity)
+        
+        // Determines any side motion in air
+        if (isJumping)
+        {
+            physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
+        }
+            
+        // Defaults to determining side motion on an area marked as solid
+        else if !isJumping
+        {
+            physicsBody?.applyTorque(torqueX)
+        }
     }
 }
