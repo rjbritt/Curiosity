@@ -7,303 +7,344 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F607EF7AFD9A0B693C5B11F /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C4112764DDF425AC265CDF /* NSManagedObjectModel+KCOrderedAccessorFix.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		2266576E8AD2CEA4733CBA4D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE700E8B471EA4D0FE65D41 /* CoreData.framework */; };
-		268647E07ED9AEEB6E085ECA /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FEBC5E3240F742CDC019CC /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */; };
-		3B527AAD99689E1C2825995B /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DC0B84A996BFB4BC9F4A9C /* NSManagedObjectModel+KCOrderedAccessorFix.h */; };
-		5D0BF988FF482CA4F19AAE1A /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C2E86AA943AA9840B1CEA /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */; };
-		752CA3FD2D21517D0307AB04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE700E8B471EA4D0FE65D41 /* CoreData.framework */; };
-		7B84014800EF9D0F50F6F317 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B2F86623DE7EC5C7ABE4C /* Foundation.framework */; };
-		7F1400A78E34A8F15ED5EDC1 /* Pods-CuriosityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2516F5A42AA99CB808093598 /* Pods-CuriosityTests-dummy.m */; };
-		8EFFDA411F6DDA63B46978F6 /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DC0B84A996BFB4BC9F4A9C /* NSManagedObjectModel+KCOrderedAccessorFix.h */; };
-		9ACA9A841146B04E71316332 /* Pods-Curiosity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD7B45A4A7C12ED225D386 /* Pods-Curiosity-dummy.m */; };
-		E6B707C0F35A44FD6C53CD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B2F86623DE7EC5C7ABE4C /* Foundation.framework */; };
-		EC99EC0B138CE13317D1E821 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B2F86623DE7EC5C7ABE4C /* Foundation.framework */; };
-		F04519EE8A7CD13DB0793B7B /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C4112764DDF425AC265CDF /* NSManagedObjectModel+KCOrderedAccessorFix.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		FE7D773C1D4A50116BFCB0BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B2F86623DE7EC5C7ABE4C /* Foundation.framework */; };
+		015396A12FA31471DFE2AAD1 /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */; };
+		179D76B513C04A8569716044 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		32F006AA3423930B3C695D82 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B272CF6B3AF051A29B6A1897 /* CoreData.framework */; };
+		4317979BFEEB3D12FC866E8D /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */; };
+		4F4C41928DE724A41CE4C8B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B272CF6B3AF051A29B6A1897 /* CoreData.framework */; };
+		6F8712B0265B900253797320 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A8F0DD7251B4A620259E7 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */; };
+		7341CCF0D9004CB778ACFD10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
+		78B9EB03A45B45B81B6AE813 /* Pods-CuriosityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F9DCA50BEE6EA1FE427E5 /* Pods-CuriosityTests-dummy.m */; };
+		7EC92D1FB8A16685778896D8 /* Pods-Curiosity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEED8107A51A0EBD95550776 /* Pods-Curiosity-dummy.m */; };
+		89B4D7379262776DC0F46D65 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA7743D87B6665D9842578 /* A3ParallaxScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B413BC07BD94F60B07B9FF7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
+		BB22F1E7DBA04182820A33EC /* Pods-Curiosity-A3ParallaxScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 955EB26C335AF17C7ACEF083 /* Pods-Curiosity-A3ParallaxScrollView-dummy.m */; };
+		C4800DBCA114B5DE9A491791 /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82825BA029FD3AB8E2794B3C /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */; };
+		C696D77840C08D3AB0CF91C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
+		CB4DC25F78357D85950BC56B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
+		CF5FD9E54E7AA36D2D6739B7 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D130D8C8CA8DDB8146A17CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
+		D14008E7EC3EA7A88A47B0FA /* A3ParallaxScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E67FC6B8E509CF302B34A80 /* A3ParallaxScrollView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F3EAF0CBD279BF70EF8619B /* PBXContainerItemProxy */ = {
+		BA680FCE4C4EE3665E968745 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 86BE6602E9A19B0F441E046A /* Project object */;
+			containerPortal = B154A43E49ACDD17884254E3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B23EA02719ECD24201F9CA40;
+			remoteGlobalIDString = 59A644C8431B1FFD0F37E10E;
+			remoteInfo = "Pods-Curiosity-KCOrderedAccessorFix";
+		};
+		C1667582410C734D59D5C149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B154A43E49ACDD17884254E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 539788B2295278E12C2A06FB;
 			remoteInfo = "Pods-CuriosityTests-KCOrderedAccessorFix";
 		};
-		A2BF7A648236E8B8927AEEAB /* PBXContainerItemProxy */ = {
+		FF915D6284A4FFBC25D4BFC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 86BE6602E9A19B0F441E046A /* Project object */;
+			containerPortal = B154A43E49ACDD17884254E3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 08F56F139FA7416DF1481D13;
-			remoteInfo = "Pods-Curiosity-KCOrderedAccessorFix";
+			remoteGlobalIDString = 152A6F148C05EE2A9689A162;
+			remoteInfo = "Pods-Curiosity-A3ParallaxScrollView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CCED9ACACB513765872720A /* Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig"; sourceTree = "<group>"; };
-		1DE700E8B471EA4D0FE65D41 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		2516F5A42AA99CB808093598 /* Pods-CuriosityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CuriosityTests-dummy.m"; sourceTree = "<group>"; };
-		25C4112764DDF425AC265CDF /* NSManagedObjectModel+KCOrderedAccessorFix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+KCOrderedAccessorFix.m"; sourceTree = "<group>"; };
-		27E39C353442EAEAFC3840AD /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
-		29C568EA855F900A6E16AAC2 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig"; sourceTree = "<group>"; };
-		2B11159833260D53D56343C7 /* Pods-Curiosity-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Curiosity-acknowledgements.plist"; sourceTree = "<group>"; };
-		35EECF687C33BCAE1C0329AB /* libPods-CuriosityTests-KCOrderedAccessorFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests-KCOrderedAccessorFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F95925124B31552CC407982 /* Pods-CuriosityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CuriosityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		451892F21C740DA58F7B3769 /* Pods-CuriosityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuriosityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		49DC0B84A996BFB4BC9F4A9C /* NSManagedObjectModel+KCOrderedAccessorFix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+KCOrderedAccessorFix.h"; sourceTree = "<group>"; };
-		4D98ADE6FE577A87DF98EC56 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		551C2E86AA943AA9840B1CEA /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m"; sourceTree = "<group>"; };
-		55FEBC5E3240F742CDC019CC /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-KCOrderedAccessorFix-dummy.m"; sourceTree = "<group>"; };
-		5CA8F7CCF56D829C5B21A64B /* libPods-Curiosity-KCOrderedAccessorFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity-KCOrderedAccessorFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E5C526D59A5AD97703A0399 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		611A8662B722D98CB9A3D265 /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig"; sourceTree = "<group>"; };
-		6AB02DA361052D42CC663C5A /* Pods-Curiosity-KCOrderedAccessorFix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-KCOrderedAccessorFix-prefix.pch"; sourceTree = "<group>"; };
-		79FAB382F2E6738A31A85578 /* Pods-Curiosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity.debug.xcconfig"; sourceTree = "<group>"; };
-		837156F2B8756BBB6F573941 /* Pods-Curiosity-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Curiosity-resources.sh"; sourceTree = "<group>"; };
-		9129965CE2053B92FD6FD064 /* Pods-Curiosity-KCOrderedAccessorFix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-KCOrderedAccessorFix.xcconfig"; sourceTree = "<group>"; };
-		A053C7A989E42E0F97C379A1 /* Pods-CuriosityTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CuriosityTests-environment.h"; sourceTree = "<group>"; };
-		A4B9E1A10F811EBAF8754D94 /* Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch"; sourceTree = "<group>"; };
-		A58D3B4C59BE19BD763DBEEC /* Pods-Curiosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity.release.xcconfig"; sourceTree = "<group>"; };
-		BA35ED7A972DABBA22019363 /* Pods-CuriosityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CuriosityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5B764F01970526EC1EDCCD0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
-		E68B2F86623DE7EC5C7ABE4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EA46E150F142E1BD2519A2BB /* Pods-CuriosityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuriosityTests-resources.sh"; sourceTree = "<group>"; };
-		F7D4325B60C9EBE728A11285 /* Pods-Curiosity-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Curiosity-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F93A2F16EE06B3AA9D70AF7D /* Pods-Curiosity-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-environment.h"; sourceTree = "<group>"; };
-		FBFD7B45A4A7C12ED225D386 /* Pods-Curiosity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-dummy.m"; sourceTree = "<group>"; };
+		0E67FC6B8E509CF302B34A80 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A3ParallaxScrollView.h; path = A3ParallaxScrollView/A3ParallaxScrollView.h; sourceTree = "<group>"; };
+		11AB76145266B115D40ACB50 /* Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig"; sourceTree = "<group>"; };
+		134403002B6900516B6B4159 /* libPods-CuriosityTests-KCOrderedAccessorFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests-KCOrderedAccessorFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F0F473691FFD12AEFF3105 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7917FDBBEDB0C736983883 /* Pods-CuriosityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuriosityTests-resources.sh"; sourceTree = "<group>"; };
+		43D93E73A3AA109A5253FB63 /* Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch"; sourceTree = "<group>"; };
+		452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig"; sourceTree = "<group>"; };
+		59D1BDB4860497007F0B9711 /* Pods-Curiosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity.debug.xcconfig"; sourceTree = "<group>"; };
+		5B2224965F94C5CC3AF81D97 /* Pods-CuriosityTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CuriosityTests-environment.h"; sourceTree = "<group>"; };
+		5D7F9DCA50BEE6EA1FE427E5 /* Pods-CuriosityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CuriosityTests-dummy.m"; sourceTree = "<group>"; };
+		5DA2DC1505E2571355DFA40E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		5FC06B831BEC930312941B18 /* Pods-CuriosityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CuriosityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		602C1984970A6906E8CD286B /* Pods-Curiosity-KCOrderedAccessorFix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-KCOrderedAccessorFix-prefix.pch"; sourceTree = "<group>"; };
+		671AF28A37BD32B2B9FE3121 /* Pods-CuriosityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuriosityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EE1ECC6DC8EFA692A4D1712 /* libPods-Curiosity-KCOrderedAccessorFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity-KCOrderedAccessorFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig"; sourceTree = "<group>"; };
+		747C3B225CF21F3F26FB8168 /* Pods-Curiosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity.release.xcconfig"; sourceTree = "<group>"; };
+		7E2A8F0DD7251B4A620259E7 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-KCOrderedAccessorFix-dummy.m"; sourceTree = "<group>"; };
+		82825BA029FD3AB8E2794B3C /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m"; sourceTree = "<group>"; };
+		84E5ED86DD094A66F8B2B3E9 /* Pods-Curiosity-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Curiosity-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86A70B66C6BBC38903F437DE /* Pods-Curiosity-A3ParallaxScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-A3ParallaxScrollView-prefix.pch"; sourceTree = "<group>"; };
+		8B7DC5AC49173D45A507784D /* Pods-CuriosityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CuriosityTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+KCOrderedAccessorFix.m"; sourceTree = "<group>"; };
+		8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+KCOrderedAccessorFix.h"; sourceTree = "<group>"; };
+		955EB26C335AF17C7ACEF083 /* Pods-Curiosity-A3ParallaxScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-A3ParallaxScrollView-dummy.m"; sourceTree = "<group>"; };
+		99059787679F0A6A6C3DA8F9 /* Pods-Curiosity-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Curiosity-resources.sh"; sourceTree = "<group>"; };
+		A0F82FEA271EE3B9723F59CB /* Pods-Curiosity-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-environment.h"; sourceTree = "<group>"; };
+		A3ED2234B8E7050CD926AF1B /* Pods-Curiosity-A3ParallaxScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-A3ParallaxScrollView.xcconfig"; sourceTree = "<group>"; };
+		A724E485DA1B0139D93AA21D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A860813E0F689E09DE8F5871 /* Pods-Curiosity-KCOrderedAccessorFix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-KCOrderedAccessorFix.xcconfig"; sourceTree = "<group>"; };
+		AE2CC826C4B350AE1959BB63 /* Pods-Curiosity-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Curiosity-acknowledgements.plist"; sourceTree = "<group>"; };
+		B272CF6B3AF051A29B6A1897 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		B9174B1C0B66A6077E75B308 /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2243BA9E30F958F9CB5A22E /* libPods-Curiosity-A3ParallaxScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity-A3ParallaxScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB8BEA3FF3B36D2C1DBC3E0 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig"; sourceTree = "<group>"; };
+		D9AA7743D87B6665D9842578 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A3ParallaxScrollView.m; path = A3ParallaxScrollView/A3ParallaxScrollView.m; sourceTree = "<group>"; };
+		EEED8107A51A0EBD95550776 /* Pods-Curiosity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		548184A466D4E0F74F0C77A4 /* Frameworks */ = {
+		16614FADE9FCCDB5DAA13B53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2266576E8AD2CEA4733CBA4D /* CoreData.framework in Frameworks */,
-				7B84014800EF9D0F50F6F317 /* Foundation.framework in Frameworks */,
+				CB4DC25F78357D85950BC56B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6597A95067CC01405CFE4C08 /* Frameworks */ = {
+		1EA04760B8A9C0C8287E9BCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752CA3FD2D21517D0307AB04 /* CoreData.framework in Frameworks */,
-				EC99EC0B138CE13317D1E821 /* Foundation.framework in Frameworks */,
+				B413BC07BD94F60B07B9FF7E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEBA5395CFD5E36D5E13D5DB /* Frameworks */ = {
+		BD380B4C3564B7BACF27288B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B707C0F35A44FD6C53CD6D /* Foundation.framework in Frameworks */,
+				C696D77840C08D3AB0CF91C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD2CC8835FA56FAC356C70A2 /* Frameworks */ = {
+		DB4BC559D724F9C14A523CD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE7D773C1D4A50116BFCB0BE /* Foundation.framework in Frameworks */,
+				4F4C41928DE724A41CE4C8B6 /* CoreData.framework in Frameworks */,
+				7341CCF0D9004CB778ACFD10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E74395BD0F8239C34CF3733F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F006AA3423930B3C695D82 /* CoreData.framework in Frameworks */,
+				D130D8C8CA8DDB8146A17CBB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E3DD1989F5427164C2EAF7B /* KCOrderedAccessorFix */ = {
+		0109A73D3193405F259E644D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49DC0B84A996BFB4BC9F4A9C /* NSManagedObjectModel+KCOrderedAccessorFix.h */,
-				25C4112764DDF425AC265CDF /* NSManagedObjectModel+KCOrderedAccessorFix.m */,
-				BACEF2C7C36BA59FEAFFFFA5 /* Support Files */,
+				A4DE23D9E8EE38095E2400C4 /* Pods-Curiosity */,
+				CCF2AFF8C6CE95C34B04EBB2 /* Pods-CuriosityTests */,
 			);
-			path = KCOrderedAccessorFix;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		574125BDDFE9D675773B8A00 /* Products */ = {
+		198D91D4BFA5553549564CB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5E5C526D59A5AD97703A0399 /* libPods-Curiosity.a */,
-				5CA8F7CCF56D829C5B21A64B /* libPods-Curiosity-KCOrderedAccessorFix.a */,
-				4D98ADE6FE577A87DF98EC56 /* libPods-CuriosityTests.a */,
-				35EECF687C33BCAE1C0329AB /* libPods-CuriosityTests-KCOrderedAccessorFix.a */,
+				B272CF6B3AF051A29B6A1897 /* CoreData.framework */,
+				A724E485DA1B0139D93AA21D /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		5BA471B27ED21DC0C45C0BB7 /* Frameworks */ = {
+		1BAC81F60AED6813CE0E1C55 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1F43EF0E360140AEDD6A75F /* iOS */,
+				A3ED2234B8E7050CD926AF1B /* Pods-Curiosity-A3ParallaxScrollView.xcconfig */,
+				452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */,
+				955EB26C335AF17C7ACEF083 /* Pods-Curiosity-A3ParallaxScrollView-dummy.m */,
+				86A70B66C6BBC38903F437DE /* Pods-Curiosity-A3ParallaxScrollView-prefix.pch */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Curiosity-A3ParallaxScrollView";
 			sourceTree = "<group>";
 		};
-		5E80A6F36AE9D4507DE99CEC /* Pods */ = {
+		1F821683B29610B9C9760717 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E3DD1989F5427164C2EAF7B /* KCOrderedAccessorFix */,
+				E5C5D4E3FDDB74E1C7451804 /* A3ParallaxScrollView */,
+				D75836B5300A606772FCFE3F /* KCOrderedAccessorFix */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7DDB77157A7116875BE8D6B6 /* Pods-Curiosity */ = {
+		7748E1A6DEC2ED7CDCA88BF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7D4325B60C9EBE728A11285 /* Pods-Curiosity-acknowledgements.markdown */,
-				2B11159833260D53D56343C7 /* Pods-Curiosity-acknowledgements.plist */,
-				FBFD7B45A4A7C12ED225D386 /* Pods-Curiosity-dummy.m */,
-				F93A2F16EE06B3AA9D70AF7D /* Pods-Curiosity-environment.h */,
-				837156F2B8756BBB6F573941 /* Pods-Curiosity-resources.sh */,
-				79FAB382F2E6738A31A85578 /* Pods-Curiosity.debug.xcconfig */,
-				A58D3B4C59BE19BD763DBEEC /* Pods-Curiosity.release.xcconfig */,
+				198D91D4BFA5553549564CB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A49DE91C678FA9E863FC737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8BEA3FF3B36D2C1DBC3E0 /* libPods-Curiosity.a */,
+				C2243BA9E30F958F9CB5A22E /* libPods-Curiosity-A3ParallaxScrollView.a */,
+				6EE1ECC6DC8EFA692A4D1712 /* libPods-Curiosity-KCOrderedAccessorFix.a */,
+				14F0F473691FFD12AEFF3105 /* libPods-CuriosityTests.a */,
+				134403002B6900516B6B4159 /* libPods-CuriosityTests-KCOrderedAccessorFix.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4DE23D9E8EE38095E2400C4 /* Pods-Curiosity */ = {
+			isa = PBXGroup;
+			children = (
+				84E5ED86DD094A66F8B2B3E9 /* Pods-Curiosity-acknowledgements.markdown */,
+				AE2CC826C4B350AE1959BB63 /* Pods-Curiosity-acknowledgements.plist */,
+				EEED8107A51A0EBD95550776 /* Pods-Curiosity-dummy.m */,
+				A0F82FEA271EE3B9723F59CB /* Pods-Curiosity-environment.h */,
+				99059787679F0A6A6C3DA8F9 /* Pods-Curiosity-resources.sh */,
+				59D1BDB4860497007F0B9711 /* Pods-Curiosity.debug.xcconfig */,
+				747C3B225CF21F3F26FB8168 /* Pods-Curiosity.release.xcconfig */,
 			);
 			name = "Pods-Curiosity";
 			path = "Target Support Files/Pods-Curiosity";
 			sourceTree = "<group>";
 		};
-		7E818876779751B95E1494B7 /* Targets Support Files */ = {
+		CB50934599AB6D200FE782DC = {
 			isa = PBXGroup;
 			children = (
-				7DDB77157A7116875BE8D6B6 /* Pods-Curiosity */,
-				AC79C92D8BAAAF025707F8DD /* Pods-CuriosityTests */,
+				5DA2DC1505E2571355DFA40E /* Podfile */,
+				7748E1A6DEC2ED7CDCA88BF7 /* Frameworks */,
+				1F821683B29610B9C9760717 /* Pods */,
+				7A49DE91C678FA9E863FC737 /* Products */,
+				0109A73D3193405F259E644D /* Targets Support Files */,
 			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AC79C92D8BAAAF025707F8DD /* Pods-CuriosityTests */ = {
+		CCF2AFF8C6CE95C34B04EBB2 /* Pods-CuriosityTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA35ED7A972DABBA22019363 /* Pods-CuriosityTests-acknowledgements.markdown */,
-				3F95925124B31552CC407982 /* Pods-CuriosityTests-acknowledgements.plist */,
-				2516F5A42AA99CB808093598 /* Pods-CuriosityTests-dummy.m */,
-				A053C7A989E42E0F97C379A1 /* Pods-CuriosityTests-environment.h */,
-				EA46E150F142E1BD2519A2BB /* Pods-CuriosityTests-resources.sh */,
-				451892F21C740DA58F7B3769 /* Pods-CuriosityTests.debug.xcconfig */,
-				27E39C353442EAEAFC3840AD /* Pods-CuriosityTests.release.xcconfig */,
+				5FC06B831BEC930312941B18 /* Pods-CuriosityTests-acknowledgements.markdown */,
+				8B7DC5AC49173D45A507784D /* Pods-CuriosityTests-acknowledgements.plist */,
+				5D7F9DCA50BEE6EA1FE427E5 /* Pods-CuriosityTests-dummy.m */,
+				5B2224965F94C5CC3AF81D97 /* Pods-CuriosityTests-environment.h */,
+				2F7917FDBBEDB0C736983883 /* Pods-CuriosityTests-resources.sh */,
+				671AF28A37BD32B2B9FE3121 /* Pods-CuriosityTests.debug.xcconfig */,
+				B9174B1C0B66A6077E75B308 /* Pods-CuriosityTests.release.xcconfig */,
 			);
 			name = "Pods-CuriosityTests";
 			path = "Target Support Files/Pods-CuriosityTests";
 			sourceTree = "<group>";
 		};
-		BACEF2C7C36BA59FEAFFFFA5 /* Support Files */ = {
+		D75836B5300A606772FCFE3F /* KCOrderedAccessorFix */ = {
 			isa = PBXGroup;
 			children = (
-				9129965CE2053B92FD6FD064 /* Pods-Curiosity-KCOrderedAccessorFix.xcconfig */,
-				611A8662B722D98CB9A3D265 /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */,
-				55FEBC5E3240F742CDC019CC /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */,
-				6AB02DA361052D42CC663C5A /* Pods-Curiosity-KCOrderedAccessorFix-prefix.pch */,
-				1CCED9ACACB513765872720A /* Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig */,
-				29C568EA855F900A6E16AAC2 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */,
-				551C2E86AA943AA9840B1CEA /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */,
-				A4B9E1A10F811EBAF8754D94 /* Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch */,
+				8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */,
+				8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */,
+				F98B740DB4210FED91A56FF3 /* Support Files */,
+			);
+			path = KCOrderedAccessorFix;
+			sourceTree = "<group>";
+		};
+		E5C5D4E3FDDB74E1C7451804 /* A3ParallaxScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0E67FC6B8E509CF302B34A80 /* A3ParallaxScrollView.h */,
+				D9AA7743D87B6665D9842578 /* A3ParallaxScrollView.m */,
+				1BAC81F60AED6813CE0E1C55 /* Support Files */,
+			);
+			path = A3ParallaxScrollView;
+			sourceTree = "<group>";
+		};
+		F98B740DB4210FED91A56FF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A860813E0F689E09DE8F5871 /* Pods-Curiosity-KCOrderedAccessorFix.xcconfig */,
+				73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */,
+				7E2A8F0DD7251B4A620259E7 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */,
+				602C1984970A6906E8CD286B /* Pods-Curiosity-KCOrderedAccessorFix-prefix.pch */,
+				11AB76145266B115D40ACB50 /* Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig */,
+				D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */,
+				82825BA029FD3AB8E2794B3C /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */,
+				43D93E73A3AA109A5253FB63 /* Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Curiosity-KCOrderedAccessorFix";
 			sourceTree = "<group>";
 		};
-		C09F572B314201A8D5F036A1 = {
-			isa = PBXGroup;
-			children = (
-				E5B764F01970526EC1EDCCD0 /* Podfile */,
-				5BA471B27ED21DC0C45C0BB7 /* Frameworks */,
-				5E80A6F36AE9D4507DE99CEC /* Pods */,
-				574125BDDFE9D675773B8A00 /* Products */,
-				7E818876779751B95E1494B7 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		C1F43EF0E360140AEDD6A75F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				1DE700E8B471EA4D0FE65D41 /* CoreData.framework */,
-				E68B2F86623DE7EC5C7ABE4C /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4EC488803E9787A8C305CF8C /* Headers */ = {
+		12415B59F9B828F870F3A6B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B527AAD99689E1C2825995B /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */,
+				015396A12FA31471DFE2AAD1 /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD6DD26B91F3D5DAE5856130 /* Headers */ = {
+		84BE87323F3EB645545A1174 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EFFDA411F6DDA63B46978F6 /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */,
+				4317979BFEEB3D12FC866E8D /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5C4FEDCF52DDCAD9F0758CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14008E7EC3EA7A88A47B0FA /* A3ParallaxScrollView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08F56F139FA7416DF1481D13 /* Pods-Curiosity-KCOrderedAccessorFix */ = {
+		152A6F148C05EE2A9689A162 /* Pods-Curiosity-A3ParallaxScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0621306A115CED7B48CB7FBF /* Build configuration list for PBXNativeTarget "Pods-Curiosity-KCOrderedAccessorFix" */;
+			buildConfigurationList = C676D166A1887D930A262318 /* Build configuration list for PBXNativeTarget "Pods-Curiosity-A3ParallaxScrollView" */;
 			buildPhases = (
-				CBC9CBBCE47236D74AFFB3C2 /* Sources */,
-				6597A95067CC01405CFE4C08 /* Frameworks */,
-				4EC488803E9787A8C305CF8C /* Headers */,
+				96821435B01D80D88C49365D /* Sources */,
+				16614FADE9FCCDB5DAA13B53 /* Frameworks */,
+				E5C4FEDCF52DDCAD9F0758CB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Curiosity-KCOrderedAccessorFix";
-			productName = "Pods-Curiosity-KCOrderedAccessorFix";
-			productReference = 5CA8F7CCF56D829C5B21A64B /* libPods-Curiosity-KCOrderedAccessorFix.a */;
+			name = "Pods-Curiosity-A3ParallaxScrollView";
+			productName = "Pods-Curiosity-A3ParallaxScrollView";
+			productReference = C2243BA9E30F958F9CB5A22E /* libPods-Curiosity-A3ParallaxScrollView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		0BCC611E777973D79ACBDF11 /* Pods-CuriosityTests */ = {
+		347F69C11E5498F82CBFF106 /* Pods-CuriosityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDBD5221AE24C07F6E10C918 /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests" */;
+			buildConfigurationList = 68A4F5000BAD3388E7E37DF7 /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests" */;
 			buildPhases = (
-				C11D96C71A49A069121A9DBB /* Sources */,
-				BD2CC8835FA56FAC356C70A2 /* Frameworks */,
+				C0121AAA58BA25CB19BFE0CA /* Sources */,
+				BD380B4C3564B7BACF27288B /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F97D78C34EC23F34D6603B95 /* PBXTargetDependency */,
+				556AB227B2729DFDBF81EF8C /* PBXTargetDependency */,
 			);
 			name = "Pods-CuriosityTests";
 			productName = "Pods-CuriosityTests";
-			productReference = 4D98ADE6FE577A87DF98EC56 /* libPods-CuriosityTests.a */;
+			productReference = 14F0F473691FFD12AEFF3105 /* libPods-CuriosityTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6E9550E5374A608E3FDBF35C /* Pods-Curiosity */ = {
+		539788B2295278E12C2A06FB /* Pods-CuriosityTests-KCOrderedAccessorFix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E42E44E42126F77B8350F4CC /* Build configuration list for PBXNativeTarget "Pods-Curiosity" */;
+			buildConfigurationList = D76BF8E3BAFF3D263EB8F30C /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests-KCOrderedAccessorFix" */;
 			buildPhases = (
-				17CAEC31C33CAE3A096A7999 /* Sources */,
-				AEBA5395CFD5E36D5E13D5DB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B3FC96C7C1EB8D4F2283A298 /* PBXTargetDependency */,
-			);
-			name = "Pods-Curiosity";
-			productName = "Pods-Curiosity";
-			productReference = 5E5C526D59A5AD97703A0399 /* libPods-Curiosity.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B23EA02719ECD24201F9CA40 /* Pods-CuriosityTests-KCOrderedAccessorFix */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6EB29A502922CEACFF0F978C /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests-KCOrderedAccessorFix" */;
-			buildPhases = (
-				F38601C848FAD54A7D6B702D /* Sources */,
-				548184A466D4E0F74F0C77A4 /* Frameworks */,
-				CD6DD26B91F3D5DAE5856130 /* Headers */,
+				4C0923606FBA61D2DE79F34D /* Sources */,
+				E74395BD0F8239C34CF3733F /* Frameworks */,
+				84BE87323F3EB645545A1174 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -311,89 +352,446 @@
 			);
 			name = "Pods-CuriosityTests-KCOrderedAccessorFix";
 			productName = "Pods-CuriosityTests-KCOrderedAccessorFix";
-			productReference = 35EECF687C33BCAE1C0329AB /* libPods-CuriosityTests-KCOrderedAccessorFix.a */;
+			productReference = 134403002B6900516B6B4159 /* libPods-CuriosityTests-KCOrderedAccessorFix.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		59A644C8431B1FFD0F37E10E /* Pods-Curiosity-KCOrderedAccessorFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34339D28C738C93913D2B99D /* Build configuration list for PBXNativeTarget "Pods-Curiosity-KCOrderedAccessorFix" */;
+			buildPhases = (
+				2549A32661C67414A9F67909 /* Sources */,
+				DB4BC559D724F9C14A523CD8 /* Frameworks */,
+				12415B59F9B828F870F3A6B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Curiosity-KCOrderedAccessorFix";
+			productName = "Pods-Curiosity-KCOrderedAccessorFix";
+			productReference = 6EE1ECC6DC8EFA692A4D1712 /* libPods-Curiosity-KCOrderedAccessorFix.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5CBDCA7E436851B9F1C8572D /* Pods-Curiosity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A905A36D215DFD42C924DFB /* Build configuration list for PBXNativeTarget "Pods-Curiosity" */;
+			buildPhases = (
+				14936C72E2F0C6C08929DCE2 /* Sources */,
+				1EA04760B8A9C0C8287E9BCA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA6EDE94363DCB69E29B4C0 /* PBXTargetDependency */,
+				828C8FA59859FAF84F7EE76C /* PBXTargetDependency */,
+			);
+			name = "Pods-Curiosity";
+			productName = "Pods-Curiosity";
+			productReference = CCB8BEA3FF3B36D2C1DBC3E0 /* libPods-Curiosity.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		86BE6602E9A19B0F441E046A /* Project object */ = {
+		B154A43E49ACDD17884254E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 4F9AFDBCBD599C4D9BFFC354 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4E03F20378D51EF396ABCC71 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C09F572B314201A8D5F036A1;
-			productRefGroup = 574125BDDFE9D675773B8A00 /* Products */;
+			mainGroup = CB50934599AB6D200FE782DC;
+			productRefGroup = 7A49DE91C678FA9E863FC737 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E9550E5374A608E3FDBF35C /* Pods-Curiosity */,
-				08F56F139FA7416DF1481D13 /* Pods-Curiosity-KCOrderedAccessorFix */,
-				0BCC611E777973D79ACBDF11 /* Pods-CuriosityTests */,
-				B23EA02719ECD24201F9CA40 /* Pods-CuriosityTests-KCOrderedAccessorFix */,
+				5CBDCA7E436851B9F1C8572D /* Pods-Curiosity */,
+				152A6F148C05EE2A9689A162 /* Pods-Curiosity-A3ParallaxScrollView */,
+				59A644C8431B1FFD0F37E10E /* Pods-Curiosity-KCOrderedAccessorFix */,
+				347F69C11E5498F82CBFF106 /* Pods-CuriosityTests */,
+				539788B2295278E12C2A06FB /* Pods-CuriosityTests-KCOrderedAccessorFix */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17CAEC31C33CAE3A096A7999 /* Sources */ = {
+		14936C72E2F0C6C08929DCE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ACA9A841146B04E71316332 /* Pods-Curiosity-dummy.m in Sources */,
+				7EC92D1FB8A16685778896D8 /* Pods-Curiosity-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C11D96C71A49A069121A9DBB /* Sources */ = {
+		2549A32661C67414A9F67909 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1400A78E34A8F15ED5EDC1 /* Pods-CuriosityTests-dummy.m in Sources */,
+				CF5FD9E54E7AA36D2D6739B7 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */,
+				6F8712B0265B900253797320 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBC9CBBCE47236D74AFFB3C2 /* Sources */ = {
+		4C0923606FBA61D2DE79F34D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04519EE8A7CD13DB0793B7B /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */,
-				268647E07ED9AEEB6E085ECA /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m in Sources */,
+				179D76B513C04A8569716044 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */,
+				C4800DBCA114B5DE9A491791 /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F38601C848FAD54A7D6B702D /* Sources */ = {
+		96821435B01D80D88C49365D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F607EF7AFD9A0B693C5B11F /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */,
-				5D0BF988FF482CA4F19AAE1A /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m in Sources */,
+				89B4D7379262776DC0F46D65 /* A3ParallaxScrollView.m in Sources */,
+				BB22F1E7DBA04182820A33EC /* Pods-Curiosity-A3ParallaxScrollView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0121AAA58BA25CB19BFE0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B9EB03A45B45B81B6AE813 /* Pods-CuriosityTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B3FC96C7C1EB8D4F2283A298 /* PBXTargetDependency */ = {
+		556AB227B2729DFDBF81EF8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 08F56F139FA7416DF1481D13 /* Pods-Curiosity-KCOrderedAccessorFix */;
-			targetProxy = A2BF7A648236E8B8927AEEAB /* PBXContainerItemProxy */;
+			target = 539788B2295278E12C2A06FB /* Pods-CuriosityTests-KCOrderedAccessorFix */;
+			targetProxy = C1667582410C734D59D5C149 /* PBXContainerItemProxy */;
 		};
-		F97D78C34EC23F34D6603B95 /* PBXTargetDependency */ = {
+		828C8FA59859FAF84F7EE76C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B23EA02719ECD24201F9CA40 /* Pods-CuriosityTests-KCOrderedAccessorFix */;
-			targetProxy = 2F3EAF0CBD279BF70EF8619B /* PBXContainerItemProxy */;
+			target = 59A644C8431B1FFD0F37E10E /* Pods-Curiosity-KCOrderedAccessorFix */;
+			targetProxy = BA680FCE4C4EE3665E968745 /* PBXContainerItemProxy */;
+		};
+		FAA6EDE94363DCB69E29B4C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 152A6F148C05EE2A9689A162 /* Pods-Curiosity-A3ParallaxScrollView */;
+			targetProxy = FF915D6284A4FFBC25D4BFC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		36D2A899DC851080C56CF7C2 /* Debug */ = {
+		086FF2AE5854B4CE9F521AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747C3B225CF21F3F26FB8168 /* Pods-Curiosity.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D38475C0CF7E25EE461723A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9174B1C0B66A6077E75B308 /* Pods-CuriosityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F0E3022527C733B49EAB5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D3BF70F78FFD7DBC4C2FFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-A3ParallaxScrollView/Pods-Curiosity-A3ParallaxScrollView-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		98608CBE118CB9D4F7DBB76B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-A3ParallaxScrollView/Pods-Curiosity-A3ParallaxScrollView-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B09314EE4F77C9104D4753DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B1DC936ABE58C52288C9E83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D1BDB4860497007F0B9711 /* Pods-Curiosity.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B71418490D96E93E1D39BB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC28262985D406E3ED3A0142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671AF28A37BD32B2B9FE3121 /* Pods-CuriosityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D588202794C1E7946F3492FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0B88B7EE273749E94D2838A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1286DBF7E1D772F54693A39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -429,306 +827,64 @@
 			};
 			name = Debug;
 		};
-		4B9500D6BA7BBF0E8C8AF66C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 611A8662B722D98CB9A3D265 /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5A3A0780478F934762246949 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 611A8662B722D98CB9A3D265 /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7771228112ABBA74AF5B9535 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29C568EA855F900A6E16AAC2 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7A0178F50D2879B255243DA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 451892F21C740DA58F7B3769 /* Pods-CuriosityTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A67234CE2EA16B4C98591806 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27E39C353442EAEAFC3840AD /* Pods-CuriosityTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C47BB1C91BC918B9533E7152 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A58D3B4C59BE19BD763DBEEC /* Pods-Curiosity.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CD23FCC0FFF214C8F8B41AA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E2EBCABACBDE4F37C2C1757F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79FAB382F2E6738A31A85578 /* Pods-Curiosity.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F5819A842DECC1ADCFEF5507 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29C568EA855F900A6E16AAC2 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0621306A115CED7B48CB7FBF /* Build configuration list for PBXNativeTarget "Pods-Curiosity-KCOrderedAccessorFix" */ = {
+		34339D28C738C93913D2B99D /* Build configuration list for PBXNativeTarget "Pods-Curiosity-KCOrderedAccessorFix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A3A0780478F934762246949 /* Debug */,
-				4B9500D6BA7BBF0E8C8AF66C /* Release */,
+				B09314EE4F77C9104D4753DB /* Debug */,
+				E0B88B7EE273749E94D2838A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F9AFDBCBD599C4D9BFFC354 /* Build configuration list for PBXProject "Pods" */ = {
+		4E03F20378D51EF396ABCC71 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36D2A899DC851080C56CF7C2 /* Debug */,
-				CD23FCC0FFF214C8F8B41AA4 /* Release */,
+				F1286DBF7E1D772F54693A39 /* Debug */,
+				D588202794C1E7946F3492FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EB29A502922CEACFF0F978C /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests-KCOrderedAccessorFix" */ = {
+		68A4F5000BAD3388E7E37DF7 /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7771228112ABBA74AF5B9535 /* Debug */,
-				F5819A842DECC1ADCFEF5507 /* Release */,
+				BC28262985D406E3ED3A0142 /* Debug */,
+				2D38475C0CF7E25EE461723A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E42E44E42126F77B8350F4CC /* Build configuration list for PBXNativeTarget "Pods-Curiosity" */ = {
+		7A905A36D215DFD42C924DFB /* Build configuration list for PBXNativeTarget "Pods-Curiosity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2EBCABACBDE4F37C2C1757F /* Debug */,
-				C47BB1C91BC918B9533E7152 /* Release */,
+				B1DC936ABE58C52288C9E83C /* Debug */,
+				086FF2AE5854B4CE9F521AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDBD5221AE24C07F6E10C918 /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests" */ = {
+		C676D166A1887D930A262318 /* Build configuration list for PBXNativeTarget "Pods-Curiosity-A3ParallaxScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A0178F50D2879B255243DA8 /* Debug */,
-				A67234CE2EA16B4C98591806 /* Release */,
+				8D3BF70F78FFD7DBC4C2FFD0 /* Debug */,
+				98608CBE118CB9D4F7DBB76B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76BF8E3BAFF3D263EB8F30C /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests-KCOrderedAccessorFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0E3022527C733B49EAB5E8 /* Debug */,
+				B71418490D96E93E1D39BB24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 86BE6602E9A19B0F441E046A /* Project object */;
+	rootObject = B154A43E49ACDD17884254E3 /* Project object */;
 }

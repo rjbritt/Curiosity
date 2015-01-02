@@ -14,32 +14,22 @@ class CuriosityScene: SKScene
 {
     
     //MARK: Private instance variables
-    private var motionManager = CMMotionManager();
-    private var queue = NSOperationQueue();
-    private let framerate = 60.0 //Frames planned to deliver per second.
-
+    private let motionManager = CMMotionManager();
+    private let queue = NSOperationQueue();
+    private let framerate = 30.0 //Minimum Frames planned to deliver per second.
     
     //MARK: Public instance variables
-    var cloudBackground:PBParallaxScrolling?
-    var parallaxBackground:PBParallaxScrolling?
-    var characterSpriteNode:Character?
+    var farOutBackground:PBParallaxScrolling? // A background designed to be farther out than the other parallel backgrounds
+    var parallaxBackground:PBParallaxScrolling? // A set of parallax backgrounds to be used as a backdrop for the action
+    
+    var characterSpriteNode:Character? // The character that is currently presented in the scene
     var cameraNode:SKNode?
+    var items:[Item]?
 
 
     //MARK: View Lifecycle Methods
     override func didMoveToView(view: SKView)
-    {
-        
-        //Initializes a parallax background that will move with the character.
-        let parallaxImages:NSArray = NSArray(objects:UIImage(named: "flowers")!,UIImage(named: "hills")!)
-        let size = UIImage(named:"blueDayBackground")!.size
-        
-        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImages, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:3.0, andSpeedDecrease:1.0)
-      
-        //Initializes a cloud parallax background that will always move
-        cloudBackground = PBParallaxScrolling(backgrounds: NSArray(object:UIImage(named: "blueDayBackground")!), size: size, direction: kPBParallaxBackgroundDirectionRight, fastestSpeed: 1.0, andSpeedDecrease: 1.0)
-        cloudBackground?.zPosition = parallaxBackground!.zPosition - 1
-        
+    {        
         //Initializes and sets the swipe gesture recognizer that will cause the character to jump
         var swipeRecognizer:UISwipeGestureRecognizer =  UISwipeGestureRecognizer(target: self, action:"jump")
         swipeRecognizer.direction = UISwipeGestureRecognizerDirection.Up
@@ -55,20 +45,25 @@ class CuriosityScene: SKScene
             })
         }
         
-        //Create the initial Character
-        characterSpriteNode = Character.presetCharacter("Curiosity")
-        
         if let world = childNodeWithName("//WORLD")
         {
             parallaxBackground?.anchorPoint = CGPointMake(0,0)
             if let parallax = parallaxBackground
             { world.addChild(parallax) }
             
-            if let cloud = cloudBackground
+            if let cloud = farOutBackground
             { world.addChild(cloud) }
             
             if let character = characterSpriteNode
             { world.addChild(character) }
+            
+            if let allItems = items
+            {
+                for item in allItems
+                {
+                    world.addChild(item)
+                }
+            }
         }
         cameraNode = childNodeWithName("//CAMERA")
         cameraNode?.position.y = self.size.height/2
@@ -85,23 +80,27 @@ class CuriosityScene: SKScene
         {
             character.move()
             
-            if(physicsBody!.velocity.dx > 0.1)
+            if(character.direction == .Right)
             {
-                self.parallaxBackground?.direction = kPBParallaxBackgroundDirectionLeft
-                self.parallaxBackground?.update(currentTime)
-                
+                parallaxBackground?.direction = kPBParallaxBackgroundDirectionLeft
+                farOutBackground?.direction = kPBParallaxBackgroundDirectionLeft
             }
-            else if(character.physicsBody!.velocity.dx < -0.1)
+            else if(character.direction == .Left)
             {
-                self.parallaxBackground?.direction = kPBParallaxBackgroundDirectionRight
-                self.parallaxBackground?.update(currentTime)
+                parallaxBackground?.direction = kPBParallaxBackgroundDirectionRight
+                farOutBackground?.direction = kPBParallaxBackgroundDirectionRight
             }
+            
             
             // Aligns the parallax background position with the cameraNode position that way the 
             // background follows along with the camera.
             self.parallaxBackground?.position.x = cameraNode!.position.x
-            self.cloudBackground?.position.x = cameraNode!.position.x
-            self.cloudBackground?.update(currentTime)
+            self.farOutBackground?.position.x = cameraNode!.position.x
+            
+            let backgroundSpeedFactor = determineBackgroundSpeedFactor()
+            
+            farOutBackground?.update(currentTime, withSpeedModifiedBy: backgroundSpeedFactor)
+            parallaxBackground?.update(currentTime, withSpeedModifiedBy: backgroundSpeedFactor)
         }
     }
     
@@ -164,5 +163,28 @@ class CuriosityScene: SKScene
         {
             world.position = CGPointMake(world.position.x - cameraPositionInScene.x, world.position.y - cameraPositionInScene.y)
         }
+    }
+    
+    /**
+    Determines the background speed factor based on the character's current speed.
+    
+    :returns: A factor to be be used in computing the background's effective speed.
+    */
+    func determineBackgroundSpeedFactor() -> Float
+    {
+        var factor:Float = 0.0
+        let speedDivisionFactor:Float = 100.0 //100 rounds off the speed in a nice way as the velocity goes between 0 and 1000 on average
+        if let char = characterSpriteNode
+        {
+            let speed = char.physicsBody?.velocity.dx
+            if let spd = speed
+            {
+                factor = abs(Float(spd)/speedDivisionFactor)
+                // absolute value because the direction handling is done in the parallax scrolling class.
+                // Attempting to do so with the sign of the velocity simply unrolls the created "banner" of repeating backgrounds.
+            }
+        }
+        
+        return factor
     }
 }

@@ -11,94 +11,86 @@ import UIKit
 
 class Character: SKSpriteNode
 {
+    enum XDirection
+    {
+        case Right, Left, None
+    }
+    
     //Ideas: enum for valid characters, listening var to determine what character is currently in play
     //      Allow for double jump
     
+    //MARK: Private Properties
+    private let leftVelocityMovementThreshold:CGFloat = -0.1 // m/s that determines if the character is moving to the left.
+    private let rightVelocityMovementThreshold:CGFloat = 0.1 // m/s that determines if the character is moving to the right.
     
-    
+    //MARK: Public Properties
     var jumpXMovementConstant:Double = 0 //Determines the amount of movement allowed midair while jumping
     var torqueConstant:Double = 0 //Determines the amount of torque applied during movement
     var jumpConstant:CGFloat = 0 //Determines the amount of vertical impulse applied during a jump
-    var ascendingJumpVelocityThreshold:CGFloat = 0 //character must be ascending with less velocity than this threshold.
-    var descendingJumpVelocityThreshold:CGFloat = 0 //character must be descending with less velocity than this threshold.
+    
+    var jumpVelocityThreshold:CGFloat = 50 //character must be ascending with more velocity than this threshold
+    var fallingVelocityThreshold:CGFloat = -10 //character must be descending with more velocity than this threshold.
     
     var accelerationX:Double = 0
     var accelerationY:Double = 0
     
-    var isJumping:Bool
+    var allowDoubleJump = false
+    
+    //MARK: Computed Properties
+    var isFalling:Bool
+    {
+        if self.physicsBody?.velocity.dy < fallingVelocityThreshold
         {
-            // If the Y velocity is between a threshold, then the character is jumping
-            if ((self.physicsBody?.velocity.dy < ascendingJumpVelocityThreshold) &&
-                (self.physicsBody?.velocity.dy > descendingJumpVelocityThreshold))
-            {
-                return false
-            }
             return true
         }
+        return false
+        
+    }
     
-    class func presetCharacter(name:String) -> Character?
+    var isJumping:Bool // Computed property to tell whether the character is jumping or not.
+        {
+            if ((self.physicsBody?.velocity.dy > jumpVelocityThreshold))
+            {
+                return true
+            }
+            return false
+            
+        }
+    
+    var direction:XDirection //Computed property to tell the direction of the character
+    {
+        if (self.physicsBody?.velocity.dx > rightVelocityMovementThreshold)
+        {
+            return .Right
+        }
+        else if (self.physicsBody?.velocity.dx < leftVelocityMovementThreshold)
+        {
+            return .Left
+        }
+        return .None
+        
+    }
+    
+    //MARK: Class Methods
+    class func Character(name:String) -> Character?
     {
         var charSprite:Character?
 
         // Initialize preset characters with their unique "personality" which will affect their playstyle.
         // All presets are temporarily set to the same as that of Curiosity.
-        switch name
-        {
-        case "Curiosity":
-            charSprite = Character(texture: SKTexture(imageNamed: "Curiosity 2"))
-            charSprite?.physicsBody = SKPhysicsBody(texture: charSprite!.texture, size: charSprite!.size)
-            charSprite?.physicsBody?.mass = 0.2
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        case "Excite":
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        case "Anx":
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        case "Adam":
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        case "Amora":
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        case "Pragma":
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        case "Uto":
-            charSprite?.jumpXMovementConstant = 3.0
-            charSprite?.torqueConstant = 7.0
-            charSprite?.jumpConstant = 150.0
-            charSprite?.ascendingJumpVelocityThreshold = 30.0
-            charSprite?.descendingJumpVelocityThreshold = -120.0
-            
-        default:
-            break
-        }
+
+//        let allCharacters = 
+        
+//        case "Curiosity":
+//            charSprite = Character(texture: SKTexture(imageNamed: "Curiosity"))
+//            charSprite?.physicsBody = SKPhysicsBody(texture: charSprite!.texture, size: charSprite!.size)
+//            charSprite?.physicsBody?.mass = 0.2
+//            charSprite?.jumpXMovementConstant = 2.0
+//            charSprite?.torqueConstant = 7.0
+//            charSprite?.jumpConstant = 150.0
+//            charSprite?.name = name
+//            
+
         
         charSprite?.physicsBody?.affectedByGravity = true
         charSprite?.physicsBody?.allowsRotation = true
@@ -107,15 +99,23 @@ class Character: SKSpriteNode
         return charSprite
     }
     
+    //MARK: Instance Methods
+    
     /**
     Commands the character to perform the physics related to a jump
     */
     func jump()
     {
+        
+        println(self.physicsBody?.velocity.dy)
         //Limit another jump to be started by making sure that the character isn't already jumping.
-        if !isJumping
+        if !isJumping && !isFalling && allowDoubleJump == false
         {
             self.physicsBody?.applyImpulse(CGVectorMake(0, jumpConstant))
+        }
+        else if !isJumping && allowDoubleJump == true
+        {
+            //TODO: Implement Double Jump Algorithm
         }
         
     }
@@ -125,7 +125,7 @@ class Character: SKSpriteNode
     
     :param: velocity The full velocity vector of the character
     
-    :returns: An appropriate torque depending on the character's velocity and the tilt of the device.
+    :returns: An appropriate torque depending on the character's X velocity and the tilt of the device.
     */
     func torqueToApplyForCharacterWithVelocity(velocity:CGVector) -> CGFloat
     {

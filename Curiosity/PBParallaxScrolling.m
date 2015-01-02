@@ -38,16 +38,17 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
 /** The array containing the set of duplicated background nodes that will appear when the background starts sliding out of the screen */
 @property (nonatomic, strong) NSArray * clonedBackgrounds;
 
-/** The array of speeds for every background */
+/** The array of speeds for every background. Measured in points per frame*/
 @property (nonatomic, strong) NSArray * speeds;
 
 /** Number of backgrounds in this parallax background set */
 @property (nonatomic) NSUInteger numberOfBackgrounds;
 
-
 /** The size of the parallax background set */
 @property (nonatomic) CGSize size;
 
+// Max speed as initialized
+@property (nonatomic, readwrite) CGFloat maxSpeed;
 @end
 
 @implementation PBParallaxScrolling
@@ -130,11 +131,29 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
             self.backgrounds = [bgs copy];
             self.clonedBackgrounds = [cBgs copy];
             self.speeds = [spds copy];
+            self.maxSpeed = speed;
         } else { NSLog(@"Unable to find any valid backgrounds for parallax scrolling."); return nil; }
 
     }
     
     return self;
+}
+
+-(void)update:(NSTimeInterval)currentTime withSpeedModifiedBy:(float)factor
+{
+    NSArray *originalSpeeds = [self.speeds copy];
+    NSMutableArray *newSpeeds = [NSMutableArray arrayWithArray:originalSpeeds];
+    
+    for (int i = 0; i<newSpeeds.count; i++)
+    {
+        newSpeeds[i] =  [NSNumber numberWithFloat:([newSpeeds[i] floatValue] * factor)];
+    }
+    
+    self.speeds = [NSArray arrayWithArray:newSpeeds];
+    
+    [self update:currentTime];
+    
+    self.speeds = originalSpeeds;
 }
 
 - (void) update:(NSTimeInterval)currentTime {

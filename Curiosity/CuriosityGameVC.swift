@@ -9,8 +9,13 @@
 import UIKit
 import SpriteKit
 
+enum CuriosityGameLevel:String
+{
+    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2"
+}
+
 extension SKNode {
-    class func unarchiveFromFile(file : NSString) -> SKNode? {
+    class func unarchiveFromFile(file : String?) -> SKNode? {
         if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
             var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)
             var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData!)
@@ -26,12 +31,16 @@ extension SKNode {
     
 }
 
-class CuriosityGameVC: UIViewController {
 
-    override func viewDidLoad() {
+
+class CuriosityGameVC: UIViewController
+{
+    var levelSelected:CuriosityGameLevel = CuriosityGameLevel.Level1 //Defaults to level 1.
+
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        if let scene = CuriosityScene.unarchiveFromFile("Test Scene 1") as? CuriosityScene {
+        if let scene = CuriosityScene.unarchiveFromFile(levelSelected.rawValue) as? CuriosityScene {
             // Configure the view.
             let skView = self.view as SKView
             skView.showsFPS = true
@@ -43,7 +52,22 @@ class CuriosityGameVC: UIViewController {
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = SKSceneScaleMode.AspectFill
             
+            prepareCuriosityScene(scene)
             skView.presentScene(scene)
+        }
+    }
+    
+    func prepareCuriosityScene(scene:CuriosityScene)
+    {
+        switch self.levelSelected
+        {
+        case .Level1:
+            scene.configureLevel1()
+        case .Level2:
+            scene.configureLevel2()
+            break
+        case .Level3:
+            break
         }
     }
 
