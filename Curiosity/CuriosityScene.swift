@@ -17,19 +17,20 @@ class CuriosityScene: SKScene
     private let motionManager = CMMotionManager();
     private let queue = NSOperationQueue();
     private let framerate = 30.0 //Minimum Frames planned to deliver per second.
-    
+
     //MARK: Public instance variables
     var farOutBackground:PBParallaxScrolling? // A background designed to be farther out than the other parallel backgrounds
     var parallaxBackground:PBParallaxScrolling? // A set of parallax backgrounds to be used as a backdrop for the action
     
     var characterSpriteNode:Character? // The character that is currently presented in the scene
     var cameraNode:SKNode?
-    var items:[Item]?
+//    var items:[ItemSpriteNode] = [ItemSpriteNode]()
 
 
     //MARK: View Lifecycle Methods
     override func didMoveToView(view: SKView)
-    {        
+    {
+        
         //Initializes and sets the swipe gesture recognizer that will cause the character to jump
         var swipeRecognizer:UISwipeGestureRecognizer =  UISwipeGestureRecognizer(target: self, action:"jump")
         swipeRecognizer.direction = UISwipeGestureRecognizerDirection.Up
@@ -57,16 +58,19 @@ class CuriosityScene: SKScene
             if let character = characterSpriteNode
             { world.addChild(character) }
             
-            if let allItems = items
-            {
-                for item in allItems
-                {
-                    world.addChild(item)
-                }
-            }
+//            if !items.isEmpty
+//            {
+//                for item in items
+//                {
+//                    world.addChild(item)
+//                }
+//            }
         }
         cameraNode = childNodeWithName("//CAMERA")
         cameraNode?.position.y = self.size.height/2
+        
+        self.physicsWorld.contactDelegate = self
+
     
     }
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -138,7 +142,7 @@ class CuriosityScene: SKScene
     }
     
     /**
-    Local method simply to call the character jump method.
+    Local method to call the character jump method.
     */
     func jump()
     {
@@ -186,5 +190,33 @@ class CuriosityScene: SKScene
         }
         
         return factor
+    }
+    
+
+}
+
+extension CuriosityScene: SKPhysicsContactDelegate
+{
+    func didBeginContact(contact: SKPhysicsContact)
+    {
+        var item:ItemSpriteNode?
+        
+        //Item Contact
+        if(contact.bodyA.categoryBitMask == PhysicsCategory.Character.rawValue &&
+            contact.bodyB.categoryBitMask == PhysicsCategory.Item.rawValue)
+        {
+            item = (contact.bodyB.node as ItemSpriteNode)
+        }
+        else if (contact.bodyB.categoryBitMask == PhysicsCategory.Character.rawValue &&
+            contact.bodyA.categoryBitMask == PhysicsCategory.Item.rawValue)
+        {
+            item = (contact.bodyA.node as ItemSpriteNode)
+        }
+        
+        if let validItem = item
+        {
+            validItem.effect?()
+            validItem.removeFromParent()
+        }
     }
 }

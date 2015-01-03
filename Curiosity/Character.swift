@@ -29,12 +29,12 @@ class Character: SKSpriteNode
     var jumpConstant:CGFloat = 0 //Determines the amount of vertical impulse applied during a jump
     
     var jumpVelocityThreshold:CGFloat = 50 //character must be ascending with more velocity than this threshold
-    var fallingVelocityThreshold:CGFloat = -10 //character must be descending with more velocity than this threshold.
+    var fallingVelocityThreshold:CGFloat = -30 //character must be descending with more velocity than this threshold.
     
     var accelerationX:Double = 0
     var accelerationY:Double = 0
     
-    var allowDoubleJump = false
+    var canJump = true
     
     //MARK: Computed Properties
     var isFalling:Bool
@@ -72,29 +72,63 @@ class Character: SKSpriteNode
     }
     
     //MARK: Class Methods
-    class func Character(name:String) -> Character?
+    
+
+    /**
+    Returns a character configured in a particular way from the CharacterInformation plist file. Returns a nil Character
+    if there isn't a definition for that character name
+    
+    :param: name The name of the predefined character
+    
+    :returns: An optional representing the character if there are presets for one, or a nil value if there are not.
+    */
+    class func presetCharacter(name:String) -> Character?
     {
         var charSprite:Character?
-
+        
         // Initialize preset characters with their unique "personality" which will affect their playstyle.
         // All presets are temporarily set to the same as that of Curiosity.
-
-//        let allCharacters = 
         
-//        case "Curiosity":
-//            charSprite = Character(texture: SKTexture(imageNamed: "Curiosity"))
-//            charSprite?.physicsBody = SKPhysicsBody(texture: charSprite!.texture, size: charSprite!.size)
-//            charSprite?.physicsBody?.mass = 0.2
-//            charSprite?.jumpXMovementConstant = 2.0
-//            charSprite?.torqueConstant = 7.0
-//            charSprite?.jumpConstant = 150.0
-//            charSprite?.name = name
-//            
-
+        let path = NSBundle.mainBundle().pathForResource("CharacterInformation", ofType: "plist")
+        
+        var presetCharacters:NSArray?
+        
+        if let validPath = path
+        {
+            presetCharacters = NSArray(contentsOfFile: validPath)
+        }
+        
+        if let allCharacters = presetCharacters
+        {
+            for characterEntry in allCharacters
+            {
+                let character = characterEntry as NSDictionary
+                if let thisName = character.valueForKey("name") as? String
+                {
+                    if (thisName == name)
+                    {
+                        charSprite = Character(texture: SKTexture(imageNamed: name))
+                        charSprite?.name = name
+                        charSprite?.physicsBody = SKPhysicsBody(circleOfRadius: charSprite!.size.height/2)//SKPhysicsBody(texture: charSprite!.texture, alphaThreshold: 0.8, size: charSprite!.size)
+                        charSprite?.physicsBody?.mass = CGFloat((character.valueForKey("mass") as NSNumber).doubleValue)
+                        charSprite?.jumpXMovementConstant = (character.valueForKey("jumpXMovementConstant") as NSNumber).doubleValue
+                        charSprite?.torqueConstant = (character.valueForKey("torqueConstant") as NSNumber).doubleValue
+                        charSprite?.jumpConstant = CGFloat((character.valueForKey("jumpConstant") as NSNumber).doubleValue)
+                    }
+                }
+            }
+        }
         
         charSprite?.physicsBody?.affectedByGravity = true
         charSprite?.physicsBody?.allowsRotation = true
-        charSprite?.position = CGPointMake(0, charSprite!.size.height)
+        charSprite?.physicsBody?.categoryBitMask = PhysicsCategory.Character.rawValue
+        
+        //Offset due to the Camera/World relationship
+        if let char = charSprite
+        {
+            charSprite?.position = CGPointMake(0, charSprite!.size.height)
+
+        }
         
         return charSprite
     }
@@ -106,18 +140,12 @@ class Character: SKSpriteNode
     */
     func jump()
     {
-        
         println(self.physicsBody?.velocity.dy)
         //Limit another jump to be started by making sure that the character isn't already jumping.
-        if !isJumping && !isFalling && allowDoubleJump == false
+        if !isJumping && canJump
         {
             self.physicsBody?.applyImpulse(CGVectorMake(0, jumpConstant))
         }
-        else if !isJumping && allowDoubleJump == true
-        {
-            //TODO: Implement Double Jump Algorithm
-        }
-        
     }
     
     /**

@@ -9,11 +9,6 @@
 import UIKit
 import SpriteKit
 
-enum CuriosityGameLevel:String
-{
-    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2"
-}
-
 extension SKNode {
     class func unarchiveFromFile(file : String?) -> SKNode? {
         if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {

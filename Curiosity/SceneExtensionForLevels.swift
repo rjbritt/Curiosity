@@ -18,9 +18,30 @@ extension CuriosityScene
         
         characterSpriteNode = Character.presetCharacter("Curiosity")
         
-//        var tempItem = Item(imageNamed: "spark")
-//        tempItem.position = CGPointMake(characterSpriteNode!.position.x, characterSpriteNode!.position.y)
-//        items?.append(tempItem)
+        let orbPlaceHolder = self.childNodeWithName("//GreenOrb1")
+        var tempItem = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
+//        tempItem.position = CGPointMake(272,193)//characterSpriteNode!.position.x - 100, characterSpriteNode!.position.y)
+
+        //TODO: fix effect still being nil after explicit set.
+        tempItem.effect =
+            {
+            let node = self.childNodeWithName("//block1")
+            
+            let action = SKAction.moveBy(CGVector(dx: 0, dy: 100), duration: 1)
+            node?.runAction(action)
+            }
+        
+        if let placeholder = orbPlaceHolder
+        {
+            tempItem.position = placeholder.position
+            placeholder.parent?.addChild(tempItem)
+            placeholder.removeFromParent()
+        }
+        
+        
+        
+        
+//        items.append(tempItem)
         
     }
     

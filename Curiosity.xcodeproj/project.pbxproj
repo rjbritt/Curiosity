@@ -13,7 +13,9 @@
 		2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F3DB8351A4F28B600AA6919 /* LevelSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */; };
+		2F4F6BA41A5650F400668939 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F6BA31A5650F400668939 /* Enums.swift */; };
 		2F68C19519AC1E6F006EB529 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F68C19419AC1E6F006EB529 /* CoreData.framework */; };
+		2F7F5F961A578E280021BFDF /* Level1Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F5F951A578E280021BFDF /* Level1Items.plist */; };
 		2F890F101A0F0CB80047A76D /* Tree top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F890F0F1A0F0CB80047A76D /* Tree top.png */; };
 		2F921E831A29512400A23878 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E811A29512400A23878 /* hills.png */; };
 		2F921E841A29512400A23878 /* flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E821A29512400A23878 /* flowers.png */; };
@@ -55,7 +57,9 @@
 		2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBParallaxScrolling.m; path = Curiosity/PBParallaxScrolling.m; sourceTree = "<group>"; };
 		2F3C2E571A28FD8500A293EA /* ObjC-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-BridgingHeader.h"; sourceTree = "<group>"; };
 		2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectViewController.swift; sourceTree = "<group>"; };
+		2F4F6BA31A5650F400668939 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		2F68C19419AC1E6F006EB529 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2F7F5F951A578E280021BFDF /* Level1Items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level1Items.plist; sourceTree = "<group>"; };
 		2F890F0F1A0F0CB80047A76D /* Tree top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tree top.png"; sourceTree = "<group>"; };
 		2F921E811A29512400A23878 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
 		2F921E821A29512400A23878 /* flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowers.png; sourceTree = "<group>"; };
@@ -112,7 +116,7 @@
 			children = (
 				2FBB756C19AC12D300203EF8 /* Main.storyboard */,
 				2FD94E3C1A4F3DF8002CE891 /* Images */,
-				2FBDB9481A510D2300B0B500 /* Level SKS */,
+				2FBDB9481A510D2300B0B500 /* Levels */,
 				2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */,
 				2FBB756F19AC12D300203EF8 /* Images.xcassets */,
 				2F2DBB1019C67799002CA7ED /* MyParticle.sks */,
@@ -155,6 +159,7 @@
 		2FBB756119AC12D300203EF8 /* Curiosity */ = {
 			isa = PBXGroup;
 			children = (
+				2F4F6BA31A5650F400668939 /* Enums.swift */,
 				2FED954C1A283F3B006FA1C0 /* External API */,
 				2F68C18319AC15D6006EB529 /* Model */,
 				2FBB756419AC12D300203EF8 /* AppDelegate.swift */,
@@ -184,13 +189,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2FBDB9481A510D2300B0B500 /* Level SKS */ = {
+		2FBDB9481A510D2300B0B500 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				2FD94E411A51017A002CE891 /* Level 2.sks */,
 				2FBB756619AC12D300203EF8 /* Level 1.sks */,
+				2FD94E411A51017A002CE891 /* Level 2.sks */,
+				2F7F5F951A578E280021BFDF /* Level1Items.plist */,
 			);
-			name = "Level SKS";
+			name = Levels;
 			sourceTree = "<group>";
 		};
 		2FD94E3C1A4F3DF8002CE891 /* Images */ = {
@@ -326,6 +332,7 @@
 			files = (
 				2FD94E421A51017A002CE891 /* Level 2.sks in Resources */,
 				2F2DBB1319C67799002CA7ED /* spark.png in Resources */,
+				2F7F5F961A578E280021BFDF /* Level1Items.plist in Resources */,
 				2F921E881A29539100A23878 /* blueDayBackground.png in Resources */,
 				2F890F101A0F0CB80047A76D /* Tree top.png in Resources */,
 				2FBDB94D1A55CDA000B0B500 /* CharacterInformation.plist in Resources */,
@@ -424,6 +431,7 @@
 				2FBDB94A1A5111B900B0B500 /* Item.swift in Sources */,
 				2FBB756B19AC12D300203EF8 /* CuriosityGameVC.swift in Sources */,
 				2FB0625C1A367E00002C812E /* Character.swift in Sources */,
+				2F4F6BA41A5650F400668939 /* Enums.swift in Sources */,
 				2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
