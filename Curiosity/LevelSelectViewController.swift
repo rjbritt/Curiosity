@@ -28,16 +28,21 @@ class LevelSelectViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+        var nextVC:UIViewController?
+        
+        if segue.destinationViewController.isMemberOfClass(CuriosityGameViewController)
+        {
+            nextVC = segue.destinationViewController as CuriosityGameViewController
+        }
+        
         if segue.identifier == "level1"
         {
-            let nextVC = segue.destinationViewController as CuriosityGameVC
-            
-            nextVC.levelSelected = .Level1
+           (nextVC as CuriosityGameViewController).levelSelected = .Level1
         }
+            
         else if segue.identifier == "level2"
         {
-            let nextVC = segue.destinationViewController as CuriosityGameVC
-            nextVC.levelSelected = .Level2
+            (nextVC as CuriosityGameViewController).levelSelected = .Level2
 
         }
         

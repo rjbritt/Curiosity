@@ -18,31 +18,41 @@ extension CuriosityScene
         
         characterSpriteNode = Character.presetCharacter("Curiosity")
         
-        let orbPlaceHolder = self.childNodeWithName("//GreenOrb1")
+        //Create temp Item and set effect
         var tempItem = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
-//        tempItem.position = CGPointMake(272,193)//characterSpriteNode!.position.x - 100, characterSpriteNode!.position.y)
-
-        //TODO: fix effect still being nil after explicit set.
+        
         tempItem.effect =
             {
-            let node = self.childNodeWithName("//block1")
-            
-            let action = SKAction.moveBy(CGVector(dx: 0, dy: 100), duration: 1)
-            node?.runAction(action)
+                let node = self.childNodeWithName("//hiddenRock") as? SKSpriteNode
+                if let validNode = node
+                {
+                    let action = SKAction.moveBy(CGVector(dx: 0, dy: validNode.size.height), duration: 1)
+                    node?.runAction(action)
+                }
+        }
+
+        self.enumerateChildNodesWithName("//*Orb*", usingBlock: { (node, stop) -> Void in
+            if let placeholder:SKSpriteNode = (node as? SKSpriteNode)
+            {
+                if placeholder.name == "GreenOrb1"
+                {
+                    tempItem.position = placeholder.position
+                    placeholder.parent?.addChild(tempItem)
+                    placeholder.removeFromParent()
+                }
             }
+        })
+
         
+        //Replace placeholder with temp item
+        let orbPlaceHolder = self.childNodeWithName("//GreenOrb1")
         if let placeholder = orbPlaceHolder
         {
             tempItem.position = placeholder.position
             placeholder.parent?.addChild(tempItem)
             placeholder.removeFromParent()
         }
-        
-        
-        
-        
-//        items.append(tempItem)
-        
+
     }
     
     func configureLevel2()

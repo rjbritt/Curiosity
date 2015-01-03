@@ -28,7 +28,7 @@ extension SKNode {
 
 
 
-class CuriosityGameVC: UIViewController
+class CuriosityGameViewController: UIViewController
 {
     var levelSelected:CuriosityGameLevel = CuriosityGameLevel.Level1 //Defaults to level 1.
 

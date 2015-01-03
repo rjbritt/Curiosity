@@ -48,7 +48,7 @@
         <!--Level1-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController storyboardIdentifier="Level1Scene" extendedLayoutIncludesOpaqueBars="YES" id="BV1-FR-VrT" userLabel="Level1" customClass="CuriosityGameVC" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Level1Scene" extendedLayoutIncludesOpaqueBars="YES" id="BV1-FR-VrT" userLabel="Level1" customClass="CuriosityGameViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
                         <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>

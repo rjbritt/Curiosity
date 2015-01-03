@@ -24,7 +24,6 @@ class CuriosityScene: SKScene
     
     var characterSpriteNode:Character? // The character that is currently presented in the scene
     var cameraNode:SKNode?
-//    var items:[ItemSpriteNode] = [ItemSpriteNode]()
 
 
     //MARK: View Lifecycle Methods
@@ -57,14 +56,6 @@ class CuriosityScene: SKScene
             
             if let character = characterSpriteNode
             { world.addChild(character) }
-            
-//            if !items.isEmpty
-//            {
-//                for item in items
-//                {
-//                    world.addChild(item)
-//                }
-//            }
         }
         cameraNode = childNodeWithName("//CAMERA")
         cameraNode?.position.y = self.size.height/2
@@ -129,7 +120,8 @@ class CuriosityScene: SKScene
                     // of the initial viewport.
                     if(camera.position.y != self.size.height/2)
                     {
-                        let move = SKAction.moveToY(self.size.height/2, duration: 0.5)
+                        let move = SKAction.moveToY(self.size.height/2, duration: 1)
+                        move.timingMode = SKActionTimingMode.Linear
                         camera.runAction(move)
                     }                    
                 }

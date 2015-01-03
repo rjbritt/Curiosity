@@ -11,6 +11,7 @@ import UIKit
 class ItemSpriteNode: SKSpriteNode
 {
     var effect:(() -> ())?
+        
     
     class func orbItemWithColor(color:UIColor) -> ItemSpriteNode
     {
