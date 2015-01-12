@@ -10,29 +10,35 @@ import UIKit
 
 class ItemSpriteNode: SKSpriteNode
 {
-    var effect:(() -> ())?
+    var storedEffect:(() -> ())?
         
     
     class func orbItemWithColor(color:UIColor) -> ItemSpriteNode
     {
-        var tempItem = ItemSpriteNode(imageNamed: "spark")
+        let image = UIImage(named: "spark")
+        var tempItem:ItemSpriteNode?
         
-        tempItem.physicsBody = SKPhysicsBody(texture: SKTexture(imageNamed: "spark"), alphaThreshold: 0.9, size: tempItem.size)
-        tempItem.physicsBody?.dynamic = false
+        if let validImage = image
+        {
+            tempItem = ItemSpriteNode(texture: SKTexture(image: validImage))
+        }
         
-        tempItem.physicsBody?.categoryBitMask = PhysicsCategory.Item.rawValue
-        tempItem.physicsBody?.collisionBitMask = PhysicsCategory.Character.rawValue//PhysicsCategory.Item.rawValue
-        tempItem.physicsBody?.contactTestBitMask = PhysicsCategory.Character.rawValue
+        tempItem?.physicsBody = SKPhysicsBody(texture: tempItem?.texture, alphaThreshold: 0.9, size: tempItem!.size)
+        tempItem?.physicsBody?.dynamic = false
         
-        tempItem.color = color
-        tempItem.colorBlendFactor = 0.8
+        tempItem?.physicsBody?.categoryBitMask = PhysicsCategory.Item.rawValue
+        tempItem?.physicsBody?.collisionBitMask = PhysicsCategory.Character.rawValue//PhysicsCategory.Item.rawValue
+        tempItem?.physicsBody?.contactTestBitMask = PhysicsCategory.Character.rawValue
         
-        let pulse = SKAction.repeatActionForever(SKAction.sequence([SKAction.scaleBy(1.5, duration: 1),
+        tempItem?.color = color
+        tempItem?.colorBlendFactor = 0.8
+        
+        let pulse = SKAction.repeatActionForever(SKAction.sequence([SKAction.scaleBy(2.0, duration: 1),
                                                                     SKAction.scaleTo(1.0, duration: 1)]))
         
-        tempItem.runAction(pulse)
+        tempItem?.runAction(pulse)
         
-        return tempItem
+        return tempItem!
         
     }
 }

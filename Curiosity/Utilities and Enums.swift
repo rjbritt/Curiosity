@@ -19,5 +19,16 @@ enum PhysicsCategory:UInt32
     case Character = 1
     case Item = 2
     case Environment = 3
-    case All = 9999
+    case All = 4294967295
+}
+
+func distanceBetweenPointOne(pointOne:CGPoint, andPointTwo pointTwo:CGPoint) -> Float
+{
+    var distance:Float = 0
+    
+    distance = sqrtf(powf(Float(pointTwo.x) - Float(pointOne.x), 2) +
+         powf(Float(pointTwo.y) - Float(pointOne.y), 2))
+    
+    return distance
+
 }

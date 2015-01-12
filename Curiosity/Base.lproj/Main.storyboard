@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4aC-Xu-SfC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mYf-44-Hc5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Bzz-4N-sz2">
+            <objects>
+                <viewController id="mYf-44-Hc5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kGd-8c-MuY"/>
+                        <viewControllerLayoutGuide type="bottom" id="QgC-zt-REg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WNJ-Ab-LmP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-3K-N9N">
+                                <rect key="frame" x="251" y="273" width="99" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="151" y="66" width="99" height="60"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="351" y="66" width="99" height="60"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="4aC-Xu-SfC" kind="show" id="iZJ-Yk-01e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="PPs-3K-N9N" secondAttribute="centerX" constant="-0.5" id="NC3-Ne-oM3"/>
+                            <constraint firstAttribute="centerY" secondItem="PPs-3K-N9N" secondAttribute="centerY" constant="0.5" id="xDt-qP-BtX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vyo-oY-tZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2851" y="-159"/>
+        </scene>
         <!--Level Select View Controller-->
         <scene sceneID="wol-9N-kBy">
             <objects>
-                <viewController id="4aC-Xu-SfC" customClass="LevelSelectViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuVC" id="4aC-Xu-SfC" customClass="LevelSelectViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OaK-vm-WQH"/>
                         <viewControllerLayoutGuide type="bottom" id="7yU-GS-bjb"/>
@@ -22,10 +63,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" identifier="level1" id="dwh-Tg-nWP"/>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" identifier="level1" modalPresentationStyle="fullScreen" id="dwh-Tg-nWP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92I-XO-6Im">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92I-XO-6Im">
                                 <rect key="frame" x="73" y="20" width="49" height="30"/>
                                 <state key="normal" title="Level 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,13 +78,35 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jld-KF-jXj" firstAttribute="top" secondItem="OaK-vm-WQH" secondAttribute="bottom" id="4Me-5z-OXR"/>
+                            <constraint firstItem="Jld-KF-jXj" firstAttribute="top" secondItem="OaK-vm-WQH" secondAttribute="bottom" id="3g0-1K-Xni"/>
+                            <constraint firstItem="Jld-KF-jXj" firstAttribute="leading" secondItem="dMI-WS-qnJ" secondAttribute="leadingMargin" id="80Y-ui-jdp"/>
+                            <constraint firstItem="92I-XO-6Im" firstAttribute="leading" secondItem="Jld-KF-jXj" secondAttribute="trailing" constant="8" symbolic="YES" id="8n1-7c-Lyk"/>
+                            <constraint firstItem="92I-XO-6Im" firstAttribute="baseline" secondItem="Jld-KF-jXj" secondAttribute="baseline" id="91D-Sc-O4n"/>
+                            <constraint firstItem="92I-XO-6Im" firstAttribute="baseline" secondItem="Jld-KF-jXj" secondAttribute="baseline" id="Nom-pb-5OX"/>
+                            <constraint firstItem="92I-XO-6Im" firstAttribute="leading" secondItem="Jld-KF-jXj" secondAttribute="trailing" constant="8" symbolic="YES" id="cuS-EE-ug8"/>
+                            <constraint firstItem="92I-XO-6Im" firstAttribute="top" secondItem="OaK-vm-WQH" secondAttribute="bottom" id="dtZ-Vc-duN"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="80Y-ui-jdp"/>
+                                <exclude reference="Nom-pb-5OX"/>
+                                <exclude reference="cuS-EE-ug8"/>
+                                <exclude reference="dtZ-Vc-duN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="80Y-ui-jdp"/>
+                                <include reference="Nom-pb-5OX"/>
+                                <include reference="cuS-EE-ug8"/>
+                                <include reference="dtZ-Vc-duN"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibu-Sr-6ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2028" y="-163"/>
+            <point key="canvasLocation" x="-2123" y="-163"/>
         </scene>
         <!--Level1-->
         <scene sceneID="tXr-a1-R10">
@@ -62,12 +125,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1358" y="-163"/>
+            <point key="canvasLocation" x="-1487" y="-163"/>
         </scene>
         <!--Level2-->
         <scene sceneID="XDs-DX-OWz">
             <objects>
-                <viewController storyboardIdentifier="Level2Scene" extendedLayoutIncludesOpaqueBars="YES" id="dPF-0x-7dB" userLabel="Level2" customClass="CuriosityGameVC" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Level2Scene" extendedLayoutIncludesOpaqueBars="YES" id="dPF-0x-7dB" userLabel="Level2" customClass="CuriosityGameViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SvO-WZ-fxH"/>
                         <viewControllerLayoutGuide type="bottom" id="apj-h2-5lo"/>
@@ -81,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aoc-PQ-NNQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696" y="-163"/>
+            <point key="canvasLocation" x="-802.5" y="-159"/>
         </scene>
     </scenes>
 </document>

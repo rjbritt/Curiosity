@@ -1,3 +1,4 @@
+
 //
 //  GameViewController.swift
 //  Curiosity
@@ -31,11 +32,13 @@ extension SKNode {
 class CuriosityGameViewController: UIViewController
 {
     var levelSelected:CuriosityGameLevel = CuriosityGameLevel.Level1 //Defaults to level 1.
+    var levelSelectVCDelegate:LevelSelectViewController?
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        if let scene = CuriosityScene.unarchiveFromFile(levelSelected.rawValue) as? CuriosityScene {
+        if let scene = CuriosityScene.unarchiveFromFile(levelSelected.rawValue) as? CuriosityScene
+        {
             // Configure the view.
             let skView = self.view as SKView
             skView.showsFPS = true
@@ -47,7 +50,18 @@ class CuriosityGameViewController: UIViewController
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = SKSceneScaleMode.AspectFill
             
-            prepareCuriosityScene(scene)
+            switch self.levelSelected
+            {
+            case .Level1:
+                scene.configureLevel1()
+            case .Level2:
+                scene.configureLevel2()
+                break
+            case .Level3:
+                break
+            }
+            scene.gameViewControllerDelegate = self
+
             skView.presentScene(scene)
         }
     }
@@ -66,6 +80,13 @@ class CuriosityGameViewController: UIViewController
         }
     }
 
+    func returnToMenu()
+    {
+        levelSelectVCDelegate?.dismissViewControllerAnimated(true, completion:nil)
+        let skView = self.view as SKView
+        skView.presentScene(nil)
+    }
+    
     override func shouldAutorotate() -> Bool {
         return true
     }
@@ -80,6 +101,7 @@ class CuriosityGameViewController: UIViewController
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        println("Memory Warning")
         // Release any cached data, images, etc that aren't in use.
     }
 

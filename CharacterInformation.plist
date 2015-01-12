@@ -8,11 +8,11 @@
 		<key>mass</key>
 		<real>0.2</real>
 		<key>jumpXMovementConstant</key>
-		<integer>2</integer>
+		<integer>1</integer>
 		<key>torqueConstant</key>
 		<real>7</real>
 		<key>jumpConstant</key>
-		<integer>150</integer>
+		<integer>130</integer>
 	</dict>
 	<dict>
 		<key>name</key>

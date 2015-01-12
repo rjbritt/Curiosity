@@ -13,7 +13,7 @@
 		2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F3DB8351A4F28B600AA6919 /* LevelSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */; };
-		2F4F6BA41A5650F400668939 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F6BA31A5650F400668939 /* Enums.swift */; };
+		2F4F6BA41A5650F400668939 /* Utilities and Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F6BA31A5650F400668939 /* Utilities and Enums.swift */; };
 		2F68C19519AC1E6F006EB529 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F68C19419AC1E6F006EB529 /* CoreData.framework */; };
 		2F890F101A0F0CB80047A76D /* Tree top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F890F0F1A0F0CB80047A76D /* Tree top.png */; };
 		2F921E831A29512400A23878 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F921E811A29512400A23878 /* hills.png */; };
@@ -56,7 +56,7 @@
 		2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBParallaxScrolling.m; path = Curiosity/PBParallaxScrolling.m; sourceTree = "<group>"; };
 		2F3C2E571A28FD8500A293EA /* ObjC-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-BridgingHeader.h"; sourceTree = "<group>"; };
 		2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectViewController.swift; sourceTree = "<group>"; };
-		2F4F6BA31A5650F400668939 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		2F4F6BA31A5650F400668939 /* Utilities and Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utilities and Enums.swift"; sourceTree = "<group>"; };
 		2F68C19419AC1E6F006EB529 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2F890F0F1A0F0CB80047A76D /* Tree top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tree top.png"; sourceTree = "<group>"; };
 		2F921E811A29512400A23878 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		2FBB756119AC12D300203EF8 /* Curiosity */ = {
 			isa = PBXGroup;
 			children = (
-				2F4F6BA31A5650F400668939 /* Enums.swift */,
+				2F4F6BA31A5650F400668939 /* Utilities and Enums.swift */,
 				2FED954C1A283F3B006FA1C0 /* External API */,
 				2F68C18319AC15D6006EB529 /* Model */,
 				2FBB756419AC12D300203EF8 /* AppDelegate.swift */,
@@ -443,7 +443,7 @@
 				2FBDB94A1A5111B900B0B500 /* Item.swift in Sources */,
 				2FBB756B19AC12D300203EF8 /* CuriosityGameViewController.swift in Sources */,
 				2FB0625C1A367E00002C812E /* Character.swift in Sources */,
-				2F4F6BA41A5650F400668939 /* Enums.swift in Sources */,
+				2F4F6BA41A5650F400668939 /* Utilities and Enums.swift in Sources */,
 				2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

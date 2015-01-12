@@ -51,7 +51,16 @@ typedef enum {
 - (void) update: (NSTimeInterval) currentTime;
 
 /** This is a convenience method for working with the update method. This method allows the dynamic changing of the speeds by a relative factor per frame */
--(void) update:(NSTimeInterval)currentTime withSpeedModifiedBy:(float)factor;
+-(void)update:(NSTimeInterval)currentTime withSpeedModifiedByFactor:(float)factor;
+
+/**
+ *  Convenience method for working with the update method. This method allows the dynamic changing of the speeds by a new absolute max speed.
+ *
+ *  @param currentTime  Current time in the game loop.
+ *  @param speed        New absolute max speed for this frame.
+ */
+-(void)update:(NSTimeInterval)currentTime withNewMaxSpeed:(float)speed;
+
 
 /** reverse the direction of the movement, left->right, right->left, up->down, down->up */
 - (void) reverseMovementDirection;
@@ -64,5 +73,9 @@ typedef enum {
 
 // The max speed as initialized. Readonly.
 @property (nonatomic, readonly) CGFloat maxSpeed;
+
+//Boolean that lets the backgrounds know whether the speed should be used as a factor in calculating the delta positions.
+@property (nonatomic) BOOL useSpeed;
+
 
 @end

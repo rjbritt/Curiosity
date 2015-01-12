@@ -10,6 +10,8 @@ import UIKit
 
 class LevelSelectViewController: UIViewController {
 
+    @IBOutlet weak var jumpControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,29 +27,27 @@ class LevelSelectViewController: UIViewController {
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        var nextVC:UIViewController?
+        var nextVC:CuriosityGameViewController?
         
         if segue.destinationViewController.isMemberOfClass(CuriosityGameViewController)
         {
-            nextVC = segue.destinationViewController as CuriosityGameViewController
+            nextVC = segue.destinationViewController as? CuriosityGameViewController
         }
         
         if segue.identifier == "level1"
         {
-           (nextVC as CuriosityGameViewController).levelSelected = .Level1
+           nextVC?.levelSelected = .Level1
         }
             
         else if segue.identifier == "level2"
         {
-            (nextVC as CuriosityGameViewController).levelSelected = .Level2
-
+            nextVC?.levelSelected = .Level2
         }
         
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        nextVC?.levelSelectVCDelegate = self
+
     }
 
 

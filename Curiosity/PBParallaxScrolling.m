@@ -49,6 +49,10 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
 
 // Max speed as initialized
 @property (nonatomic, readwrite) CGFloat maxSpeed;
+
+// Speed differing amount between layers as initialized
+@property (nonatomic) CGFloat differential;
+
 @end
 
 @implementation PBParallaxScrolling
@@ -79,7 +83,8 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
             SKSpriteNode * node = nil;
             if ([obj isKindOfClass:[UIImage class]]) {
                 node = [[SKSpriteNode alloc] initWithTexture:[SKTexture textureWithImage:(UIImage *) obj]];
-            } else if ([obj isKindOfClass:[NSString class]])  {
+            } else if ([obj isKindOfClass:[NSString class]])
+            {
                 node = [[SKSpriteNode alloc] initWithImageNamed:(NSString *) obj];
             } else if ([obj isKindOfClass:[SKTexture class]]) {
                 node = [[SKSpriteNode alloc] initWithTexture:(SKTexture *) obj];
@@ -132,6 +137,7 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
             self.clonedBackgrounds = [cBgs copy];
             self.speeds = [spds copy];
             self.maxSpeed = speed;
+            self.differential = differential;
         } else { NSLog(@"Unable to find any valid backgrounds for parallax scrolling."); return nil; }
 
     }
@@ -139,7 +145,25 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
     return self;
 }
 
--(void)update:(NSTimeInterval)currentTime withSpeedModifiedBy:(float)factor
+-(void)update:(NSTimeInterval)currentTime withNewMaxSpeed:(float)speed
+{
+    NSArray *originalSpeeds = [self.speeds copy];
+    NSMutableArray *newSpeeds = [[NSMutableArray alloc]init];
+    CGFloat currentSpeed = roundFloatToTwoDecimalPlaces(speed);
+    
+    for (int i = 0; i<self.backgrounds.count; i++)
+    {
+        // add the velocity for this node and adjust the next current velocity.
+        [newSpeeds addObject:[NSNumber numberWithFloat:currentSpeed]];
+        currentSpeed = roundFloatToTwoDecimalPlaces(currentSpeed / (1 + self.differential));
+    }
+    
+    self.speeds = [NSArray arrayWithArray:newSpeeds];
+    [self update:currentTime];
+    self.speeds = originalSpeeds;
+}
+
+-(void)update:(NSTimeInterval)currentTime withSpeedModifiedByFactor:(float)factor
 {
     NSArray *originalSpeeds = [self.speeds copy];
     NSMutableArray *newSpeeds = [NSMutableArray arrayWithArray:originalSpeeds];
@@ -242,5 +266,11 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
  
     }
 }
+-(void) removeFromParent {
+    self.backgrounds = nil;
+    self.clonedBackgrounds = nil;
+    [super removeFromParent];
+}
+
 
 @end
