@@ -107,7 +107,12 @@ class Character: SKSpriteNode
                 {
                     if (thisName == name)
                     {
-                        charSprite = Character(texture: SKTexture(imageNamed: name))
+                        let charImage = UIImage(named: name)
+                        if let image = charImage
+                        {
+                            charSprite = Character(texture: SKTexture(image: image))
+                        }
+                    
                         charSprite?.name = name
                         charSprite?.physicsBody = SKPhysicsBody(circleOfRadius: charSprite!.size.height/2)//SKPhysicsBody(texture: charSprite!.texture, alphaThreshold: 0.8, size: charSprite!.size)
                         charSprite?.physicsBody?.mass = CGFloat((character.valueForKey("mass") as NSNumber).doubleValue)
@@ -130,6 +135,8 @@ class Character: SKSpriteNode
 
         }
         
+        charSprite?.physicsBody?.friction = 1.0
+        
         return charSprite
     }
     
@@ -140,12 +147,9 @@ class Character: SKSpriteNode
     */
     func jump()
     {
-        println(self.physicsBody?.velocity.dy)
-        //Limit another jump to be started by making sure that the character isn't already jumping.
-        if !isJumping && canJump
-        {
-            self.physicsBody?.applyImpulse(CGVectorMake(0, jumpConstant))
-        }
+        //resets the Y velocity so the current velocity has no impact on net jump height.
+        self.physicsBody?.velocity.dy = 0
+        self.physicsBody?.applyImpulse(CGVectorMake(0, jumpConstant))
     }
     
     /**
@@ -157,14 +161,19 @@ class Character: SKSpriteNode
     */
     func torqueToApplyForCharacterWithVelocity(velocity:CGVector) -> CGFloat
     {
-        var torque:CGFloat = 0.0
+        
+        var torque:CGFloat = CGFloat(-accelerationX / torqueConstant)
+
+        //If velocity is below a certain threshold, apply double the torque to get the character moving faster
         if fabs(velocity.dx) < 90.0
         {
-            torque = CGFloat(2 * (-accelerationX / torqueConstant))
+            torque *= 2
         }
-        else
+        
+        //If acceleration is in the opposite direction as velocity, double the torque again to change directions
+        if(CGFloat(accelerationX) * velocity.dx < 0)
         {
-            torque = CGFloat(-accelerationX / torqueConstant)
+            torque *= 2
         }
         
         return torque

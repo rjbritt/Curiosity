@@ -14,7 +14,7 @@ extension CuriosityScene
         let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
         let size = UIImage(named:"blueDayBackground")!.size
         
-        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:2.0, andSpeedDecrease:1.0)
+        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
         
         characterSpriteNode = Character.presetCharacter("Curiosity")
         
@@ -60,11 +60,11 @@ extension CuriosityScene
     
     func configureLevel2()
     {
-        //Initializes a parallax background that will move with the character.
-        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
-        let size = UIImage(named:"blueDayBackground")!.size
-        
-        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:2.0, andSpeedDecrease:1.0)
+//        //Initializes a parallax background that will move with the character.
+//        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+//        let size = UIImage(named:"blueDayBackground")!.size
+//        
+//        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:2.0, andSpeedDecrease:1.0)
         
         
         characterSpriteNode = Character.presetCharacter("Curiosity")

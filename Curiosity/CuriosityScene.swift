@@ -120,8 +120,12 @@ class CuriosityScene: SKScene
         }
         else //scene is paused, but camera may be moving, so background needs to update
         {
-            farOutBackground?.update(currentTime, withNewMaxSpeed: cameraSpeed)
-            parallaxBackground?.update(currentTime, withNewMaxSpeed: cameraSpeed)
+            let backgroundSpeedFactor = determineBackgroundSpeedFactor()
+
+            farOutBackground?.update(currentTime)
+            parallaxBackground?.update(currentTime)
+//            farOutBackground?.update(currentTime, withNewMaxSpeed: cameraSpeed)
+//            parallaxBackground?.update(currentTime, withNewMaxSpeed: cameraSpeed)
         }
 
     }
@@ -158,6 +162,8 @@ class CuriosityScene: SKScene
                     }
                 }
             }
+            
+            
 
             //Centers the view on the camera node.
             self.centerOnNode(camera)
