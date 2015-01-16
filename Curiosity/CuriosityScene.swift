@@ -132,6 +132,9 @@ class CuriosityScene: SKScene
     
     override func didFinishUpdate()
     {
+        
+        //TODO: Check and see if constant SKActions here are making the frames stutter. 
+        
         //Unwrapping the camera outside of the isPaused check allows the camera to be refreshed
         //even when all of the movement in the scene is paused
         if let camera = cameraNode
