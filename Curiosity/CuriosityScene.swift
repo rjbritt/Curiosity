@@ -134,6 +134,7 @@ class CuriosityScene: SKScene
     {
         
         //TODO: Check and see if constant SKActions here are making the frames stutter. 
+        //TODO: Stutter seen on background only on iphone 5C
         
         //Unwrapping the camera outside of the isPaused check allows the camera to be refreshed
         //even when all of the movement in the scene is paused
@@ -149,18 +150,40 @@ class CuriosityScene: SKScene
                     //verically moves the camera up if the character is above the top of the initial viewport.
                     if(characterSKNode.position.y >= self.size.height)
                     {
-                        let move = SKAction.moveToY(characterSKNode.position.y, duration: 1)
-                        camera.runAction(move)
+                        //Camera hasn't caught up with the character
+                        if(camera.position.y < characterSKNode.position.y)
+                        {
+                            let difference = abs(characterSKNode.position.y - camera.position.y)
+                            if(difference > 5)
+                            {
+                                camera.position.y += 5
+                            }
+                            else
+                            {
+                                camera.position.y += difference
+                            }
+                        }
+                        //Camera has caught up with the character and follows the character's Y Value above the ground
+                        else
+                        {
+                            camera.position.y = characterSKNode.position.y
+                        }
                     }
                     else
                     {
                         //Moves the camera back down to a neutral Y height if the character is below the top
                         // of the initial viewport.
-                        if(camera.position.y != self.size.height/2)
+                        if(camera.position.y > self.size.height/2)
                         {
-                            let move = SKAction.moveToY(self.size.height/2, duration: 1)
-                            move.timingMode = SKActionTimingMode.Linear
-                            camera.runAction(move)
+                            let difference = abs(characterSKNode.position.y - camera.position.y)
+                            if(difference > 5)
+                            {
+                                camera.position.y -= 5
+                            }
+                            else
+                            {
+                                camera.position.y -= difference
+                            }
                         }
                     }
                 }
