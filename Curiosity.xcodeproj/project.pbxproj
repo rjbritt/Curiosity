@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1FC0EE0E20ED4A73AC768ABC /* libPods-Curiosity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1844F48898D043FD89743073 /* libPods-Curiosity.a */; };
-		2F21C40F1A649E14002B49F2 /* gameAssets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2F21C40E1A649E14002B49F2 /* gameAssets.atlas */; };
+		2F211F451A6DF70500552A1D /* gameAssets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F441A6DF70500552A1D /* gameAssets.atlas */; };
+		2F211F4C1A6DF79700552A1D /* blueDayBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F461A6DF79700552A1D /* blueDayBackground.png */; };
+		2F211F4D1A6DF79700552A1D /* Curiosity.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F471A6DF79700552A1D /* Curiosity.png */; };
+		2F211F4E1A6DF79700552A1D /* flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F481A6DF79700552A1D /* flowers.png */; };
+		2F211F4F1A6DF79700552A1D /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F491A6DF79700552A1D /* hills.png */; };
+		2F211F501A6DF79700552A1D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F4A1A6DF79700552A1D /* spark.png */; };
+		2F211F511A6DF79700552A1D /* Tree top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F4B1A6DF79700552A1D /* Tree top.png */; };
+		2F211F531A6E037700552A1D /* Tutorial1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F521A6E037700552A1D /* Tutorial1.sks */; };
 		2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1019C67799002CA7ED /* MyParticle.sks */; };
 		2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
@@ -45,7 +52,14 @@
 /* Begin PBXFileReference section */
 		1844F48898D043FD89743073 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD13A8FB60357DFFF6210A /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
-		2F21C40E1A649E14002B49F2 /* gameAssets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = gameAssets.atlas; sourceTree = "<group>"; };
+		2F211F441A6DF70500552A1D /* gameAssets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = gameAssets.atlas; sourceTree = "<group>"; };
+		2F211F461A6DF79700552A1D /* blueDayBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueDayBackground.png; path = gameAssets.atlas/blueDayBackground.png; sourceTree = "<group>"; };
+		2F211F471A6DF79700552A1D /* Curiosity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Curiosity.png; path = gameAssets.atlas/Curiosity.png; sourceTree = "<group>"; };
+		2F211F481A6DF79700552A1D /* flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flowers.png; path = gameAssets.atlas/flowers.png; sourceTree = "<group>"; };
+		2F211F491A6DF79700552A1D /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hills.png; path = gameAssets.atlas/hills.png; sourceTree = "<group>"; };
+		2F211F4A1A6DF79700552A1D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = gameAssets.atlas/spark.png; sourceTree = "<group>"; };
+		2F211F4B1A6DF79700552A1D /* Tree top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tree top.png"; path = "gameAssets.atlas/Tree top.png"; sourceTree = "<group>"; };
+		2F211F521A6E037700552A1D /* Tutorial1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tutorial1.sks; sourceTree = "<group>"; };
 		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2F3C2E531A28E6CA00A293EA /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBParallaxScrolling.h; path = Curiosity/PBParallaxScrolling.h; sourceTree = "<group>"; };
 		2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBParallaxScrolling.m; path = Curiosity/PBParallaxScrolling.m; sourceTree = "<group>"; };
@@ -196,6 +210,7 @@
 		2FBDB9481A510D2300B0B500 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				2F211F521A6E037700552A1D /* Tutorial1.sks */,
 				2FBB756619AC12D300203EF8 /* Level 1.sks */,
 				2FD94E411A51017A002CE891 /* Level 2.sks */,
 			);
@@ -205,7 +220,13 @@
 		2FD94E3C1A4F3DF8002CE891 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2F21C40E1A649E14002B49F2 /* gameAssets.atlas */,
+				2F211F461A6DF79700552A1D /* blueDayBackground.png */,
+				2F211F471A6DF79700552A1D /* Curiosity.png */,
+				2F211F481A6DF79700552A1D /* flowers.png */,
+				2F211F491A6DF79700552A1D /* hills.png */,
+				2F211F4A1A6DF79700552A1D /* spark.png */,
+				2F211F4B1A6DF79700552A1D /* Tree top.png */,
+				2F211F441A6DF70500552A1D /* gameAssets.atlas */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -328,13 +349,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F21C40F1A649E14002B49F2 /* gameAssets.atlas in Resources */,
+				2F211F451A6DF70500552A1D /* gameAssets.atlas in Resources */,
+				2F211F4D1A6DF79700552A1D /* Curiosity.png in Resources */,
 				2FD94E421A51017A002CE891 /* Level 2.sks in Resources */,
 				2FBDB94D1A55CDA000B0B500 /* CharacterInformation.plist in Resources */,
+				2F211F4F1A6DF79700552A1D /* hills.png in Resources */,
+				2F211F501A6DF79700552A1D /* spark.png in Resources */,
+				2F211F4C1A6DF79700552A1D /* blueDayBackground.png in Resources */,
 				2FBB757019AC12D300203EF8 /* Images.xcassets in Resources */,
+				2F211F511A6DF79700552A1D /* Tree top.png in Resources */,
 				2FBB756719AC12D300203EF8 /* Level 1.sks in Resources */,
 				2FF474231A4DE67B0080AD51 /* Podfile in Resources */,
 				2FBB756E19AC12D300203EF8 /* Main.storyboard in Resources */,
+				2F211F4E1A6DF79700552A1D /* flowers.png in Resources */,
+				2F211F531A6E037700552A1D /* Tutorial1.sks in Resources */,
 				2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

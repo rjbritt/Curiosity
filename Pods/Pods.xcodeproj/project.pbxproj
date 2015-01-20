@@ -1,890 +1,1979 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		015396A12FA31471DFE2AAD1 /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */; };
-		179D76B513C04A8569716044 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		32F006AA3423930B3C695D82 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B272CF6B3AF051A29B6A1897 /* CoreData.framework */; };
-		4317979BFEEB3D12FC866E8D /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */; };
-		4F4C41928DE724A41CE4C8B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B272CF6B3AF051A29B6A1897 /* CoreData.framework */; };
-		6F8712B0265B900253797320 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A8F0DD7251B4A620259E7 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */; };
-		7341CCF0D9004CB778ACFD10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
-		78B9EB03A45B45B81B6AE813 /* Pods-CuriosityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F9DCA50BEE6EA1FE427E5 /* Pods-CuriosityTests-dummy.m */; };
-		7EC92D1FB8A16685778896D8 /* Pods-Curiosity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEED8107A51A0EBD95550776 /* Pods-Curiosity-dummy.m */; };
-		89B4D7379262776DC0F46D65 /* A3ParallaxScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA7743D87B6665D9842578 /* A3ParallaxScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		B413BC07BD94F60B07B9FF7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
-		BB22F1E7DBA04182820A33EC /* Pods-Curiosity-A3ParallaxScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 955EB26C335AF17C7ACEF083 /* Pods-Curiosity-A3ParallaxScrollView-dummy.m */; };
-		C4800DBCA114B5DE9A491791 /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82825BA029FD3AB8E2794B3C /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */; };
-		C696D77840C08D3AB0CF91C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
-		CB4DC25F78357D85950BC56B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
-		CF5FD9E54E7AA36D2D6739B7 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		D130D8C8CA8DDB8146A17CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724E485DA1B0139D93AA21D /* Foundation.framework */; };
-		D14008E7EC3EA7A88A47B0FA /* A3ParallaxScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E67FC6B8E509CF302B34A80 /* A3ParallaxScrollView.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BA680FCE4C4EE3665E968745 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B154A43E49ACDD17884254E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59A644C8431B1FFD0F37E10E;
-			remoteInfo = "Pods-Curiosity-KCOrderedAccessorFix";
-		};
-		C1667582410C734D59D5C149 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B154A43E49ACDD17884254E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 539788B2295278E12C2A06FB;
-			remoteInfo = "Pods-CuriosityTests-KCOrderedAccessorFix";
-		};
-		FF915D6284A4FFBC25D4BFC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B154A43E49ACDD17884254E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 152A6F148C05EE2A9689A162;
-			remoteInfo = "Pods-Curiosity-A3ParallaxScrollView";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0E67FC6B8E509CF302B34A80 /* A3ParallaxScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A3ParallaxScrollView.h; path = A3ParallaxScrollView/A3ParallaxScrollView.h; sourceTree = "<group>"; };
-		11AB76145266B115D40ACB50 /* Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig"; sourceTree = "<group>"; };
-		134403002B6900516B6B4159 /* libPods-CuriosityTests-KCOrderedAccessorFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests-KCOrderedAccessorFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F0F473691FFD12AEFF3105 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F7917FDBBEDB0C736983883 /* Pods-CuriosityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuriosityTests-resources.sh"; sourceTree = "<group>"; };
-		43D93E73A3AA109A5253FB63 /* Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch"; sourceTree = "<group>"; };
-		452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig"; sourceTree = "<group>"; };
-		59D1BDB4860497007F0B9711 /* Pods-Curiosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity.debug.xcconfig"; sourceTree = "<group>"; };
-		5B2224965F94C5CC3AF81D97 /* Pods-CuriosityTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CuriosityTests-environment.h"; sourceTree = "<group>"; };
-		5D7F9DCA50BEE6EA1FE427E5 /* Pods-CuriosityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CuriosityTests-dummy.m"; sourceTree = "<group>"; };
-		5DA2DC1505E2571355DFA40E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
-		5FC06B831BEC930312941B18 /* Pods-CuriosityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CuriosityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		602C1984970A6906E8CD286B /* Pods-Curiosity-KCOrderedAccessorFix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-KCOrderedAccessorFix-prefix.pch"; sourceTree = "<group>"; };
-		671AF28A37BD32B2B9FE3121 /* Pods-CuriosityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuriosityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6EE1ECC6DC8EFA692A4D1712 /* libPods-Curiosity-KCOrderedAccessorFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity-KCOrderedAccessorFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig"; sourceTree = "<group>"; };
-		747C3B225CF21F3F26FB8168 /* Pods-Curiosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity.release.xcconfig"; sourceTree = "<group>"; };
-		7E2A8F0DD7251B4A620259E7 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-KCOrderedAccessorFix-dummy.m"; sourceTree = "<group>"; };
-		82825BA029FD3AB8E2794B3C /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m"; sourceTree = "<group>"; };
-		84E5ED86DD094A66F8B2B3E9 /* Pods-Curiosity-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Curiosity-acknowledgements.markdown"; sourceTree = "<group>"; };
-		86A70B66C6BBC38903F437DE /* Pods-Curiosity-A3ParallaxScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-A3ParallaxScrollView-prefix.pch"; sourceTree = "<group>"; };
-		8B7DC5AC49173D45A507784D /* Pods-CuriosityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CuriosityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+KCOrderedAccessorFix.m"; sourceTree = "<group>"; };
-		8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+KCOrderedAccessorFix.h"; sourceTree = "<group>"; };
-		955EB26C335AF17C7ACEF083 /* Pods-Curiosity-A3ParallaxScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-A3ParallaxScrollView-dummy.m"; sourceTree = "<group>"; };
-		99059787679F0A6A6C3DA8F9 /* Pods-Curiosity-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Curiosity-resources.sh"; sourceTree = "<group>"; };
-		A0F82FEA271EE3B9723F59CB /* Pods-Curiosity-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Curiosity-environment.h"; sourceTree = "<group>"; };
-		A3ED2234B8E7050CD926AF1B /* Pods-Curiosity-A3ParallaxScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-A3ParallaxScrollView.xcconfig"; sourceTree = "<group>"; };
-		A724E485DA1B0139D93AA21D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A860813E0F689E09DE8F5871 /* Pods-Curiosity-KCOrderedAccessorFix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Curiosity-KCOrderedAccessorFix.xcconfig"; sourceTree = "<group>"; };
-		AE2CC826C4B350AE1959BB63 /* Pods-Curiosity-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Curiosity-acknowledgements.plist"; sourceTree = "<group>"; };
-		B272CF6B3AF051A29B6A1897 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		B9174B1C0B66A6077E75B308 /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
-		C2243BA9E30F958F9CB5A22E /* libPods-Curiosity-A3ParallaxScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity-A3ParallaxScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCB8BEA3FF3B36D2C1DBC3E0 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig"; path = "../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig"; sourceTree = "<group>"; };
-		D9AA7743D87B6665D9842578 /* A3ParallaxScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A3ParallaxScrollView.m; path = A3ParallaxScrollView/A3ParallaxScrollView.m; sourceTree = "<group>"; };
-		EEED8107A51A0EBD95550776 /* Pods-Curiosity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Curiosity-dummy.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		16614FADE9FCCDB5DAA13B53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB4DC25F78357D85950BC56B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EA04760B8A9C0C8287E9BCA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B413BC07BD94F60B07B9FF7E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD380B4C3564B7BACF27288B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C696D77840C08D3AB0CF91C0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB4BC559D724F9C14A523CD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F4C41928DE724A41CE4C8B6 /* CoreData.framework in Frameworks */,
-				7341CCF0D9004CB778ACFD10 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E74395BD0F8239C34CF3733F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32F006AA3423930B3C695D82 /* CoreData.framework in Frameworks */,
-				D130D8C8CA8DDB8146A17CBB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0109A73D3193405F259E644D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A4DE23D9E8EE38095E2400C4 /* Pods-Curiosity */,
-				CCF2AFF8C6CE95C34B04EBB2 /* Pods-CuriosityTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		198D91D4BFA5553549564CB1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B272CF6B3AF051A29B6A1897 /* CoreData.framework */,
-				A724E485DA1B0139D93AA21D /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		1BAC81F60AED6813CE0E1C55 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A3ED2234B8E7050CD926AF1B /* Pods-Curiosity-A3ParallaxScrollView.xcconfig */,
-				452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */,
-				955EB26C335AF17C7ACEF083 /* Pods-Curiosity-A3ParallaxScrollView-dummy.m */,
-				86A70B66C6BBC38903F437DE /* Pods-Curiosity-A3ParallaxScrollView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Curiosity-A3ParallaxScrollView";
-			sourceTree = "<group>";
-		};
-		1F821683B29610B9C9760717 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E5C5D4E3FDDB74E1C7451804 /* A3ParallaxScrollView */,
-				D75836B5300A606772FCFE3F /* KCOrderedAccessorFix */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7748E1A6DEC2ED7CDCA88BF7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				198D91D4BFA5553549564CB1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7A49DE91C678FA9E863FC737 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CCB8BEA3FF3B36D2C1DBC3E0 /* libPods-Curiosity.a */,
-				C2243BA9E30F958F9CB5A22E /* libPods-Curiosity-A3ParallaxScrollView.a */,
-				6EE1ECC6DC8EFA692A4D1712 /* libPods-Curiosity-KCOrderedAccessorFix.a */,
-				14F0F473691FFD12AEFF3105 /* libPods-CuriosityTests.a */,
-				134403002B6900516B6B4159 /* libPods-CuriosityTests-KCOrderedAccessorFix.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A4DE23D9E8EE38095E2400C4 /* Pods-Curiosity */ = {
-			isa = PBXGroup;
-			children = (
-				84E5ED86DD094A66F8B2B3E9 /* Pods-Curiosity-acknowledgements.markdown */,
-				AE2CC826C4B350AE1959BB63 /* Pods-Curiosity-acknowledgements.plist */,
-				EEED8107A51A0EBD95550776 /* Pods-Curiosity-dummy.m */,
-				A0F82FEA271EE3B9723F59CB /* Pods-Curiosity-environment.h */,
-				99059787679F0A6A6C3DA8F9 /* Pods-Curiosity-resources.sh */,
-				59D1BDB4860497007F0B9711 /* Pods-Curiosity.debug.xcconfig */,
-				747C3B225CF21F3F26FB8168 /* Pods-Curiosity.release.xcconfig */,
-			);
-			name = "Pods-Curiosity";
-			path = "Target Support Files/Pods-Curiosity";
-			sourceTree = "<group>";
-		};
-		CB50934599AB6D200FE782DC = {
-			isa = PBXGroup;
-			children = (
-				5DA2DC1505E2571355DFA40E /* Podfile */,
-				7748E1A6DEC2ED7CDCA88BF7 /* Frameworks */,
-				1F821683B29610B9C9760717 /* Pods */,
-				7A49DE91C678FA9E863FC737 /* Products */,
-				0109A73D3193405F259E644D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		CCF2AFF8C6CE95C34B04EBB2 /* Pods-CuriosityTests */ = {
-			isa = PBXGroup;
-			children = (
-				5FC06B831BEC930312941B18 /* Pods-CuriosityTests-acknowledgements.markdown */,
-				8B7DC5AC49173D45A507784D /* Pods-CuriosityTests-acknowledgements.plist */,
-				5D7F9DCA50BEE6EA1FE427E5 /* Pods-CuriosityTests-dummy.m */,
-				5B2224965F94C5CC3AF81D97 /* Pods-CuriosityTests-environment.h */,
-				2F7917FDBBEDB0C736983883 /* Pods-CuriosityTests-resources.sh */,
-				671AF28A37BD32B2B9FE3121 /* Pods-CuriosityTests.debug.xcconfig */,
-				B9174B1C0B66A6077E75B308 /* Pods-CuriosityTests.release.xcconfig */,
-			);
-			name = "Pods-CuriosityTests";
-			path = "Target Support Files/Pods-CuriosityTests";
-			sourceTree = "<group>";
-		};
-		D75836B5300A606772FCFE3F /* KCOrderedAccessorFix */ = {
-			isa = PBXGroup;
-			children = (
-				8FBD45D87CFF854F9DF49264 /* NSManagedObjectModel+KCOrderedAccessorFix.h */,
-				8F9C6A7EBB953F13EDB86863 /* NSManagedObjectModel+KCOrderedAccessorFix.m */,
-				F98B740DB4210FED91A56FF3 /* Support Files */,
-			);
-			path = KCOrderedAccessorFix;
-			sourceTree = "<group>";
-		};
-		E5C5D4E3FDDB74E1C7451804 /* A3ParallaxScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				0E67FC6B8E509CF302B34A80 /* A3ParallaxScrollView.h */,
-				D9AA7743D87B6665D9842578 /* A3ParallaxScrollView.m */,
-				1BAC81F60AED6813CE0E1C55 /* Support Files */,
-			);
-			path = A3ParallaxScrollView;
-			sourceTree = "<group>";
-		};
-		F98B740DB4210FED91A56FF3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A860813E0F689E09DE8F5871 /* Pods-Curiosity-KCOrderedAccessorFix.xcconfig */,
-				73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */,
-				7E2A8F0DD7251B4A620259E7 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m */,
-				602C1984970A6906E8CD286B /* Pods-Curiosity-KCOrderedAccessorFix-prefix.pch */,
-				11AB76145266B115D40ACB50 /* Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig */,
-				D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */,
-				82825BA029FD3AB8E2794B3C /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m */,
-				43D93E73A3AA109A5253FB63 /* Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Curiosity-KCOrderedAccessorFix";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		12415B59F9B828F870F3A6B2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				015396A12FA31471DFE2AAD1 /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84BE87323F3EB645545A1174 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4317979BFEEB3D12FC866E8D /* NSManagedObjectModel+KCOrderedAccessorFix.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5C4FEDCF52DDCAD9F0758CB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D14008E7EC3EA7A88A47B0FA /* A3ParallaxScrollView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		152A6F148C05EE2A9689A162 /* Pods-Curiosity-A3ParallaxScrollView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C676D166A1887D930A262318 /* Build configuration list for PBXNativeTarget "Pods-Curiosity-A3ParallaxScrollView" */;
-			buildPhases = (
-				96821435B01D80D88C49365D /* Sources */,
-				16614FADE9FCCDB5DAA13B53 /* Frameworks */,
-				E5C4FEDCF52DDCAD9F0758CB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Curiosity-A3ParallaxScrollView";
-			productName = "Pods-Curiosity-A3ParallaxScrollView";
-			productReference = C2243BA9E30F958F9CB5A22E /* libPods-Curiosity-A3ParallaxScrollView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		347F69C11E5498F82CBFF106 /* Pods-CuriosityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68A4F5000BAD3388E7E37DF7 /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests" */;
-			buildPhases = (
-				C0121AAA58BA25CB19BFE0CA /* Sources */,
-				BD380B4C3564B7BACF27288B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				556AB227B2729DFDBF81EF8C /* PBXTargetDependency */,
-			);
-			name = "Pods-CuriosityTests";
-			productName = "Pods-CuriosityTests";
-			productReference = 14F0F473691FFD12AEFF3105 /* libPods-CuriosityTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		539788B2295278E12C2A06FB /* Pods-CuriosityTests-KCOrderedAccessorFix */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D76BF8E3BAFF3D263EB8F30C /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests-KCOrderedAccessorFix" */;
-			buildPhases = (
-				4C0923606FBA61D2DE79F34D /* Sources */,
-				E74395BD0F8239C34CF3733F /* Frameworks */,
-				84BE87323F3EB645545A1174 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-CuriosityTests-KCOrderedAccessorFix";
-			productName = "Pods-CuriosityTests-KCOrderedAccessorFix";
-			productReference = 134403002B6900516B6B4159 /* libPods-CuriosityTests-KCOrderedAccessorFix.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		59A644C8431B1FFD0F37E10E /* Pods-Curiosity-KCOrderedAccessorFix */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 34339D28C738C93913D2B99D /* Build configuration list for PBXNativeTarget "Pods-Curiosity-KCOrderedAccessorFix" */;
-			buildPhases = (
-				2549A32661C67414A9F67909 /* Sources */,
-				DB4BC559D724F9C14A523CD8 /* Frameworks */,
-				12415B59F9B828F870F3A6B2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Curiosity-KCOrderedAccessorFix";
-			productName = "Pods-Curiosity-KCOrderedAccessorFix";
-			productReference = 6EE1ECC6DC8EFA692A4D1712 /* libPods-Curiosity-KCOrderedAccessorFix.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		5CBDCA7E436851B9F1C8572D /* Pods-Curiosity */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7A905A36D215DFD42C924DFB /* Build configuration list for PBXNativeTarget "Pods-Curiosity" */;
-			buildPhases = (
-				14936C72E2F0C6C08929DCE2 /* Sources */,
-				1EA04760B8A9C0C8287E9BCA /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAA6EDE94363DCB69E29B4C0 /* PBXTargetDependency */,
-				828C8FA59859FAF84F7EE76C /* PBXTargetDependency */,
-			);
-			name = "Pods-Curiosity";
-			productName = "Pods-Curiosity";
-			productReference = CCB8BEA3FF3B36D2C1DBC3E0 /* libPods-Curiosity.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		B154A43E49ACDD17884254E3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = 4E03F20378D51EF396ABCC71 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = CB50934599AB6D200FE782DC;
-			productRefGroup = 7A49DE91C678FA9E863FC737 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				5CBDCA7E436851B9F1C8572D /* Pods-Curiosity */,
-				152A6F148C05EE2A9689A162 /* Pods-Curiosity-A3ParallaxScrollView */,
-				59A644C8431B1FFD0F37E10E /* Pods-Curiosity-KCOrderedAccessorFix */,
-				347F69C11E5498F82CBFF106 /* Pods-CuriosityTests */,
-				539788B2295278E12C2A06FB /* Pods-CuriosityTests-KCOrderedAccessorFix */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		14936C72E2F0C6C08929DCE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EC92D1FB8A16685778896D8 /* Pods-Curiosity-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2549A32661C67414A9F67909 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF5FD9E54E7AA36D2D6739B7 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */,
-				6F8712B0265B900253797320 /* Pods-Curiosity-KCOrderedAccessorFix-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C0923606FBA61D2DE79F34D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				179D76B513C04A8569716044 /* NSManagedObjectModel+KCOrderedAccessorFix.m in Sources */,
-				C4800DBCA114B5DE9A491791 /* Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96821435B01D80D88C49365D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89B4D7379262776DC0F46D65 /* A3ParallaxScrollView.m in Sources */,
-				BB22F1E7DBA04182820A33EC /* Pods-Curiosity-A3ParallaxScrollView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0121AAA58BA25CB19BFE0CA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78B9EB03A45B45B81B6AE813 /* Pods-CuriosityTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		556AB227B2729DFDBF81EF8C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 539788B2295278E12C2A06FB /* Pods-CuriosityTests-KCOrderedAccessorFix */;
-			targetProxy = C1667582410C734D59D5C149 /* PBXContainerItemProxy */;
-		};
-		828C8FA59859FAF84F7EE76C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 59A644C8431B1FFD0F37E10E /* Pods-Curiosity-KCOrderedAccessorFix */;
-			targetProxy = BA680FCE4C4EE3665E968745 /* PBXContainerItemProxy */;
-		};
-		FAA6EDE94363DCB69E29B4C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 152A6F148C05EE2A9689A162 /* Pods-Curiosity-A3ParallaxScrollView */;
-			targetProxy = FF915D6284A4FFBC25D4BFC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		086FF2AE5854B4CE9F521AB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 747C3B225CF21F3F26FB8168 /* Pods-Curiosity.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2D38475C0CF7E25EE461723A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9174B1C0B66A6077E75B308 /* Pods-CuriosityTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5F0E3022527C733B49EAB5E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8D3BF70F78FFD7DBC4C2FFD0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-A3ParallaxScrollView/Pods-Curiosity-A3ParallaxScrollView-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		98608CBE118CB9D4F7DBB76B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 452722E5B7556DFC1A9A9805 /* Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-A3ParallaxScrollView/Pods-Curiosity-A3ParallaxScrollView-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B09314EE4F77C9104D4753DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B1DC936ABE58C52288C9E83C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59D1BDB4860497007F0B9711 /* Pods-Curiosity.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B71418490D96E93E1D39BB24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D178A56E3F575EE4CF2E5F51 /* Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BC28262985D406E3ED3A0142 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 671AF28A37BD32B2B9FE3121 /* Pods-CuriosityTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D588202794C1E7946F3492FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E0B88B7EE273749E94D2838A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73A14199C531FCF0CC59834C /* Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F1286DBF7E1D772F54693A39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		34339D28C738C93913D2B99D /* Build configuration list for PBXNativeTarget "Pods-Curiosity-KCOrderedAccessorFix" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B09314EE4F77C9104D4753DB /* Debug */,
-				E0B88B7EE273749E94D2838A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4E03F20378D51EF396ABCC71 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1286DBF7E1D772F54693A39 /* Debug */,
-				D588202794C1E7946F3492FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68A4F5000BAD3388E7E37DF7 /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC28262985D406E3ED3A0142 /* Debug */,
-				2D38475C0CF7E25EE461723A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7A905A36D215DFD42C924DFB /* Build configuration list for PBXNativeTarget "Pods-Curiosity" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1DC936ABE58C52288C9E83C /* Debug */,
-				086FF2AE5854B4CE9F521AB8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C676D166A1887D930A262318 /* Build configuration list for PBXNativeTarget "Pods-Curiosity-A3ParallaxScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8D3BF70F78FFD7DBC4C2FFD0 /* Debug */,
-				98608CBE118CB9D4F7DBB76B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D76BF8E3BAFF3D263EB8F30C /* Build configuration list for PBXNativeTarget "Pods-CuriosityTests-KCOrderedAccessorFix" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F0E3022527C733B49EAB5E8 /* Debug */,
-				B71418490D96E93E1D39BB24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = B154A43E49ACDD17884254E3 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>015BFC2DF9A6CCB0F9897EEA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02812C5CFF34299229B55277</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>08C89432B0E5E101BD91510B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0A35E2AE772D8F4935F95F20</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC2520BAE05A46649BA4D26D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>10C4FB9F56568F41B8C42021</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7C55ABC30043209FF913B6ED</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1865E7758D0ABDA3C1760683</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch</string>
+			<key>path</key>
+			<string>../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>19109C8A7C7CA5F9CDF154B2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3F46BC8841FDB18BCF0470E7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>193B47AEA6889C8302829F54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E7596D96D0372F40972B097</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>194F63301E9B30EDC4AFC425</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>A3ParallaxScrollView.m</string>
+			<key>path</key>
+			<string>A3ParallaxScrollView/A3ParallaxScrollView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1969474DD7664E70DB556ACF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E7596D96D0372F40972B097</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1A4B4444551A8F887F05F8F4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>2F076B7C6328515414CE3E2F</string>
+			<key>targetProxy</key>
+			<string>FA603690BE8E3C69581648E6</string>
+		</dict>
+		<key>1E4C910DBA244CB560CC9BAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8CC19249FF0F6FE7159E8C63</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>1F7662BA81AEA11A9FF2ADB3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Curiosity-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>24C3A8C1A4C005E4E674D63D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSManagedObjectModel+KCOrderedAccessorFix.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>24F5A819F2CFF394A527C915</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8CC19249FF0F6FE7159E8C63</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>266CDC3502EB1681E11958F7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2717B8CD4CEA92E2AA1175D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>015BFC2DF9A6CCB0F9897EEA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2A498911EAE6E921711215D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Curiosity-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F076B7C6328515414CE3E2F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6796DBE957B685506769A10F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>67E7DEDE5895C61C36594385</string>
+				<string>C5A6BB3E6AEA068F0298F065</string>
+				<string>757DC81874302CF754BDA5C2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix</string>
+			<key>productName</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix</string>
+			<key>productReference</key>
+			<string>6FE84E528B1E4359E63F7ADD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>2FF258556DC370CFA2D49B5E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>318188DBD21F8AC90B1FE27D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C140DD4BA36CD8F29668DAA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>31D82F924607E00B5335E768</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>AE736390171BFB738BF50F0A</string>
+			<key>targetProxy</key>
+			<string>3F685B1179A8E962CA73AB83</string>
+		</dict>
+		<key>3278BC711F1F4D7D5723FC4E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Curiosity-KCOrderedAccessorFix.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3CFE26DD579201853052E620</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4A0AD4FFF4AEF0E85D0DB810</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3DA896CC6089AF888BEF68A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>A3ParallaxScrollView.h</string>
+			<key>path</key>
+			<string>A3ParallaxScrollView/A3ParallaxScrollView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DF6C745CA61AED5E84A9EF4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>08C89432B0E5E101BD91510B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3E7596D96D0372F40972B097</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3F46BC8841FDB18BCF0470E7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3DA896CC6089AF888BEF68A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F685B1179A8E962CA73AB83</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5C0CD3C7357EDDE32CF2E7D5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>AE736390171BFB738BF50F0A</string>
+			<key>remoteInfo</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView</string>
+		</dict>
+		<key>401769527B50EBD6F10FF622</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>439BDBBFF3E17BD179553229</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3DA896CC6089AF888BEF68A1</string>
+				<string>194F63301E9B30EDC4AFC425</string>
+				<string>76E44E0E1706FD92482997BC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>A3ParallaxScrollView</string>
+			<key>path</key>
+			<string>A3ParallaxScrollView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47559B7D81C779E4213F15AF</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>47D8E265B53BCF1E293113D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47F34C56E0259FD552F2A1F3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>02812C5CFF34299229B55277</string>
+				<string>47559B7D81C779E4213F15AF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>48DDE73DA68607962D3496E4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-CuriosityTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4A0AD4FFF4AEF0E85D0DB810</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Curiosity.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AB0D2559E78CB7D644BAC72</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A56DDB3078272D71944E4BA6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D5D202D6E0A5E89BBC85480</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>24F5A819F2CFF394A527C915</string>
+				<string>FFBA635F389AEC54D51DADB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4E382EB9B776B4A34E188A53</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3CFE26DD579201853052E620</string>
+				<string>FEE268D582C8308A7EFE5C92</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>559E2BDFDD8048F10DCE4C30</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>841117954EFD2042C9EEDC16</string>
+				<string>EB39EA9A0769C0433540657E</string>
+				<string>D2AEF749A0471B8240CC6859</string>
+				<string>8A9F79291206A69EB6B51644</string>
+				<string>75FF41BF1DFD85A3AA564702</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56CDBB85CC8AD535A522A467</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E7596D96D0372F40972B097</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5864F656740473A610B06BF8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Curiosity.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>590C5A199835385724EA7DDD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F1033A4492F5522FFDB48E6B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5C0CD3C7357EDDE32CF2E7D5</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>47F34C56E0259FD552F2A1F3</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>559E2BDFDD8048F10DCE4C30</string>
+			<key>productRefGroup</key>
+			<string>8A9F79291206A69EB6B51644</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>ADB5286BE056C8A30CEAD2B6</string>
+				<string>AE736390171BFB738BF50F0A</string>
+				<string>AAE95736B0F6928DC49409AE</string>
+				<string>D7FE013F2C92BC7E25F6333C</string>
+				<string>2F076B7C6328515414CE3E2F</string>
+			</array>
+		</dict>
+		<key>6796DBE957B685506769A10F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>590C5A199835385724EA7DDD</string>
+				<string>F1DCFD58FD4158C1F7B1E0F8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>67E7DEDE5895C61C36594385</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1E4C910DBA244CB560CC9BAD</string>
+				<string>BB8ABC3C0A50037EDA9B9779</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6B668C8A6C6A06DC7EB40964</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ACF3F17884C059FEBFBFDED0</string>
+				<string>08C89432B0E5E101BD91510B</string>
+				<string>266CDC3502EB1681E11958F7</string>
+				<string>47D8E265B53BCF1E293113D6</string>
+				<string>BFDABEAB24E503CD730C2A81</string>
+				<string>F1033A4492F5522FFDB48E6B</string>
+				<string>A0CE67D225CDFE196C9DF704</string>
+				<string>1865E7758D0ABDA3C1760683</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-Curiosity-KCOrderedAccessorFix</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E9715627D6945B648D77446</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C140DD4BA36CD8F29668DAA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FE84E528B1E4359E63F7ADD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-CuriosityTests-KCOrderedAccessorFix.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>72B4942520A498A872458493</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2FF258556DC370CFA2D49B5E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Curiosity-A3ParallaxScrollView/Pods-Curiosity-A3ParallaxScrollView-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>745D45A58D5129B0DD431AC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>757DC81874302CF754BDA5C2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EDA65C0B591AD2B74D99ECA2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75FF41BF1DFD85A3AA564702</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BD5C86BCC879A7EF7A4C0192</string>
+				<string>DD408819E02332F180308CB8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7667A2911109AD982BF35E7A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E7596D96D0372F40972B097</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>76E44E0E1706FD92482997BC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>745D45A58D5129B0DD431AC1</string>
+				<string>2FF258556DC370CFA2D49B5E</string>
+				<string>015BFC2DF9A6CCB0F9897EEA</string>
+				<string>AEB636A0E31AA4B22E70F12D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-Curiosity-A3ParallaxScrollView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>784E828458A19A4D3186EF7D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>24C3A8C1A4C005E4E674D63D</string>
+				<string>8CC19249FF0F6FE7159E8C63</string>
+				<string>6B668C8A6C6A06DC7EB40964</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>KCOrderedAccessorFix</string>
+			<key>path</key>
+			<string>KCOrderedAccessorFix</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C38C51515F9D1C495783A84</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C55ABC30043209FF913B6ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E3CE092984AB482AD3CF9B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Curiosity-A3ParallaxScrollView.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>828735D614B5705BC72F20AD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>841117954EFD2042C9EEDC16</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>890888742882CB68C41ABFBF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AFEBA2476C1032B73CD26089</string>
+				<string>2717B8CD4CEA92E2AA1175D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8A9F79291206A69EB6B51644</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F17AFD3384FE3BCE4DF1136A</string>
+				<string>7E3CE092984AB482AD3CF9B7</string>
+				<string>3278BC711F1F4D7D5723FC4E</string>
+				<string>48DDE73DA68607962D3496E4</string>
+				<string>6FE84E528B1E4359E63F7ADD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CC19249FF0F6FE7159E8C63</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSManagedObjectModel+KCOrderedAccessorFix.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8FF61402A2B2342D1D9DA15E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>24C3A8C1A4C005E4E674D63D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>91F9BE1262181FEBCD2B4163</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8FF61402A2B2342D1D9DA15E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96D92AA851E2947C977E274E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EA95682120B28D5617297F18</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>97F476BAE9919506FBA094E2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3DF6C745CA61AED5E84A9EF4</string>
+				<string>DFBD37198BED9F73294C1D33</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9D7827BC2112338808DAC5F1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>72B4942520A498A872458493</string>
+				<string>F1E3347A7B6E8EFCC7259731</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A0CE67D225CDFE196C9DF704</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m</string>
+			<key>path</key>
+			<string>../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A35045EE6BA7411056B2DA04</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-Curiosity-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A56DDB3078272D71944E4BA6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C172B3DC7C588EF1EA639FCA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AAE95736B0F6928DC49409AE</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>97F476BAE9919506FBA094E2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4D5D202D6E0A5E89BBC85480</string>
+				<string>DF5B4D8E521C2BB2DCB78E7F</string>
+				<string>91F9BE1262181FEBCD2B4163</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix</string>
+			<key>productName</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix</string>
+			<key>productReference</key>
+			<string>3278BC711F1F4D7D5723FC4E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AC8F3C4BABC541BB2F550F10</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5C0CD3C7357EDDE32CF2E7D5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>AAE95736B0F6928DC49409AE</string>
+			<key>remoteInfo</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix</string>
+		</dict>
+		<key>ACF3F17884C059FEBFBFDED0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Curiosity-KCOrderedAccessorFix.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADB5286BE056C8A30CEAD2B6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>4E382EB9B776B4A34E188A53</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BCE6979F5E6B3DD457CD0478</string>
+				<string>FFBE248D0E74B09F4AC110FB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>31D82F924607E00B5335E768</string>
+				<string>CC451DB4FE564CB8346E4157</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Curiosity</string>
+			<key>productName</key>
+			<string>Pods-Curiosity</string>
+			<key>productReference</key>
+			<string>F17AFD3384FE3BCE4DF1136A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AE736390171BFB738BF50F0A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9D7827BC2112338808DAC5F1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>890888742882CB68C41ABFBF</string>
+				<string>B3BE07A5B1F494C19645AEF5</string>
+				<string>19109C8A7C7CA5F9CDF154B2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView</string>
+			<key>productName</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView</string>
+			<key>productReference</key>
+			<string>7E3CE092984AB482AD3CF9B7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AEB636A0E31AA4B22E70F12D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Curiosity-A3ParallaxScrollView-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFEBA2476C1032B73CD26089</key>
+		<dict>
+			<key>fileRef</key>
+			<string>194F63301E9B30EDC4AFC425</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>B3BE07A5B1F494C19645AEF5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7667A2911109AD982BF35E7A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BB8ABC3C0A50037EDA9B9779</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A0CE67D225CDFE196C9DF704</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BCE6979F5E6B3DD457CD0478</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0A35E2AE772D8F4935F95F20</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BD5C86BCC879A7EF7A4C0192</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2A498911EAE6E921711215D9</string>
+				<string>A35045EE6BA7411056B2DA04</string>
+				<string>EC2520BAE05A46649BA4D26D</string>
+				<string>1F7662BA81AEA11A9FF2ADB3</string>
+				<string>D54D926B59D83C335E4D53C5</string>
+				<string>4A0AD4FFF4AEF0E85D0DB810</string>
+				<string>5864F656740473A610B06BF8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Curiosity</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Curiosity</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BFDABEAB24E503CD730C2A81</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C140DD4BA36CD8F29668DAA0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C172B3DC7C588EF1EA639FCA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5A6BB3E6AEA068F0298F065</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>318188DBD21F8AC90B1FE27D</string>
+				<string>193B47AEA6889C8302829F54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CC451DB4FE564CB8346E4157</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>AAE95736B0F6928DC49409AE</string>
+			<key>targetProxy</key>
+			<string>AC8F3C4BABC541BB2F550F10</string>
+		</dict>
+		<key>D2AEF749A0471B8240CC6859</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>439BDBBFF3E17BD179553229</string>
+				<string>784E828458A19A4D3186EF7D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2DEA1C01FDCA33AABEDAA00</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>828735D614B5705BC72F20AD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D42D4C759CA35911930F0533</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>10C4FB9F56568F41B8C42021</string>
+				<string>D2DEA1C01FDCA33AABEDAA00</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D54D926B59D83C335E4D53C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Curiosity-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D7FE013F2C92BC7E25F6333C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D42D4C759CA35911930F0533</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4AB0D2559E78CB7D644BAC72</string>
+				<string>96D92AA851E2947C977E274E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>1A4B4444551A8F887F05F8F4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests</string>
+			<key>productName</key>
+			<string>Pods-CuriosityTests</string>
+			<key>productReference</key>
+			<string>48DDE73DA68607962D3496E4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>DC32A2DB1458268D9C53976B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C140DD4BA36CD8F29668DAA0</string>
+				<string>3E7596D96D0372F40972B097</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD408819E02332F180308CB8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7C38C51515F9D1C495783A84</string>
+				<string>401769527B50EBD6F10FF622</string>
+				<string>C172B3DC7C588EF1EA639FCA</string>
+				<string>E96669012371A11E5003A4AA</string>
+				<string>EF842BDA612C9D8A85AFDD56</string>
+				<string>7C55ABC30043209FF913B6ED</string>
+				<string>828735D614B5705BC72F20AD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-CuriosityTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF5B4D8E521C2BB2DCB78E7F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6E9715627D6945B648D77446</string>
+				<string>1969474DD7664E70DB556ACF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DFBD37198BED9F73294C1D33</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>08C89432B0E5E101BD91510B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Curiosity-KCOrderedAccessorFix/Pods-Curiosity-KCOrderedAccessorFix-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E96669012371A11E5003A4AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA95682120B28D5617297F18</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E7596D96D0372F40972B097</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EB39EA9A0769C0433540657E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DC32A2DB1458268D9C53976B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC2520BAE05A46649BA4D26D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Curiosity-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EDA65C0B591AD2B74D99ECA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>24C3A8C1A4C005E4E674D63D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EF842BDA612C9D8A85AFDD56</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-CuriosityTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F1033A4492F5522FFDB48E6B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F17AFD3384FE3BCE4DF1136A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Curiosity.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F1DCFD58FD4158C1F7B1E0F8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F1033A4492F5522FFDB48E6B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-CuriosityTests-KCOrderedAccessorFix/Pods-CuriosityTests-KCOrderedAccessorFix-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F1E3347A7B6E8EFCC7259731</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2FF258556DC370CFA2D49B5E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Curiosity-A3ParallaxScrollView/Pods-Curiosity-A3ParallaxScrollView-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FA603690BE8E3C69581648E6</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5C0CD3C7357EDDE32CF2E7D5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2F076B7C6328515414CE3E2F</string>
+			<key>remoteInfo</key>
+			<string>Pods-CuriosityTests-KCOrderedAccessorFix</string>
+		</dict>
+		<key>FEE268D582C8308A7EFE5C92</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5864F656740473A610B06BF8</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FFBA635F389AEC54D51DADB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>266CDC3502EB1681E11958F7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFBE248D0E74B09F4AC110FB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56CDBB85CC8AD535A522A467</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>5C0CD3C7357EDDE32CF2E7D5</string>
+</dict>
+</plist>
