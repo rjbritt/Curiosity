@@ -50,17 +50,8 @@ class CuriosityGameViewController: UIViewController
             
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = SKSceneScaleMode.AspectFill
-            
-            switch self.levelSelected
-            {
-            case .Level1:
-                scene.configureLevel1()
-            case .Level2:
-                scene.configureLevel2()
-                break
-            case .Level3:
-                break
-            }
+
+            self.prepareCuriosityScene(scene)
             scene.gameViewControllerDelegate = self
 
             skView.presentScene(scene)
@@ -75,9 +66,10 @@ class CuriosityGameViewController: UIViewController
             scene.configureLevel1()
         case .Level2:
             scene.configureLevel2()
-            break
         case .Level3:
             break
+        case .Tut1:
+            scene.configureTutorial()
         }
     }
 

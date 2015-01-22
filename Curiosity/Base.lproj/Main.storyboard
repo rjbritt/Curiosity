@@ -75,6 +75,15 @@
                                     <segue destination="dPF-0x-7dB" kind="show" identifier="level2" id="Rpa-xJ-XdE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-Qt-O2T">
+                                <rect key="frame" x="130" y="20" width="50" height="30"/>
+                                <state key="normal" title="Tutorial">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Y4M-WM-Uff" kind="show" identifier="tutorial" id="Fad-1E-bFU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -125,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1487" y="-163"/>
+            <point key="canvasLocation" x="-2129" y="-825"/>
         </scene>
         <!--Level2-->
         <scene sceneID="XDs-DX-OWz">
@@ -144,7 +153,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aoc-PQ-NNQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-802.5" y="-159"/>
+            <point key="canvasLocation" x="-1499" y="-825"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="xgC-9R-vXe">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" extendedLayoutIncludesOpaqueBars="YES" id="Y4M-WM-Uff" userLabel="Tutorial" customClass="CuriosityGameViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wHA-6N-iim"/>
+                        <viewControllerLayoutGuide type="bottom" id="tzF-Fj-VSO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QHf-bk-hL3" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFP-R0-lDg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-451" y="-291"/>
         </scene>
     </scenes>
 </document>

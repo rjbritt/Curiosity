@@ -35,15 +35,20 @@ class LevelSelectViewController: UIViewController {
         {
             nextVC = segue.destinationViewController as? CuriosityGameViewController
         }
-        
-        if segue.identifier == "level1"
+
+        if let segueID = segue.identifier
         {
-           nextVC?.levelSelected = .Level1
-        }
-            
-        else if segue.identifier == "level2"
-        {
-            nextVC?.levelSelected = .Level2
+            switch segueID
+            {
+            case "level1":
+                nextVC?.levelSelected = .Level1
+            case "level2":
+                nextVC?.levelSelected = .Level2
+            case "tutorial":
+                nextVC?.levelSelected = .Tut1
+            default:
+                break
+            }
         }
         
         nextVC?.levelSelectVCDelegate = self

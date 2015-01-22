@@ -10,7 +10,7 @@ import Foundation
 
 enum CuriosityGameLevel:String
 {
-    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2"
+    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2", Tut1 = "Tutorial1"
 }
 
 enum PhysicsCategory:UInt32

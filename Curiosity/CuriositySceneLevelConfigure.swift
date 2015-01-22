@@ -70,5 +70,10 @@ extension CuriosityScene
         characterSpriteNode = Character.presetCharacter("Curiosity")
     }
     
+    func configureTutorial()
+    {
+        characterSpriteNode = Character.presetCharacter("Curiosity")
+    }
+    
     
 }
