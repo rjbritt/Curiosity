@@ -21,7 +21,7 @@ class CuriosityScene: SKScene
     private var jumpCount = 0
 
     //MARK: Public instance variables
-    weak var gameViewControllerDelegate:CuriosityGameViewController?
+    weak var gameViewControllerDelegate:GameViewController?
     
     var farOutBackground:PBParallaxScrolling? // A background designed to be farther out than the other parallel backgrounds
     var parallaxBackground:PBParallaxScrolling? // A set of parallax backgrounds to be used as a backdrop for the action

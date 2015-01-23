@@ -2,6 +2,9 @@
 //
 //  GameViewController.swift
 //  Curiosity
+//  This view controller manages the view that presents the CuriosityScene SKScene. It handles
+//  the delegation of the level setup to the scene extension methods and loads the 
+//  CuriosityScene from the appropriate .sks file as declared in the levelSelected property.
 //
 //  Created by Ryan Britt on 8/25/14.
 //  Copyright (c) 2014 Ryan Britt. All rights reserved.
@@ -29,9 +32,11 @@ extension SKNode {
 
 
 
-class CuriosityGameViewController: UIViewController
+class GameViewController: UIViewController
 {
     var levelSelected:CuriosityGameLevel = CuriosityGameLevel.Level1 //Defaults to level 1.
+    
+    //TODO: abstract this out. It is not necessarily a level select. It is a levelEndDelegate.
     var levelSelectVCDelegate:LevelSelectViewController?
 
     override func viewDidLoad()
@@ -58,6 +63,11 @@ class CuriosityGameViewController: UIViewController
         }
     }
     
+    /**
+    Conditionally calls methods based on what level has been selected with the scene.d
+    
+    :param: scene The instance of CuriosityScene (sublcass of SKScene) to configure the level for.
+    */
     func prepareCuriosityScene(scene:CuriosityScene)
     {
         switch self.levelSelected
@@ -69,13 +79,23 @@ class CuriosityGameViewController: UIViewController
         case .Level3:
             break
         case .Tut1:
-            scene.configureTutorial()
+            scene.configureTutorial(1)
+        case .Tut2:
+            scene.configureTutorial(2)
+        case .Tut3:
+            scene.configureTutorial(3)
+        case .Tut4:
+            break
+        case .Tut5:
+            break
+        case .Tut6:
+            break
         }
     }
 
     func returnToMenu()
     {
-        levelSelectVCDelegate?.dismissViewControllerAnimated(true, completion:nil)
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion:nil)
         let skView = self.view as SKView
         skView.presentScene(nil)
     }

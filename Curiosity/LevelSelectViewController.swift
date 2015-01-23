@@ -29,29 +29,43 @@ class LevelSelectViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        var nextVC:CuriosityGameViewController?
         
-        if segue.destinationViewController.isMemberOfClass(CuriosityGameViewController)
+        //Find the destination view controller
+        var nextVC:GameViewController?
+        
+        if segue.destinationViewController.isMemberOfClass(GameViewController)
         {
-            nextVC = segue.destinationViewController as? CuriosityGameViewController
+            nextVC = segue.destinationViewController as? GameViewController
+        }
+        
+        nextVC?.levelSelectVCDelegate = self
+        
+        //Set the appropriate level selected
+        var senderButton:UIButton?
+        if let senderObj:AnyObject = sender
+        {
+            if (senderObj.isMemberOfClass(UIButton))
+            {
+                senderButton = sender as? UIButton
+            }
         }
 
-        if let segueID = segue.identifier
+        
+        let senderName = senderButton?.titleLabel?.text
+        if let name = senderName
         {
-            switch segueID
+            switch name
             {
-            case "level1":
+            case "Level 1":
                 nextVC?.levelSelected = .Level1
-            case "level2":
+            case "Level 2":
                 nextVC?.levelSelected = .Level2
-            case "tutorial":
-                nextVC?.levelSelected = .Tut1
+            case "Tutorial":
+                nextVC?.levelSelected = .Tut3
             default:
                 break
             }
         }
-        
-        nextVC?.levelSelectVCDelegate = self
 
     }
 

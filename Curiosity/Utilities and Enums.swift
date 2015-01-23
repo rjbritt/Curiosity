@@ -8,9 +8,12 @@
 
 import Foundation
 
+//TODO: transform into a struct with enum capabilities and an easier ability to advance levels and keep track of what the current level is.
 enum CuriosityGameLevel:String
 {
-    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2", Tut1 = "Tutorial1"
+    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2", Tut1 = "Tutorial1",
+    Tut2 = "Tutorial2", Tut3 = "Tutorial3", Tut4 = "Tutorial4", Tut5 = "Tutorial5",
+    Tut6 = "Tutorial6"
 }
 
 enum PhysicsCategory:UInt32

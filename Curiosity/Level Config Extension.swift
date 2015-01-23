@@ -60,20 +60,36 @@ extension CuriosityScene
     
     func configureLevel2()
     {
-//        //Initializes a parallax background that will move with the character.
-//        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
-//        let size = UIImage(named:"blueDayBackground")!.size
-//        
-//        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:2.0, andSpeedDecrease:1.0)
+        //Initializes a parallax background that will move with the character.
+        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+        let size = UIImage(named:"blueDayBackground")!.size
+        
+        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:2.0, andSpeedDecrease:1.0)
         
         
         characterSpriteNode = Character.presetCharacter("Curiosity")
     }
     
-    func configureTutorial()
+    func configureTutorial(tutNumber:Int)
     {
+        //Initializes a parallax background that will move with the character.
+        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+        let size = UIImage(named:"blueDayBackground")!.size
+        
+        //Initialize scene properties
+        parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
+        
         characterSpriteNode = Character.presetCharacter("Curiosity")
+        switch tutNumber
+        {
+        case 1:
+            maxJumps = 0
+        case 2:
+            maxJumps = 1
+        case 3:
+            maxJumps = 2
+        default:
+            maxJumps = 2
+        }
     }
-    
-    
 }
