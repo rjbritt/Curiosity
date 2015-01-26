@@ -15,6 +15,8 @@
 		2F211F4F1A6DF79700552A1D /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F491A6DF79700552A1D /* hills.png */; };
 		2F211F501A6DF79700552A1D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F4A1A6DF79700552A1D /* spark.png */; };
 		2F211F511A6DF79700552A1D /* Tree top.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F211F4B1A6DF79700552A1D /* Tree top.png */; };
+		2F254EBB1A746BAD00DBC8D8 /* GameVCLevelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */; };
+		2F254EBD1A75704B00DBC8D8 /* EndLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */; };
 		2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1019C67799002CA7ED /* MyParticle.sks */; };
 		2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
 		2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
@@ -38,7 +40,6 @@
 		2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */; };
 		2FBDB94A1A5111B900B0B500 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDB9491A5111B900B0B500 /* Item.swift */; };
 		2FBDB94D1A55CDA000B0B500 /* CharacterInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */; };
-		2FD94E401A4F9241002CE891 /* Level Config Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD94E3F1A4F9241002CE891 /* Level Config Extension.swift */; };
 		2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */; };
 		2FF474231A4DE67B0080AD51 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2FF474221A4DE67B0080AD51 /* Podfile */; };
 		E515950B26D54C449A912F82 /* libPods-CuriosityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */; };
@@ -64,6 +65,8 @@
 		2F211F491A6DF79700552A1D /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hills.png; path = gameAssets.atlas/hills.png; sourceTree = "<group>"; };
 		2F211F4A1A6DF79700552A1D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = gameAssets.atlas/spark.png; sourceTree = "<group>"; };
 		2F211F4B1A6DF79700552A1D /* Tree top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tree top.png"; path = "gameAssets.atlas/Tree top.png"; sourceTree = "<group>"; };
+		2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVCLevelConfig.swift; sourceTree = "<group>"; };
+		2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndLevelViewController.swift; sourceTree = "<group>"; };
 		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2F3C2E531A28E6CA00A293EA /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBParallaxScrolling.h; path = Curiosity/PBParallaxScrolling.h; sourceTree = "<group>"; };
 		2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBParallaxScrolling.m; path = Curiosity/PBParallaxScrolling.m; sourceTree = "<group>"; };
@@ -92,7 +95,6 @@
 		2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
 		2FBDB9491A5111B900B0B500 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CharacterInformation.plist; sourceTree = "<group>"; };
-		2FD94E3F1A4F9241002CE891 /* Level Config Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Level Config Extension.swift"; sourceTree = "<group>"; };
 		2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		2FF474221A4DE67B0080AD51 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				2FBB756A19AC12D300203EF8 /* GameViewController.swift */,
+				2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */,
 				2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */,
+				2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -160,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				2FBB756819AC12D300203EF8 /* CuriosityScene.swift */,
-				2FD94E3F1A4F9241002CE891 /* Level Config Extension.swift */,
 			);
 			name = "Game Scenes";
 			sourceTree = "<group>";
@@ -465,8 +468,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */,
-				2FD94E401A4F9241002CE891 /* Level Config Extension.swift in Sources */,
 				2F3DB8351A4F28B600AA6919 /* LevelSelectViewController.swift in Sources */,
+				2F254EBB1A746BAD00DBC8D8 /* GameVCLevelConfig.swift in Sources */,
+				2F254EBD1A75704B00DBC8D8 /* EndLevelViewController.swift in Sources */,
 				2FBB756919AC12D300203EF8 /* CuriosityScene.swift in Sources */,
 				2FBDB94A1A5111B900B0B500 /* Item.swift in Sources */,
 				2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */,

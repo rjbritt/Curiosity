@@ -45,6 +45,39 @@
             </objects>
             <point key="canvasLocation" x="-2851" y="-159"/>
         </scene>
+        <!--End Level View Controller-->
+        <scene sceneID="MgT-6F-y4u">
+            <objects>
+                <viewController storyboardIdentifier="EndLevelViewController" id="8U1-d5-4te" customClass="EndLevelViewController" customModule="Curiosity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RBU-QT-h6i"/>
+                        <viewControllerLayoutGuide type="bottom" id="PMe-Nj-lgJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ajy-gq-peg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4Y-Ep-7X5">
+                                <rect key="frame" x="223" y="285" width="154" height="30"/>
+                                <state key="normal" title="Return To Level Select">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnToLevelSelect:" destination="8U1-d5-4te" eventType="touchUpInside" id="DtU-cB-cTf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="v4Y-Ep-7X5" secondAttribute="centerX" id="tcX-Tc-dlx"/>
+                            <constraint firstAttribute="centerY" secondItem="v4Y-Ep-7X5" secondAttribute="centerY" id="uxh-Bz-fiS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVB-t8-77r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2851" y="517"/>
+        </scene>
         <!--Level Select View Controller-->
         <scene sceneID="wol-9N-kBy">
             <objects>

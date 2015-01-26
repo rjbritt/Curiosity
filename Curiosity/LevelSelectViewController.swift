@@ -9,8 +9,6 @@
 import UIKit
 
 class LevelSelectViewController: UIViewController {
-
-    @IBOutlet weak var jumpControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +36,6 @@ class LevelSelectViewController: UIViewController {
             nextVC = segue.destinationViewController as? GameViewController
         }
         
-        nextVC?.levelSelectVCDelegate = self
-        
         //Set the appropriate level selected
         var senderButton:UIButton?
         if let senderObj:AnyObject = sender
@@ -61,7 +57,7 @@ class LevelSelectViewController: UIViewController {
             case "Level 2":
                 nextVC?.levelSelected = .Level2
             case "Tutorial":
-                nextVC?.levelSelected = .Tut3
+                nextVC?.levelSelected = .Tut4
             default:
                 break
             }

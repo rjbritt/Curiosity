@@ -198,11 +198,22 @@ class CuriosityScene: SKScene
     
     override func willMoveFromView(view: SKView)
     {
-        self.enumerateChildNodesWithName("*", usingBlock: { (node:SKNode! , stop:UnsafeMutablePointer<ObjCBool>) -> Void in
+        characterSpriteNode = nil
+        farOutBackground = nil
+        parallaxBackground = nil
+        gameViewControllerDelegate = nil
+        cameraNode = nil
+        
+        self.enumerateChildNodesWithName("//*", usingBlock: { (node:SKNode! , stop:UnsafeMutablePointer<ObjCBool>) -> Void in
             node.removeAllChildren()
             node.removeAllActions()
             node.removeFromParent()
         })
+        
+        motionManager.stopAccelerometerUpdates()
+        motionManager.stopDeviceMotionUpdates()
+        
+        
     }
     
     //MARK: Accessory Methods
@@ -268,7 +279,7 @@ class CuriosityScene: SKScene
     */
     func levelFinish()
     {
-       gameViewControllerDelegate?.returnToMenu()
+       gameViewControllerDelegate?.endLevel()
     }
     
     func panCameraToLocation(location:CGPoint, forDuration duration:NSTimeInterval, andThenWait wait:NSTimeInterval)

@@ -35,9 +35,6 @@ extension SKNode {
 class GameViewController: UIViewController
 {
     var levelSelected:CuriosityGameLevel = CuriosityGameLevel.Level1 //Defaults to level 1.
-    
-    //TODO: abstract this out. It is not necessarily a level select. It is a levelEndDelegate.
-    var levelSelectVCDelegate:LevelSelectViewController?
 
     override func viewDidLoad()
     {
@@ -73,18 +70,19 @@ class GameViewController: UIViewController
         switch self.levelSelected
         {
         case .Level1:
-            scene.configureLevel1()
+            configureLevel1ForScene(scene)
         case .Level2:
-            scene.configureLevel2()
+            configureLevel2ForScene(scene)
         case .Level3:
             break
         case .Tut1:
-            scene.configureTutorial(1)
+            configureTutorialForScene(scene, TutorialNumber: 1)
         case .Tut2:
-            scene.configureTutorial(2)
+            configureTutorialForScene(scene, TutorialNumber: 2)
         case .Tut3:
-            scene.configureTutorial(3)
+            configureTutorialForScene(scene, TutorialNumber: 3)
         case .Tut4:
+            configureTutorialForScene(scene, TutorialNumber: 4)
             break
         case .Tut5:
             break
@@ -93,10 +91,25 @@ class GameViewController: UIViewController
         }
     }
 
-    func returnToMenu()
+    func endLevel()
     {
+        //Modally presents End Level Controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var endLevelVC = storyboard.instantiateViewControllerWithIdentifier("EndLevelViewController") as EndLevelViewController
+        endLevelVC.gameViewControllerDelegate = self
+        
+        endLevelVC.modalInPopover = true
+        self.presentViewController(endLevelVC, animated: true, completion: nil)
+        
+
+    }
+    
+    func returnToLevelSelect()
+    {
+        //Dismisses this view controller
         self.presentingViewController?.dismissViewControllerAnimated(true, completion:nil)
         let skView = self.view as SKView
+        //presenting a new nil scene triggers the previous scene's willMoveFromView
         skView.presentScene(nil)
     }
     
