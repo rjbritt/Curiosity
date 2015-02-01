@@ -7,15 +7,27 @@
 //
 
 import Foundation
+import Dollar
 
-//TODO: transform into a struct with enum capabilities and an easier ability to advance levels and keep track of what the current level is.
+//MARK: enums
+
+/**
+Enum describing levels in Curiosity the game. 
+The raw value equates to the name of the .sks file that is used for the level.
+*/
 enum CuriosityGameLevel:String
 {
     case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2", Tut1 = "Tutorial1",
     Tut2 = "Tutorial2", Tut3 = "Tutorial3", Tut4 = "Tutorial4", Tut5 = "Tutorial5",
     Tut6 = "Tutorial6"
+    
+    //An array of ordered levels for use in determining the next level to advance to.
+    static let orderedLevels = [Tut1, Tut2, Tut3, Tut4, Tut5, Tut6, Level1, Level2, Level3]
 }
 
+/**
+Physics categories used for this game.
+*/
 enum PhysicsCategory:UInt32
 {
     case None = 0
@@ -25,6 +37,112 @@ enum PhysicsCategory:UInt32
     case All = 4294967295
 }
 
+//MARK: Structs
+
+/**
+*  A struct designed for tracking what CuriosityGameLevel the character is on, and the max Level they have unlocked.
+*/
+struct LevelTracker
+{
+    static var highestUnlockedLevel:CuriosityGameLevel = .Tut1
+    
+    /**
+    Unlocks an arbitrary level in the game. This is implemented in such a way that once a level is unlocked, so are any levels below it.
+    
+    :param: nextLevel The next Level to unlock.
+    */
+    static func unlockLevel(nextLevel:CuriosityGameLevel)
+    {
+        let highestLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
+        let nextLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == nextLevel})
+        
+        if(nextLvl > highestLvl)
+        {
+            highestUnlockedLevel = nextLevel
+        }
+    }
+    
+    static func levelIsUnlocked(level:CuriosityGameLevel) -> Bool
+    {
+        let highestLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
+        
+        let lvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
+        
+        return lvl <= highestLvl
+    }
+    
+    var currentLevel = CuriosityGameLevel.Tut1
+    
+    /**
+    Changes the current level to any of the currently unlocked levels.
+    
+    :param: level Level to make the current level
+
+    :returns: A Bool describing whether or not the level was changed.
+    */
+    mutating func goToLevel(level:CuriosityGameLevel) -> Bool
+    {
+        var isSuccessful = true
+        
+        
+        if LevelTracker.levelIsUnlocked(level)
+        {
+            currentLevel = level
+        }
+        else
+        {
+            isSuccessful = false
+        }
+        
+        return isSuccessful
+    }
+    
+    /**
+    Makes the current level the next level in the appropriate order of Curiosity Game Levels. If the level is locked, it becomes unlocked.
+    
+    :returns: A Bool describing whether or not the next level was reached. False can be caused by either the level already being at the next level or an error occuring and the current level not being able to be found.
+    */
+    mutating func nextLevel() -> Bool
+    {
+        var isSuccessful = true
+        let currentLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.currentLevel})
+        
+        if let lvlIndex = currentLvl
+        {
+            let nextLvlIndex = lvlIndex + 1
+            if(nextLvlIndex < CuriosityGameLevel.orderedLevels.count)
+            {
+                let nextLevel = CuriosityGameLevel.orderedLevels[nextLvlIndex]
+                if !(LevelTracker.levelIsUnlocked(nextLevel))
+                {
+                    LevelTracker.unlockLevel(nextLevel)
+                }
+                
+                currentLevel = nextLevel
+                
+            }
+            else // level is already at the max level
+            { isSuccessful = false }
+
+        }
+        else // Something went wrong and nil was returned
+        { isSuccessful = false }
+
+       return isSuccessful
+
+    }
+}
+
+//MARK: Helper Functions
+
+/**
+Determines the distance between two CGPoints
+
+:param: pointOne The first CGPoint
+:param: pointTwo The second CGPoint
+
+:returns: A Float value that represents the distance between the two CGPoints.
+*/
 func distanceBetweenPointOne(pointOne:CGPoint, andPointTwo pointTwo:CGPoint) -> Float
 {
     var distance:Float = 0
@@ -33,5 +151,8 @@ func distanceBetweenPointOne(pointOne:CGPoint, andPointTwo pointTwo:CGPoint) -> 
          powf(Float(pointTwo.y) - Float(pointOne.y), 2))
     
     return distance
-
 }
+
+
+
+

@@ -40,6 +40,7 @@
 		2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */; };
 		2FBDB94A1A5111B900B0B500 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDB9491A5111B900B0B500 /* Item.swift */; };
 		2FBDB94D1A55CDA000B0B500 /* CharacterInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */; };
+		2FEF072E1A7ECD3C007FA389 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEF072B1A7ECCB2007FA389 /* Dollar.framework */; };
 		2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */; };
 		2FF474231A4DE67B0080AD51 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2FF474221A4DE67B0080AD51 /* Podfile */; };
 		E515950B26D54C449A912F82 /* libPods-CuriosityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */; };
@@ -52,6 +53,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2FBB755E19AC12D300203EF8;
 			remoteInfo = Curiosity;
+		};
+		2FEF072A1A7ECCB2007FA389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FEF07251A7ECCB1007FA389 /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E0D03C19467C67002ACC3D;
+			remoteInfo = Dollar;
+		};
+		2FEF072C1A7ECCB2007FA389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FEF07251A7ECCB1007FA389 /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E6686F19F09C6400BB4FB8;
+			remoteInfo = DollarTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -95,6 +110,7 @@
 		2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
 		2FBDB9491A5111B900B0B500 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CharacterInformation.plist; sourceTree = "<group>"; };
+		2FEF07251A7ECCB1007FA389 /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dollar.xcodeproj; path = Dollar.swift/Dollar/Dollar.xcodeproj; sourceTree = "<group>"; };
 		2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		2FF474221A4DE67B0080AD51 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEF072E1A7ECD3C007FA389 /* Dollar.framework in Frameworks */,
 				2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */,
 				2F68C19519AC1E6F006EB529 /* CoreData.framework in Frameworks */,
 				1FC0EE0E20ED4A73AC768ABC /* libPods-Curiosity.a in Frameworks */,
@@ -171,6 +188,7 @@
 		2FBB755619AC12D300203EF8 = {
 			isa = PBXGroup;
 			children = (
+				2FEF07251A7ECCB1007FA389 /* Dollar.xcodeproj */,
 				2F3C2E571A28FD8500A293EA /* ObjC-BridgingHeader.h */,
 				2FBB756119AC12D300203EF8 /* Curiosity */,
 				2FBB757819AC12D300203EF8 /* CuriosityTests */,
@@ -257,6 +275,15 @@
 			);
 			name = "External API";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		2FEF07261A7ECCB1007FA389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF072B1A7ECCB2007FA389 /* Dollar.framework */,
+				2FEF072D1A7ECCB2007FA389 /* DollarTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9881B86DC8D64E27B39DECCC /* Frameworks */ = {
@@ -354,6 +381,12 @@
 			mainGroup = 2FBB755619AC12D300203EF8;
 			productRefGroup = 2FBB756019AC12D300203EF8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2FEF07261A7ECCB1007FA389 /* Products */;
+					ProjectRef = 2FEF07251A7ECCB1007FA389 /* Dollar.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2FBB755E19AC12D300203EF8 /* Curiosity */,
@@ -361,6 +394,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2FEF072B1A7ECCB2007FA389 /* Dollar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dollar.framework;
+			remoteRef = 2FEF072A1A7ECCB2007FA389 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FEF072D1A7ECCB2007FA389 /* DollarTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DollarTests.xctest;
+			remoteRef = 2FEF072C1A7ECCB2007FA389 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2FBB755D19AC12D300203EF8 /* Resources */ = {
