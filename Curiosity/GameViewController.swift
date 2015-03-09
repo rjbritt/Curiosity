@@ -34,13 +34,23 @@ extension SKNode {
 
 class GameViewController: UIViewController
 {
-    var levelSelected:CuriosityGameLevel = CuriosityGameLevel.Level1 //Defaults to level 1.
+    var levelMgr:LevelTracker = LevelTracker()
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        if let scene = CuriosityScene.unarchiveFromFile(levelSelected.rawValue) as? CuriosityScene
+        prepareCuriosityScene()
+    }
+    
+    /**
+    Configures the scene depending on the current level and 
+    conditionally calls methods based on what level has been selected with the scene.
+    */
+    func prepareCuriosityScene()
+    {
+        if let scene = CuriosityScene.unarchiveFromFile(levelMgr.currentLevel.rawValue) as? CuriosityScene
         {
+            
             // Configure the view.
             let skView = self.view as SKView
             skView.showsFPS = true
@@ -52,65 +62,82 @@ class GameViewController: UIViewController
             
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = SKSceneScaleMode.AspectFill
-
-            self.prepareCuriosityScene(scene)
+            
             scene.gameViewControllerDelegate = self
-
+            
+            //Configure the logic for each level
+            switch levelMgr.currentLevel
+            {
+                
+            case .Tut1:
+                configureTutorialForScene(scene, TutorialNumber: 1)
+            case .Tut2:
+                configureTutorialForScene(scene, TutorialNumber: 2)
+            case .Tut3:
+                configureTutorialForScene(scene, TutorialNumber: 3)
+            case .Tut4:
+                configureTutorialForScene(scene, TutorialNumber: 4)
+                break
+            case .Level1:
+                configureLevel1ForScene(scene)
+            case .Level2:
+                configureLevel2ForScene(scene)
+ 
+            }
+            
+            //Character placement allows the use of a placeholder node named "CHARACTER" or a default setting.
+            if let characterNode = scene.characterSpriteNode
+            {
+                
+                if !replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode: characterNode)
+                {
+                    //If there is no character placeholder, place the character node in a neutral position and add to world
+                    characterNode.position = CGPoint(x: 0, y: characterNode.size.height)
+                    scene.childNodeWithName("//WORLD")?.addChild(characterNode)
+                }
+            }
+            
             skView.presentScene(scene)
         }
-    }
-    
-    /**
-    Conditionally calls methods based on what level has been selected with the scene.d
-    
-    :param: scene The instance of CuriosityScene (sublcass of SKScene) to configure the level for.
-    */
-    func prepareCuriosityScene(scene:CuriosityScene)
-    {
-        switch self.levelSelected
-        {
-        case .Level1:
-            configureLevel1ForScene(scene)
-        case .Level2:
-            configureLevel2ForScene(scene)
-        case .Level3:
-            break
-        case .Tut1:
-            configureTutorialForScene(scene, TutorialNumber: 1)
-        case .Tut2:
-            configureTutorialForScene(scene, TutorialNumber: 2)
-        case .Tut3:
-            configureTutorialForScene(scene, TutorialNumber: 3)
-        case .Tut4:
-            configureTutorialForScene(scene, TutorialNumber: 4)
-            break
-        case .Tut5:
-            break
-        case .Tut6:
-            break
-        }
+        
+
     }
 
+    /**
+    Ends the level. Typically used as a callback when a GameViewController is set as a delegate to any other class.
+    */
     func endLevel()
     {
         //Modally presents End Level Controller
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var endLevelVC = storyboard.instantiateViewControllerWithIdentifier("EndLevelViewController") as EndLevelViewController
         endLevelVC.gameViewControllerDelegate = self
-        
-        endLevelVC.modalInPopover = true
+        endLevelVC.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         self.presentViewController(endLevelVC, animated: true, completion: nil)
-        
 
     }
     
+    /**
+    Returns the user to the level select view controller. Typically used as a callback when a GameViewController is set as a delegate to any other class.
+    */
     func returnToLevelSelect()
     {
         //Dismisses this view controller
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion:nil)
-        let skView = self.view as SKView
-        //presenting a new nil scene triggers the previous scene's willMoveFromView
-        skView.presentScene(nil)
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion:{
+            let skView = self.view as SKView
+            //presenting a new nil scene triggers the previous scene's willMoveFromView
+            skView.presentScene(nil)
+        })
+
+    }
+    
+    /**
+    Advances the levelMgr's current level. Then reprepares the current scene based off the new current level. Typically used as a callback when a GameViewController is set as a delegate to any other class.
+    */
+    func loadNextLevel()
+    {
+        levelMgr.nextLevel()
+        prepareCuriosityScene()
     }
     
     override func shouldAutorotate() -> Bool {

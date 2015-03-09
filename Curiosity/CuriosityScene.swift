@@ -28,7 +28,16 @@ class CuriosityScene: SKScene
     var maxJumps = 2
     var characterSpriteNode:Character? // The character that is currently presented in the scene
     var cameraNode:SKNode?
-    var isPaused = false
+    
+    var gamePaused:Bool = false
+        {
+        willSet(pausedValue){
+            if pausedValue == true
+            { physicsWorld.speed = 0 }
+            else{ physicsWorld.speed = 1 }
+
+        }
+    }
 
     //MARK: View Lifecycle Methods
     override func didMoveToView(view: SKView)
@@ -70,15 +79,29 @@ class CuriosityScene: SKScene
             
             if let farOut = farOutBackground
             { world.addChild(farOut) }
-            
-            if let character = characterSpriteNode
-            { world.addChild(character) }
+
         }
         cameraNode = childNodeWithName("//CAMERA")
-        cameraNode?.position.y = self.size.height/2
-        
+        if let character = characterSpriteNode
+        {
+            cameraNode?.position = CGPoint(x:character.position.x, y:size.height/2)
+        }
+
         self.physicsWorld.contactDelegate = self
 
+        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
+
+        if let sceneName = name
+        {
+            myLabel.text = sceneName;
+
+        }
+        myLabel.fontSize = 65;
+        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        myLabel.alpha = 0
+        let fade = SKAction.sequence([SKAction.runBlock({self.gamePaused = true}), SKAction.fadeInWithDuration(0.5), SKAction.waitForDuration(0.5), SKAction.fadeOutWithDuration(0.5), SKAction.runBlock({self.gamePaused = false})])
+        myLabel.runAction(fade)
+        self.addChild(myLabel)
     
     }
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -89,8 +112,9 @@ class CuriosityScene: SKScene
     {
         /* Called before each frame is rendered */
         
-        if !isPaused
+        if !gamePaused
         {
+
             if let character = characterSpriteNode
             {
                 character.move()
@@ -122,10 +146,8 @@ class CuriosityScene: SKScene
         {
             let backgroundSpeedFactor = determineBackgroundSpeedFactor()
 
-            farOutBackground?.update(currentTime)
-            parallaxBackground?.update(currentTime)
-//            farOutBackground?.update(currentTime, withNewMaxSpeed: cameraSpeed)
-//            parallaxBackground?.update(currentTime, withNewMaxSpeed: cameraSpeed)
+//            farOutBackground?.update(currentTime)
+//            parallaxBackground?.update(currentTime)
         }
 
     }
@@ -136,12 +158,12 @@ class CuriosityScene: SKScene
         //TODO: Check and see if constant SKActions here are making the frames stutter. 
         //TODO: Stutter seen on background only on iphone 5C
         
-        //Unwrapping the camera outside of the isPaused check allows the camera to be refreshed
+        //Unwrapping the camera outside of the gamePaused check allows the camera to be refreshed
         //even when all of the movement in the scene is paused
         if let camera = cameraNode
         {
             //If the scene isn't paused then the camera isn't forced to keep up with the character.
-            if !isPaused
+            if !gamePaused
             {
                 if let characterSKNode = characterSpriteNode
                 {
@@ -279,6 +301,7 @@ class CuriosityScene: SKScene
     */
     func levelFinish()
     {
+        gamePaused = true
        gameViewControllerDelegate?.endLevel()
     }
     
@@ -297,10 +320,11 @@ class CuriosityScene: SKScene
             }
             
             //Pause all character/env moving
-            isPaused = true
+            gamePaused = true
             
             let cameraOrigin = camera.position
             
+            //Maybe turn this into manual movements?
             
             //This is the direction the parallax background needs to be moving for the pan direction.
             let setParallaxToDir = SKAction.runBlock({
@@ -329,12 +353,13 @@ class CuriosityScene: SKScene
             
             let panCameraBack = SKAction.moveTo(cameraOrigin, duration: duration)
             let unpause = SKAction.runBlock({
-                self.isPaused = false
+                self.gamePaused = false
+                self.paused = false
             })
             
             let cameraAction:SKAction = SKAction.sequence([setParallaxToDir,panCamera,SKAction.waitForDuration(wait),reverseParallax, panCameraBack,unpause])
             
-            self.cameraNode?.runAction(cameraAction)
+            camera.runAction(cameraAction)
         }
 
         
@@ -376,6 +401,8 @@ extension CuriosityScene: SKPhysicsContactDelegate
         if let validItem = item
         {
             validItem.storedEffect?()
+            
+            //This assumes we want to remove all items from parent. May need to extract and refactor...
             validItem.storedEffect = nil
             validItem.removeFromParent()
         }

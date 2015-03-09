@@ -17,12 +17,10 @@ The raw value equates to the name of the .sks file that is used for the level.
 */
 enum CuriosityGameLevel:String
 {
-    case Level1 = "Level 1", Level2 = "Level 2", Level3 = "2", Tut1 = "Tutorial1",
-    Tut2 = "Tutorial2", Tut3 = "Tutorial3", Tut4 = "Tutorial4", Tut5 = "Tutorial5",
-    Tut6 = "Tutorial6"
-    
+    case Level1 = "Level 1", Level2 = "Level 2", Tut1 = "Tutorial1",
+    Tut2 = "Tutorial2", Tut3 = "Tutorial3", Tut4 = "Tutorial4"
     //An array of ordered levels for use in determining the next level to advance to.
-    static let orderedLevels = [Tut1, Tut2, Tut3, Tut4, Tut5, Tut6, Level1, Level2, Level3]
+    static let orderedLevels = [Tut1, Tut2, Tut3, Tut4, Level1, Level2]
 }
 
 /**
@@ -44,6 +42,7 @@ enum PhysicsCategory:UInt32
 */
 struct LevelTracker
 {
+    //MARK: Type Level
     static var highestUnlockedLevel:CuriosityGameLevel = .Tut1
     
     /**
@@ -66,11 +65,12 @@ struct LevelTracker
     {
         let highestLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
         
-        let lvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
+        let lvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == level})
         
         return lvl <= highestLvl
     }
     
+    //MARK: Instance level
     var currentLevel = CuriosityGameLevel.Tut1
     
     /**
@@ -83,7 +83,6 @@ struct LevelTracker
     mutating func goToLevel(level:CuriosityGameLevel) -> Bool
     {
         var isSuccessful = true
-        
         
         if LevelTracker.levelIsUnlocked(level)
         {
@@ -98,9 +97,9 @@ struct LevelTracker
     }
     
     /**
-    Makes the current level the next level in the appropriate order of Curiosity Game Levels. If the level is locked, it becomes unlocked.
+    Advances the current level following the appropriate order of Curiosity Game Levels. If the level is locked, it becomes unlocked.
     
-    :returns: A Bool describing whether or not the next level was reached. False can be caused by either the level already being at the next level or an error occuring and the current level not being able to be found.
+    :returns: A Bool describing whether or not the next level was reached. False can be caused by either the level already being at the max level or an error occuring and the current level not being able to be found.
     */
     mutating func nextLevel() -> Bool
     {

@@ -24,7 +24,14 @@ class EndLevelViewController: UIViewController {
     }
     
     @IBAction func returnToLevelSelect(sender: AnyObject) {
+        
                 gameViewControllerDelegate?.returnToLevelSelect()
+    }
+    
+    @IBAction func nextLevel(sender: AnyObject) {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        gameViewControllerDelegate?.loadNextLevel()
+        
     }
 
     /*

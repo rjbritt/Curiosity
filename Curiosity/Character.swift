@@ -77,7 +77,7 @@ class Character: SKSpriteNode
     /**
     Returns a character configured in a particular way from the CharacterInformation plist file. Returns a nil Character
     if there isn't a definition for that character name
-    
+    This factory method configures many different aspects of a character: name, size, physics body, jumpXMovementConstant, torqueConstant, friction, categoryBitMask, and jumpConstant. It does not set the character's default position.
     :param: name The name of the predefined character
     
     :returns: An optional representing the character if there are presets for one, or a nil value if there are not.
@@ -127,14 +127,6 @@ class Character: SKSpriteNode
         charSprite?.physicsBody?.affectedByGravity = true
         charSprite?.physicsBody?.allowsRotation = true
         charSprite?.physicsBody?.categoryBitMask = PhysicsCategory.Character.rawValue
-        
-        //Offset due to the Camera/World relationship
-        if let char = charSprite
-        {
-            charSprite?.position = CGPointMake(0, charSprite!.size.height)
-
-        }
-        
         charSprite?.physicsBody?.friction = 1.0
         
         return charSprite
