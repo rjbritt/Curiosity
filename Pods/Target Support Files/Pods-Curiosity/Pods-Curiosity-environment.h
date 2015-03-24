@@ -12,9 +12,3 @@
 #define COCOAPODS_VERSION_MINOR_A3ParallaxScrollView 0
 #define COCOAPODS_VERSION_PATCH_A3ParallaxScrollView 2
 
-// KCOrderedAccessorFix
-#define COCOAPODS_POD_AVAILABLE_KCOrderedAccessorFix
-#define COCOAPODS_VERSION_MAJOR_KCOrderedAccessorFix 0
-#define COCOAPODS_VERSION_MINOR_KCOrderedAccessorFix 0
-#define COCOAPODS_VERSION_PATCH_KCOrderedAccessorFix 1
-

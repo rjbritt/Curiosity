@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Dollar
-
 //MARK: enums
 
 /**
@@ -52,9 +50,9 @@ struct LevelTracker
     */
     static func unlockLevel(nextLevel:CuriosityGameLevel)
     {
-        let highestLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
-        let nextLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == nextLevel})
-        
+        let highestLvl = find(CuriosityGameLevel.orderedLevels,highestUnlockedLevel)
+        let nextLvl = find(CuriosityGameLevel.orderedLevels, nextLevel)
+
         if(nextLvl > highestLvl)
         {
             highestUnlockedLevel = nextLevel
@@ -63,9 +61,8 @@ struct LevelTracker
     
     static func levelIsUnlocked(level:CuriosityGameLevel) -> Bool
     {
-        let highestLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.highestUnlockedLevel})
-        
-        let lvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == level})
+        let highestLvl = find(CuriosityGameLevel.orderedLevels, highestUnlockedLevel)
+        let lvl = find(CuriosityGameLevel.orderedLevels, level)
         
         return lvl <= highestLvl
     }
@@ -104,8 +101,7 @@ struct LevelTracker
     mutating func nextLevel() -> Bool
     {
         var isSuccessful = true
-        let currentLvl = $.findIndex(CuriosityGameLevel.orderedLevels, callback: {$0 == self.currentLevel})
-        
+        let currentLvl = find(CuriosityGameLevel.orderedLevels, currentLevel)
         if let lvlIndex = currentLvl
         {
             let nextLvlIndex = lvlIndex + 1

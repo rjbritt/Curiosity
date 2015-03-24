@@ -8,86 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>Pods-Curiosity-KCOrderedAccessorFix.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-Curiosity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
-		<key>Pods-CuriosityTests-KCOrderedAccessorFix.xcscheme</key>
+		<key>Pods-CuriosityTests-A3ParallaxScrollView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Pods-CuriosityTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>152A6F148C05EE2A9689A162</key>
+		<key>397FDC748D57AAF4C85A042B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F076B7C6328515414CE3E2F</key>
+		<key>44523B4DCD8737C663C424D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>347F69C11E5498F82CBFF106</key>
+		<key>827264929E72B7A8BC34601C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>539788B2295278E12C2A06FB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>59A644C8431B1FFD0F37E10E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5CBDCA7E436851B9F1C8572D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AAE95736B0F6928DC49409AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ADB5286BE056C8A30CEAD2B6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AE736390171BFB738BF50F0A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D7FE013F2C92BC7E25F6333C</key>
+		<key>B226FB2885BD3ED5257CB2C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
