@@ -2,13 +2,18 @@
 //  LevelSelectViewController.swift
 //  Curiosity
 //
+//
 //  Created by Ryan Britt on 12/27/14.
 //  Copyright (c) 2014 Ryan Britt. All rights reserved.
 //
 
 import UIKit
 
+
 class LevelSelectViewController: UIViewController {
+
+    var currentLevelSelectVC:LevelSelectViewController?
+    
     @IBOutlet weak var tutButton: UIButton!
     @IBOutlet weak var lvl1Button: UIButton!
     @IBOutlet weak var lvl2Button: UIButton!
@@ -77,5 +82,10 @@ class LevelSelectViewController: UIViewController {
 
     }
 
+    @IBAction func returnToMenu(sender: AnyObject)
+    {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
+

@@ -29,6 +29,8 @@
 		2F8B5BC51A71BAD9008C13C9 /* Tutorial4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBD1A71BAD9008C13C9 /* Tutorial4.sks */; };
 		2F8B5BC61A71BAD9008C13C9 /* Tutorial5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBE1A71BAD9008C13C9 /* Tutorial5.sks */; };
 		2F8B5BC71A71BAD9008C13C9 /* Tutorial6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBF1A71BAD9008C13C9 /* Tutorial6.sks */; };
+		2FAD9CE11AC74A4D0097AF34 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9CE01AC74A4D0097AF34 /* Play.png */; };
+		2FAD9CE51AC799020097AF34 /* LevelSelectPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */; };
 		2FB0625C1A367E00002C812E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0625B1A367E00002C812E /* Character.swift */; };
 		2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756419AC12D300203EF8 /* AppDelegate.swift */; };
 		2FBB756919AC12D300203EF8 /* CuriosityScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBB756819AC12D300203EF8 /* CuriosityScene.swift */; };
@@ -107,6 +109,8 @@
 		2F8B5BBD1A71BAD9008C13C9 /* Tutorial4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial4.sks; path = Curiosity/Levels/Tutorial4.sks; sourceTree = "<group>"; };
 		2F8B5BBE1A71BAD9008C13C9 /* Tutorial5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial5.sks; path = Curiosity/Levels/Tutorial5.sks; sourceTree = "<group>"; };
 		2F8B5BBF1A71BAD9008C13C9 /* Tutorial6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial6.sks; path = Curiosity/Levels/Tutorial6.sks; sourceTree = "<group>"; };
+		2FAD9CE01AC74A4D0097AF34 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectPageViewController.swift; sourceTree = "<group>"; };
 		2FB0625B1A367E00002C812E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2FBB755F19AC12D300203EF8 /* Curiosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curiosity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBB756319AC12D300203EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Curiosity/Info.plist; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 				2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */,
 				2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */,
 				2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */,
+				2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -223,6 +228,14 @@
 				2FBB756819AC12D300203EF8 /* CuriosityScene.swift */,
 			);
 			name = "Game Scenes";
+			sourceTree = "<group>";
+		};
+		2FAD9CDF1AC74A3D0097AF34 /* UI images */ = {
+			isa = PBXGroup;
+			children = (
+				2FAD9CE01AC74A4D0097AF34 /* Play.png */,
+			);
+			name = "UI images";
 			sourceTree = "<group>";
 		};
 		2FBB755619AC12D300203EF8 = {
@@ -409,6 +422,7 @@
 		2FD94E3C1A4F3DF8002CE891 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2FAD9CDF1AC74A3D0097AF34 /* UI images */,
 				2F815D981AAD3EC3008A0688 /* blueDayBackground.png */,
 				2F815D991AAD3EC3008A0688 /* Curiosity.png */,
 				2F815D9A1AAD3EC3008A0688 /* flowers.png */,
@@ -596,6 +610,7 @@
 				2F8B5BC21A71BAD9008C13C9 /* Tutorial1.sks in Resources */,
 				2F815D9F1AAD3EC3008A0688 /* Curiosity.png in Resources */,
 				2F8B5BC51A71BAD9008C13C9 /* Tutorial4.sks in Resources */,
+				2FAD9CE11AC74A4D0097AF34 /* Play.png in Resources */,
 				2F8B5BC71A71BAD9008C13C9 /* Tutorial6.sks in Resources */,
 				2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */,
 			);
@@ -687,6 +702,7 @@
 				2FBB756B19AC12D300203EF8 /* GameViewController.swift in Sources */,
 				2FB0625C1A367E00002C812E /* Character.swift in Sources */,
 				2F4F6BA41A5650F400668939 /* Utilities and Enums.swift in Sources */,
+				2FAD9CE51AC799020097AF34 /* LevelSelectPageViewController.swift in Sources */,
 				2FBB756519AC12D300203EF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
