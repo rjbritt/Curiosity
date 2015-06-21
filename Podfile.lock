@@ -5,6 +5,6 @@ DEPENDENCIES:
   - A3ParallaxScrollView (~> 1.0)
 
 SPEC CHECKSUMS:
-  A3ParallaxScrollView: c3ff4549671fcc9045ab6540ae0a14af69d4eab6
+  A3ParallaxScrollView: 1d16dc1881721642d5f25e320cabe7adcc997035
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.37.2

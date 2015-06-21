@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B04F460BBAA151DD07A325486FF076573B48308E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4E2F5E824C021282D3F5789E108FCDC580F66A19" : 0,
+    "B04F460BBAA151DD07A325486FF076573B48308E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "97707735-ABDB-4F4F-8B5A-2EF351244F4E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4E2F5E824C021282D3F5789E108FCDC580F66A19" : "Curiosity\/Dollar.swift",
+    "B04F460BBAA151DD07A325486FF076573B48308E" : "Curiosity"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Curiosity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Curiosity.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ankurp\/Dollar.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E2F5E824C021282D3F5789E108FCDC580F66A19"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rjbritt\/Curiosity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B04F460BBAA151DD07A325486FF076573B48308E"
+    }
+  ]
+}
