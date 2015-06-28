@@ -46,12 +46,12 @@ struct LevelTracker
     /**
     Unlocks an arbitrary level in the game. This is implemented in such a way that once a level is unlocked, so are any levels below it.
     
-    :param: nextLevel The next Level to unlock.
+    - parameter nextLevel: The next Level to unlock.
     */
     static func unlockLevel(nextLevel:CuriosityGameLevel)
     {
-        let highestLvl = find(CuriosityGameLevel.orderedLevels,highestUnlockedLevel)
-        let nextLvl = find(CuriosityGameLevel.orderedLevels, nextLevel)
+        let highestLvl = CuriosityGameLevel.orderedLevels.indexOf(highestUnlockedLevel)
+        let nextLvl = CuriosityGameLevel.orderedLevels.indexOf(nextLevel)
 
         if(nextLvl > highestLvl)
         {
@@ -61,8 +61,8 @@ struct LevelTracker
     
     static func levelIsUnlocked(level:CuriosityGameLevel) -> Bool
     {
-        let highestLvl = find(CuriosityGameLevel.orderedLevels, highestUnlockedLevel)
-        let lvl = find(CuriosityGameLevel.orderedLevels, level)
+        let highestLvl = CuriosityGameLevel.orderedLevels.indexOf(highestUnlockedLevel)
+        let lvl = CuriosityGameLevel.orderedLevels.indexOf(level)
         
         return lvl <= highestLvl
     }
@@ -73,9 +73,9 @@ struct LevelTracker
     /**
     Changes the current level to any of the currently unlocked levels.
     
-    :param: level Level to make the current level
+    - parameter level: Level to make the current level
 
-    :returns: A Bool describing whether or not the level was changed.
+    - returns: A Bool describing whether or not the level was changed.
     */
     mutating func goToLevel(level:CuriosityGameLevel) -> Bool
     {
@@ -96,12 +96,12 @@ struct LevelTracker
     /**
     Advances the current level following the appropriate order of Curiosity Game Levels. If the level is locked, it becomes unlocked.
     
-    :returns: A Bool describing whether or not the next level was reached. False can be caused by either the level already being at the max level or an error occuring and the current level not being able to be found.
+    - returns: A Bool describing whether or not the next level was reached. False can be caused by either the level already being at the max level or an error occuring and the current level not being able to be found.
     */
     mutating func nextLevel() -> Bool
     {
         var isSuccessful = true
-        let currentLvl = find(CuriosityGameLevel.orderedLevels, currentLevel)
+        let currentLvl = CuriosityGameLevel.orderedLevels.indexOf(currentLevel)
         if let lvlIndex = currentLvl
         {
             let nextLvlIndex = lvlIndex + 1
@@ -133,10 +133,10 @@ struct LevelTracker
 /**
 Determines the distance between two CGPoints
 
-:param: pointOne The first CGPoint
-:param: pointTwo The second CGPoint
+- parameter pointOne: The first CGPoint
+- parameter pointTwo: The second CGPoint
 
-:returns: A Float value that represents the distance between the two CGPoints.
+- returns: A Float value that represents the distance between the two CGPoints.
 */
 func distanceBetweenPointOne(pointOne:CGPoint, andPointTwo pointTwo:CGPoint) -> Float
 {

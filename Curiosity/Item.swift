@@ -19,16 +19,16 @@ class ItemSpriteNode: SKSpriteNode
     These orbs are used as generic items that can have any stored effect and will have an automatic
     pulsing action.
     
-    :param: color UIColor to make the orb
+    - parameter color: UIColor to make the orb
     
-    :returns: An ItemSpriteNode that is configured as a circular orb with a forever pulsing action.
+    - returns: An ItemSpriteNode that is configured as a circular orb with a forever pulsing action.
     */
     class func orbItemWithColor(color:UIColor) -> ItemSpriteNode
     {
         let image = UIImage(named: "spark")
-        var tempItem = ItemSpriteNode(texture: SKTexture(image: image!))
+        let tempItem = ItemSpriteNode(texture: SKTexture(image: image!))
         
-        tempItem.physicsBody = SKPhysicsBody(texture: tempItem.texture, alphaThreshold: 0.9, size: tempItem.size)
+        tempItem.physicsBody = SKPhysicsBody(texture: tempItem.texture!, alphaThreshold: 0.9, size: tempItem.size)
         tempItem.physicsBody?.dynamic = false
         
         tempItem.physicsBody?.categoryBitMask = PhysicsCategory.Item.rawValue

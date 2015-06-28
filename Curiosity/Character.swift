@@ -78,9 +78,9 @@ class Character: SKSpriteNode
     Returns a character configured in a particular way from the CharacterInformation plist file. Returns a nil Character
     if there isn't a definition for that character name
     This factory method configures many different aspects of a character: name, size, physics body, jumpXMovementConstant, torqueConstant, friction, categoryBitMask, and jumpConstant. It does not set the character's default position.
-    :param: name The name of the predefined character
+    - parameter name: The name of the predefined character
     
-    :returns: An optional representing the character if there are presets for one, or a nil value if there are not.
+    - returns: An optional representing the character if there are presets for one, or a nil value if there are not.
     */
     class func presetCharacter(name:String) -> Character?
     {
@@ -102,7 +102,7 @@ class Character: SKSpriteNode
         {
             for characterEntry in allCharacters
             {
-                let character = characterEntry as NSDictionary
+                let character = characterEntry as! NSDictionary
                 if let thisName = character.valueForKey("name") as? String
                 {
                     if (thisName == name)
@@ -115,10 +115,10 @@ class Character: SKSpriteNode
                     
                         charSprite?.name = name
                         charSprite?.physicsBody = SKPhysicsBody(circleOfRadius: charSprite!.size.height/2)//SKPhysicsBody(texture: charSprite!.texture, alphaThreshold: 0.8, size: charSprite!.size)
-                        charSprite?.physicsBody?.mass = CGFloat((character.valueForKey("mass") as NSNumber).doubleValue)
-                        charSprite?.jumpXMovementConstant = (character.valueForKey("jumpXMovementConstant") as NSNumber).doubleValue
-                        charSprite?.torqueConstant = (character.valueForKey("torqueConstant") as NSNumber).doubleValue
-                        charSprite?.jumpConstant = CGFloat((character.valueForKey("jumpConstant") as NSNumber).doubleValue)
+                        charSprite?.physicsBody?.mass = CGFloat((character.valueForKey("mass") as! NSNumber).doubleValue)
+                        charSprite?.jumpXMovementConstant = (character.valueForKey("jumpXMovementConstant")as! NSNumber).doubleValue
+                        charSprite?.torqueConstant = (character.valueForKey("torqueConstant")as! NSNumber).doubleValue
+                        charSprite?.jumpConstant = CGFloat((character.valueForKey("jumpConstant")as! NSNumber).doubleValue)
                     }
                 }
             }
@@ -147,9 +147,9 @@ class Character: SKSpriteNode
     /**
     Approximation of a torque curve for characters. Doubles the torque applied within the first 90 m/s of their X velocity
     
-    :param: velocity The full velocity vector of the character
+    - parameter velocity: The full velocity vector of the character
     
-    :returns: An appropriate torque depending on the character's X velocity and the tilt of the device.
+    - returns: An appropriate torque depending on the character's X velocity and the tilt of the device.
     */
     func torqueToApplyForCharacterWithVelocity(velocity:CGVector) -> CGFloat
     {

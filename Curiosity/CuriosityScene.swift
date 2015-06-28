@@ -27,7 +27,7 @@ class CuriosityScene: SKScene
     var parallaxBackground:PBParallaxScrolling? // A set of parallax backgrounds to be used as a backdrop for the action
     var maxJumps = 2
     var characterSpriteNode:Character? // The character that is currently presented in the scene
-    var cameraNode:SKNode?
+    var cameraNode:SKCameraNode?
     
     var gamePaused:Bool = false
         {
@@ -47,7 +47,7 @@ class CuriosityScene: SKScene
         self.enumerateChildNodesWithName("//*", usingBlock: { (node:SKNode!, stop:UnsafeMutablePointer<ObjCBool>) -> Void in
             if node.isMemberOfClass(SKSpriteNode)
             {
-                let sprite = node as SKSpriteNode
+                let sprite = node as! SKSpriteNode
                 if let physicsBody = sprite.physicsBody
                 {
                     physicsBody.contactTestBitMask = physicsBody.collisionBitMask
@@ -58,7 +58,7 @@ class CuriosityScene: SKScene
         var jumpRecognizer:UIGestureRecognizer
 
         jumpRecognizer = UISwipeGestureRecognizer(target: self, action:"jump:")
-        (jumpRecognizer as UISwipeGestureRecognizer).direction = UISwipeGestureRecognizerDirection.Up
+        (jumpRecognizer as! UISwipeGestureRecognizer).direction = UISwipeGestureRecognizerDirection.Up
         view.addGestureRecognizer(jumpRecognizer)
         
         //Starts the accelerometer updating to hand the acceleration X and Y to the character.
@@ -66,22 +66,21 @@ class CuriosityScene: SKScene
         {
             motionManager.accelerometerUpdateInterval = (1/self.framerate)
             motionManager.startAccelerometerUpdatesToQueue(queue, withHandler: {(acData, error) -> Void in
-                self.characterSpriteNode?.accelerationX = acData.acceleration.y
-                self.characterSpriteNode?.accelerationY = acData.acceleration.x
+                self.characterSpriteNode?.accelerationX = acData!.acceleration.y
+                self.characterSpriteNode?.accelerationY = acData!.acceleration.x
             })
         }
         
-        if let world = childNodeWithName("//WORLD")
-        {
-            parallaxBackground?.anchorPoint = CGPointMake(0,0)
-            if let parallax = parallaxBackground
-            { world.addChild(parallax) }
-            
-            if let farOut = farOutBackground
-            { world.addChild(farOut) }
 
-        }
-        cameraNode = childNodeWithName("//CAMERA")
+		//Add the parallax backgrounds
+		if let parallax = parallaxBackground
+            { addChild(parallax) }
+            
+		if let farOut = farOutBackground
+            { addChild(farOut) }
+	
+        cameraNode = childNodeWithName("//CAMERA") as? SKCameraNode
+		
         if let character = characterSpriteNode
         {
             cameraNode?.position = CGPoint(x:character.position.x, y:size.height/2)
@@ -89,6 +88,8 @@ class CuriosityScene: SKScene
 
         self.physicsWorld.contactDelegate = self
 
+		
+		// Create label to describe the scene.
         let myLabel = SKLabelNode(fontNamed:"Chalkduster")
 
         if let sceneName = name
@@ -99,15 +100,19 @@ class CuriosityScene: SKScene
         myLabel.fontSize = 65;
         myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         myLabel.alpha = 0
+		
+		// Animate the label
         let fade = SKAction.sequence([SKAction.runBlock({self.gamePaused = true}), SKAction.fadeInWithDuration(0.5), SKAction.waitForDuration(0.5), SKAction.fadeOutWithDuration(0.5), SKAction.runBlock({self.gamePaused = false})])
         myLabel.runAction(fade)
+		
         self.addChild(myLabel)
     
     }
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-    }
-    
+	
+	/*
+	Spritekit lifecycle method called every time a frame updates. For this scene, a sanity check is called to make sure the game isn't paused
+	then moves the character, adjusts the direction of the parallax backgrounds, adjusts the position of the parallax backgrounds to match that of the camera.
+	*/
     override func update(currentTime: CFTimeInterval)
     {
         /* Called before each frame is rendered */
@@ -133,25 +138,25 @@ class CuriosityScene: SKScene
                 
                 // Aligns the parallax background position with the cameraNode position that way the
                 // background follows along with the camera.
-                self.parallaxBackground?.position.x = cameraNode!.position.x
-                self.farOutBackground?.position.x = cameraNode!.position.x
-                
+				if let cameraNode = cameraNode {
+					self.parallaxBackground?.position.x = cameraNode.position.x
+					self.farOutBackground?.position.x = cameraNode.position.x
+					}
+				
                 let backgroundSpeedFactor = determineBackgroundSpeedFactor()
                 
                 farOutBackground?.update(currentTime, withSpeedModifiedByFactor: backgroundSpeedFactor)
                 parallaxBackground?.update(currentTime, withSpeedModifiedByFactor: backgroundSpeedFactor)
             }
         }
-        else //scene is paused, but camera may be moving, so background needs to update
-        {
-            let backgroundSpeedFactor = determineBackgroundSpeedFactor()
-
-//            farOutBackground?.update(currentTime)
-//            parallaxBackground?.update(currentTime)
+        else {//scene is paused, but camera may be moving, so background needs to update
         }
 
     }
-    
+	
+	/*
+	Callback after update method. Aligns the camera with the character's position (x and y) d
+	*/
     override func didFinishUpdate()
     {
         
@@ -168,13 +173,15 @@ class CuriosityScene: SKScene
                 if let characterSKNode = characterSpriteNode
                 {
                     camera.position.x = characterSKNode.position.x
-                    
+					
                     //verically moves the camera up if the character is above the top of the initial viewport.
                     if(characterSKNode.position.y >= self.size.height)
                     {
                         //Camera hasn't caught up with the character
                         if(camera.position.y < characterSKNode.position.y)
                         {
+							//MARK: TODO Stepping, designed to make this transition smoother. Might be able to be replaced with something different
+							// in ios 9
                             let difference = abs(characterSKNode.position.y - camera.position.y)
                             if(difference > 5)
                             {
@@ -193,7 +200,7 @@ class CuriosityScene: SKScene
                     }
                     else
                     {
-                        //Moves the camera back down to a neutral Y height if the character is below the top
+                        //Moves the camera back down to the Y of the character if the character is below the top
                         // of the initial viewport.
                         if(camera.position.y > self.size.height/2)
                         {
@@ -210,11 +217,6 @@ class CuriosityScene: SKScene
                     }
                 }
             }
-            
-            
-
-            //Centers the view on the camera node.
-            self.centerOnNode(camera)
         }
     }
     
@@ -255,28 +257,9 @@ class CuriosityScene: SKScene
 
     
     /**
-    Centers the frame on a particular node. Usually this will be a node designated as the camera for the scene
-    
-    :param: node The node to center the frame on.
-    */
-    func centerOnNode(node:SKNode)
-    {
-        if let scene = node.scene?
-        {
-            // should the from node be the scene?
-            var cameraPositionInScene:CGPoint = scene.convertPoint(node.position, fromNode: node.parent!)
-            
-            if let world = node.parent
-            {
-                world.position = CGPointMake(world.position.x - cameraPositionInScene.x, world.position.y - cameraPositionInScene.y)
-            }
-        }
-    }
-    
-    /**
     Determines the background speed factor based on the character's current speed.
     
-    :returns: A factor to be be used in computing the +background's effective speed.
+    - returns: A factor to be be used in computing the +background's effective speed.
     */
     func determineBackgroundSpeedFactor() -> Float
     {
@@ -297,14 +280,15 @@ class CuriosityScene: SKScene
     }
     
     /**
-    Method that handles what happens when a level is completed.
+    Handles what happens when a level is completed.
     */
     func levelFinish()
     {
         gamePaused = true
        gameViewControllerDelegate?.endLevel()
     }
-    
+	
+	
     func panCameraToLocation(location:CGPoint, forDuration duration:NSTimeInterval, andThenWait wait:NSTimeInterval)
     {
         if let camera = cameraNode
@@ -379,8 +363,8 @@ extension CuriosityScene: SKPhysicsContactDelegate
     /**
     Determines whether an item contacted a character and performs the item's stored effect if so.
     
-    :param: bodyA SKPhysics body labeled A
-    :param: bodyB SKPhysics body labeled B
+    - parameter bodyA: SKPhysics body labeled A
+    - parameter bodyB: SKPhysics body labeled B
     */
     func determineItemContactBetweenBodies(bodyA:SKPhysicsBody, bodyB:SKPhysicsBody)
     {
@@ -390,12 +374,12 @@ extension CuriosityScene: SKPhysicsContactDelegate
         if(bodyA.categoryBitMask == PhysicsCategory.Character.rawValue &&
             bodyB.categoryBitMask == PhysicsCategory.Item.rawValue)
         { 
-            item = (bodyB.node as ItemSpriteNode)
+            item = (bodyB.node as! ItemSpriteNode)
         }
         else if (bodyB.categoryBitMask == PhysicsCategory.Character.rawValue &&
             bodyA.categoryBitMask == PhysicsCategory.Item.rawValue)
         {
-            item = (bodyA.node as ItemSpriteNode)
+            item = (bodyA.node as! ItemSpriteNode)
         }
         
         if let validItem = item
@@ -412,8 +396,8 @@ extension CuriosityScene: SKPhysicsContactDelegate
     Determines whether an Environment contacted a character and has particular effects if the Environment is of 
     a particular type. eg:Level Finish environments.
     
-    :param: bodyA SKPhysics body labeled A
-    :param: bodyB SKPhysics body labeled B
+    - parameter bodyA: SKPhysics body labeled A
+    - parameter bodyB: SKPhysics body labeled B
     */
     func determineEnvironmentContactBetweenBodies(bodyA:SKPhysicsBody, bodyB:SKPhysicsBody)
     {

@@ -12,8 +12,8 @@ extension GameViewController
     Configures the scene as a particular tutorial scene. All the tutorial scenes have a similar background and only 
     differ based on the part of gameplay that is being demonstrated.
     
-    :param: scene     The scene to configure
-    :param: tutNumber What tutorial number to configure this scene for.
+    - parameter scene:     The scene to configure
+    - parameter tutNumber: What tutorial number to configure this scene for.
     */
     func configureTutorialForScene(scene:CuriosityScene, TutorialNumber tutNumber:Int)
     {
@@ -22,7 +22,7 @@ extension GameViewController
         let size = UIImage(named:"blueDayBackground")!.size
         
         //Initialize scene properties
-        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
+        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
         
         scene.characterSpriteNode = Character.presetCharacter("Curiosity")
         switch tutNumber
@@ -42,7 +42,7 @@ extension GameViewController
         case 4://Effect Tutorial
             scene.name = "Move to Orb"
             //Create green orb and set effect
-            var greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
+            let greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
             
             greenOrb.storedEffect = {
                 // Pan to and Raise Finish Level
@@ -73,12 +73,12 @@ extension GameViewController
         let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
         let size = UIImage(named:"blueDayBackground")!.size
         
-        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
+        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
         
         scene.characterSpriteNode = Character.presetCharacter("Curiosity")
         
         //Create green orb and set effect
-        var greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
+        let greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
         
         greenOrb.storedEffect = {
             // Pan to and Raise Rock
@@ -120,7 +120,7 @@ extension GameViewController
         let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
         let size = UIImage(named:"blueDayBackground")!.size
         
-        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames, size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
+        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
         
         scene.characterSpriteNode = Character.presetCharacter("Curiosity")
         scene.name = "Level 2"
@@ -130,10 +130,10 @@ extension GameViewController
     /**
     Replaces an optional placeholder node in a scene with a valid, non-nil node. If the placeholder is nil, this method does nothing.
     
-    :param: node1 An optional placeholder node that is found in a .sks serialized file. It may or may not be nil.
-    :param: node2 The node to replace the placeholder with.
+    - parameter node1: An optional placeholder node that is found in a .sks serialized file. It may or may not be nil.
+    - parameter node2: The node to replace the placeholder with.
     
-    :returns: Bool stating whether the replacement was successful or not.
+    - returns: Bool stating whether the replacement was successful or not.
     */
     func replacePlaceholderNode(node1:SKNode?, withNode node2:SKNode) -> Bool
     {
