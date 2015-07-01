@@ -82,7 +82,7 @@ class Character: SKSpriteNode
     
     - returns: An optional representing the character if there are presets for one, or a nil value if there are not.
     */
-    class func presetCharacter(name:String) -> Character?
+	class func presetCharacter(name:String) -> Character?
     {
         var charSprite:Character?
         
@@ -128,7 +128,7 @@ class Character: SKSpriteNode
         charSprite?.physicsBody?.allowsRotation = true
         charSprite?.physicsBody?.categoryBitMask = PhysicsCategory.Character.rawValue
         charSprite?.physicsBody?.friction = 1.0
-        
+		
         return charSprite
     }
     
@@ -180,17 +180,19 @@ class Character: SKSpriteNode
         let deltaX = CGFloat(accelerationX * jumpXMovementConstant)
         
         let torqueX = torqueToApplyForCharacterWithVelocity(physicsBody!.velocity)
-        
-        // Determines any side motion in air
-        if (isJumping)
-        {
-            physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
-        }
-            
-        // Defaults to determining side motion on an area marked as solid
-        else if !isJumping
-        {
-            physicsBody?.applyTorque(torqueX)
-        }
+
+		physicsBody?.applyTorque(torqueX)
+
+//        // Determines any side motion in air
+//        if (isJumping)
+//        {
+//            physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
+//        }
+//            
+//        // Defaults to determining side motion on an area marked as solid
+//        else if !isJumping
+//        {
+//            physicsBody?.applyTorque(torqueX)
+//        }
     }
 }

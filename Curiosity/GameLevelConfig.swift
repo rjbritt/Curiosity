@@ -24,8 +24,10 @@ extension GameViewController
         //Initialize scene properties
         scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
         
-        scene.characterSpriteNode = Character.presetCharacter("Curiosity")
-        switch tutNumber
+		scene.characterSpriteNode = Character.presetCharacter("Curiosity")
+		replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode:scene.characterSpriteNode!)
+		
+		switch tutNumber
         {
         case 1: //Tilt Tutorial
             scene.maxJumps = 0
@@ -49,7 +51,7 @@ extension GameViewController
                 let finishNode = scene.childNodeWithName("//Finish") as? SKSpriteNode
                 if let validFinish:SKSpriteNode = finishNode
                 {
-                    if let camera = scene.cameraNode
+                    if let camera = scene.camera
                     {
                         scene.panCameraToLocation(CGPoint(x: validFinish.position.x, y: camera.position.y), forDuration: 1, andThenWait: 1)
                     }
@@ -74,9 +76,10 @@ extension GameViewController
         let size = UIImage(named:"blueDayBackground")!.size
         
         scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
-        
-        scene.characterSpriteNode = Character.presetCharacter("Curiosity")
-        
+		
+		scene.characterSpriteNode = Character.presetCharacter("Curiosity")
+		replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode:scene.characterSpriteNode!)
+		
         //Create green orb and set effect
         let greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
         
@@ -86,7 +89,7 @@ extension GameViewController
             let rockNode = scene.childNodeWithName("//hiddenRock") as? SKSpriteNode
             if let validRock:SKSpriteNode = rockNode
             {
-                if let camera = scene.cameraNode
+                if let camera = scene.camera
                 {
                     scene.panCameraToLocation(CGPoint(x: validRock.position.x, y: camera.position.y), forDuration: 1, andThenWait: 1)
                 }
@@ -122,7 +125,9 @@ extension GameViewController
         
         scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
         
-        scene.characterSpriteNode = Character.presetCharacter("Curiosity")
+		scene.characterSpriteNode = Character.presetCharacter("Curiosity")
+		replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode:scene.characterSpriteNode!)
+		
         scene.name = "Level 2"
     }
     

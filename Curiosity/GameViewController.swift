@@ -90,18 +90,6 @@ class GameViewController: UIViewController
  
             }
             
-            //Character placement allows the use of a placeholder node named "CHARACTER" or a default setting.
-            if let characterNode = scene.characterSpriteNode
-            {
-                
-                if !replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode: characterNode)
-                {
-                    //If there is no character placeholder, place the character node in a neutral position and add to world
-                    characterNode.position = CGPoint(x: 0, y: characterNode.size.height)
-                    scene.childNodeWithName("//WORLD")?.addChild(characterNode)
-                }
-            }
-            
             skView.presentScene(scene)
         }
         

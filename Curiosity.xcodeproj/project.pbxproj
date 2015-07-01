@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FC0EE0E20ED4A73AC768ABC /* libPods-Curiosity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1844F48898D043FD89743073 /* libPods-Curiosity.a */; };
-		2F254EBB1A746BAD00DBC8D8 /* GameVCLevelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */; };
+		2F254EBB1A746BAD00DBC8D8 /* GameLevelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */; };
 		2F254EBD1A75704B00DBC8D8 /* EndLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */; };
 		2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F2DBB1019C67799002CA7ED /* MyParticle.sks */; };
 		2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C2E541A28E6CA00A293EA /* PBParallaxScrolling.m */; };
@@ -86,7 +86,7 @@
 /* Begin PBXFileReference section */
 		1844F48898D043FD89743073 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD13A8FB60357DFFF6210A /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
-		2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVCLevelConfig.swift; sourceTree = "<group>"; };
+		2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLevelConfig.swift; sourceTree = "<group>"; };
 		2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndLevelViewController.swift; sourceTree = "<group>"; };
 		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2F3C2E531A28E6CA00A293EA /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBParallaxScrolling.h; path = Curiosity/PBParallaxScrolling.h; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				2FBB756A19AC12D300203EF8 /* GameViewController.swift */,
-				2F254EBA1A746BAD00DBC8D8 /* GameVCLevelConfig.swift */,
+				2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */,
 				2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */,
 				2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */,
 				2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */,
@@ -696,7 +696,7 @@
 			files = (
 				2F3C2E551A28E6CA00A293EA /* PBParallaxScrolling.m in Sources */,
 				2F3DB8351A4F28B600AA6919 /* LevelSelectViewController.swift in Sources */,
-				2F254EBB1A746BAD00DBC8D8 /* GameVCLevelConfig.swift in Sources */,
+				2F254EBB1A746BAD00DBC8D8 /* GameLevelConfig.swift in Sources */,
 				2F254EBD1A75704B00DBC8D8 /* EndLevelViewController.swift in Sources */,
 				2FBB756919AC12D300203EF8 /* CuriosityScene.swift in Sources */,
 				2FBDB94A1A5111B900B0B500 /* Item.swift in Sources */,
