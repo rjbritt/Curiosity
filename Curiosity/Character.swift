@@ -86,9 +86,7 @@ class Character: SKSpriteNode
     {
         var charSprite:Character?
         
-        // Initialize preset characters with their unique "personality" which will affect their playstyle.
-        // All presets are temporarily set to the same as that of Curiosity.
-        
+        // Initialize preset characters with their unique "personality" which will affect their playstyle.        
         let path = NSBundle.mainBundle().pathForResource("CharacterInformation", ofType: "plist")
         
         var presetCharacters:NSArray?
@@ -180,19 +178,19 @@ class Character: SKSpriteNode
         let deltaX = CGFloat(accelerationX * jumpXMovementConstant)
         
         let torqueX = torqueToApplyForCharacterWithVelocity(physicsBody!.velocity)
-
+  
 		physicsBody?.applyTorque(torqueX)
 
-//        // Determines any side motion in air
-//        if (isJumping)
-//        {
-//            physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
-//        }
-//            
-//        // Defaults to determining side motion on an area marked as solid
-//        else if !isJumping
-//        {
-//            physicsBody?.applyTorque(torqueX)
-//        }
+        // Determines any side motion in air
+        if (isJumping)
+        {
+            physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
+        }
+            
+        // Defaults to determining side motion on an area marked as solid
+        else if !isJumping
+        {
+            physicsBody?.applyTorque(torqueX)
+        }
     }
 }

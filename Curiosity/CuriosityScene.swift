@@ -123,27 +123,22 @@ class CuriosityScene: SKScene
 	override func update(currentTime: CFTimeInterval)
 	{
 		/* Called before each frame is rendered */
-		
-		if !gamePaused
-		{
+		if !gamePaused {
 			
-			if let characterSKNode = characterSpriteNode
-			{
+			if let characterSKNode = characterSpriteNode {
 				characterSKNode.move()
-				updateBackgroundForCurrentTime(currentTime)
-				moveCamera()
-
+				
 			}
-			print(characterSpriteNode?.position, appendNewline: true)
-
 		}
-		
-		
 	}
 	
 	
 	override func didFinishUpdate() {
-
+		if !gamePaused {
+			moveCamera()
+			//the background position depends on the position of the camera, so it must be updated after the camera.
+			updateBackground()
+		}
 	}
 	
 	/**
@@ -191,20 +186,24 @@ class CuriosityScene: SKScene
 	Updates the two parallax backgrounds for the current time. 
 	The background speeds are increased with a factor determined by the character's speed.
 	
+	Deprecated until a better method of keeping up with the camera is found. Backgrounds will be put
+	in the .sks file
+	
 	:param: currentTime <#currentTime description#>
 	*/
-	private func updateBackgroundForCurrentTime(currentTime:CFTimeInterval){
+	private func updateBackground(){
 		if let camera = camera{
 			
 			// Aligns the parallax background position with the cameraNode position that way the
 			// background follows along with the camera.
+			
 			self.parallaxBackground?.position.x = camera.position.x
 			self.farOutBackground?.position.x = camera.position.x
 			
 			
 			let backgroundSpeedFactor = determineBackgroundSpeedFactor()
-			farOutBackground?.update(currentTime, withSpeedModifiedByFactor: backgroundSpeedFactor)
-			parallaxBackground?.update(currentTime, withSpeedModifiedByFactor: backgroundSpeedFactor)
+			farOutBackground?.updateWithSpeedModifiedByFactor(backgroundSpeedFactor)
+			parallaxBackground?.updateWithSpeedModifiedByFactor(backgroundSpeedFactor)
 			
 			if let character = characterSpriteNode {
 				if(character.direction == .Right) {
@@ -243,8 +242,7 @@ class CuriosityScene: SKScene
 	//MARK: Accessory Methods
 	
 	/**
-	Delegate method called from a UIGestureRecognizer to call the character jump method as long as it doesn't exceed the set
-	maxJumps
+	Delegate method called from a UIGestureRecognizer to call the character jump method as long as it doesn't exceed the set maxJumps
 	*/
 	func jump(sender:UIGestureRecognizer)
 	{
@@ -289,6 +287,13 @@ class CuriosityScene: SKScene
 	}
 	
 	
+	/**
+	Pans the camera to a specific location within the scene and then pans back to the original location.
+	
+	:param: location The CGPoint describing the location
+	:param: duration How long the camera will take to get there (affects the speed the camera moves)
+	:param: wait     How long the camera will wait until it pans back to the original location.
+	*/
 	func panCameraToLocation(location:CGPoint, forDuration duration:NSTimeInterval, andThenWait wait:NSTimeInterval)
 	{
 		if let camera = camera

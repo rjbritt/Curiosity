@@ -24,6 +24,8 @@
 // THE SOFTWARE.
 //
 
+
+
 #import "PBParallaxScrolling.h"
 
 #define kParallaxBackgroundAntiFlickeringAdjustment 0.05
@@ -145,7 +147,7 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
     return self;
 }
 
--(void)update:(NSTimeInterval)currentTime withNewMaxSpeed:(float)speed
+-(void)updateWithNewMaxSpeed:(float)speed
 {
     NSArray *originalSpeeds = [self.speeds copy];
     NSMutableArray *newSpeeds = [[NSMutableArray alloc]init];
@@ -159,11 +161,11 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
     }
     
     self.speeds = [NSArray arrayWithArray:newSpeeds];
-    [self update:currentTime];
+    [self update];
     self.speeds = originalSpeeds;
 }
 
--(void)update:(NSTimeInterval)currentTime withSpeedModifiedByFactor:(float)factor
+-(void)updateWithSpeedModifiedByFactor:(float)factor
 {
     NSArray *originalSpeeds = [self.speeds copy];
     NSMutableArray *newSpeeds = [NSMutableArray arrayWithArray:originalSpeeds];
@@ -175,13 +177,13 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
     
     self.speeds = [NSArray arrayWithArray:newSpeeds];
     
-    [self update:currentTime];
+    [self update];
     
     self.speeds = originalSpeeds;
     
  }
 
-- (void) update:(NSTimeInterval)currentTime {
+- (void) update{
     for (NSUInteger i = 0; i < self.numberOfBackgrounds; i++) {
         // determine the speed of each node
         CGFloat speed = [[self.speeds objectAtIndex:i] floatValue];

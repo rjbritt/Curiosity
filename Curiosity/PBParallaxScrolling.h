@@ -48,10 +48,10 @@ typedef enum {
 - (id) initWithBackgrounds: (NSArray *) backgrounds size: (CGSize) size direction: (PBParallaxBackgroundDirection) direction fastestSpeed: (CGFloat) speed andSpeedDecrease: (CGFloat) differential;
 
 /** This method, called once in every game loop, will adjust the relative position of the nodes in the parallax background set */
-- (void) update: (NSTimeInterval) currentTime;
+- (void) update;
 
 /** This is a convenience method for working with the update method. This method allows the dynamic changing of the speeds by a relative factor per frame */
--(void)update:(NSTimeInterval)currentTime withSpeedModifiedByFactor:(float)factor;
+-(void)updateWithSpeedModifiedByFactor:(float)factor;
 
 /**
  *  Convenience method for working with the update method. This method allows the dynamic changing of the speeds by a new absolute max speed.
@@ -59,7 +59,7 @@ typedef enum {
  *  @param currentTime  Current time in the game loop.
  *  @param speed        New absolute max speed for this frame.
  */
--(void)update:(NSTimeInterval)currentTime withNewMaxSpeed:(float)speed;
+-(void)updateWithNewMaxSpeed:(float)speed;
 
 
 /** reverse the direction of the movement, left->right, right->left, up->down, down->up */

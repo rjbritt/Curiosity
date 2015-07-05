@@ -86,7 +86,7 @@
 /* Begin PBXFileReference section */
 		1844F48898D043FD89743073 /* libPods-Curiosity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Curiosity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD13A8FB60357DFFF6210A /* Pods-CuriosityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests.release.xcconfig"; sourceTree = "<group>"; };
-		2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLevelConfig.swift; sourceTree = "<group>"; };
+		2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameLevelConfig.swift; path = Curiosity/GameLevelConfig.swift; sourceTree = "<group>"; };
 		2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndLevelViewController.swift; sourceTree = "<group>"; };
 		2F2DBB1019C67799002CA7ED /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		2F3C2E531A28E6CA00A293EA /* PBParallaxScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBParallaxScrolling.h; path = Curiosity/PBParallaxScrolling.h; sourceTree = "<group>"; };
@@ -189,6 +189,7 @@
 		2F3C2E581A29008600A293EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */,
 				2FBB756C19AC12D300203EF8 /* Main.storyboard */,
 				2FD94E3C1A4F3DF8002CE891 /* Images */,
 				2FBDB9481A510D2300B0B500 /* Levels */,
@@ -214,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				2FBB756A19AC12D300203EF8 /* GameViewController.swift */,
-				2F254EBA1A746BAD00DBC8D8 /* GameLevelConfig.swift */,
 				2F3DB8341A4F28B600AA6919 /* LevelSelectViewController.swift */,
 				2F254EBC1A75704B00DBC8D8 /* EndLevelViewController.swift */,
 				2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */,
