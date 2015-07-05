@@ -1,13 +1,12 @@
 //
-//  GameVCLevelExtension.swift
+//  GameLevelConfig.swift
 //  Curiosity
 //
 //  Created by Ryan Britt on 1/24/15.
 //  Copyright (c) 2015 Ryan Britt. All rights reserved.
 //
 
-extension GameViewController
-{
+class GameLevelConfig {
     /**
     Configures the scene as a particular tutorial scene. All the tutorial scenes have a similar background and only 
     differ based on the part of gameplay that is being demonstrated.
@@ -15,15 +14,15 @@ extension GameViewController
     - parameter scene:     The scene to configure
     - parameter tutNumber: What tutorial number to configure this scene for.
     */
-    func configureTutorialForScene(scene:CuriosityScene, TutorialNumber tutNumber:Int)
+    class func configureTutorialForScene(scene:CuriosityScene, TutorialNumber tutNumber:Int)
     {
-        //Initializes a parallax background that will move with the character.
-        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
-        let size = UIImage(named:"blueDayBackground")!.size
-        
-        //Initialize scene properties
-        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
-        
+//        //Initializes a parallax background that will move with the character.
+//        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+//        let size = UIImage(named:"blueDayBackground")!.size
+//        
+//        //Initialize scene properties
+//        scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
+		
 		scene.characterSpriteNode = Character.presetCharacter("Curiosity")
 		replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode:scene.characterSpriteNode!)
 		
@@ -69,7 +68,7 @@ extension GameViewController
         }
     }
     
-    func configureLevel1ForScene(scene:CuriosityScene)
+    class func configureLevel1ForScene(scene:CuriosityScene)
     {
         //Initializes a parallax background that will move with the character.
         let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
@@ -117,7 +116,7 @@ extension GameViewController
     }
 
     
-    func configureLevel2ForScene(scene:CuriosityScene)
+    class func configureLevel2ForScene(scene:CuriosityScene)
     {
         //Initializes a parallax background that will move with the character.
         let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
@@ -140,7 +139,7 @@ extension GameViewController
     
     - returns: Bool stating whether the replacement was successful or not.
     */
-    func replacePlaceholderNode(node1:SKNode?, withNode node2:SKNode) -> Bool
+    private class func replacePlaceholderNode(node1:SKNode?, withNode node2:SKNode) -> Bool
     {
         var successful = false
         

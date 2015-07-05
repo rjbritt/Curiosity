@@ -75,18 +75,18 @@ class GameViewController: UIViewController
             {
                 
             case .Tut1:
-                configureTutorialForScene(scene, TutorialNumber: 1)
+                GameLevelConfig.configureTutorialForScene(scene, TutorialNumber: 1)
             case .Tut2:
-                configureTutorialForScene(scene, TutorialNumber: 2)
+                GameLevelConfig.configureTutorialForScene(scene, TutorialNumber: 2)
             case .Tut3:
-                configureTutorialForScene(scene, TutorialNumber: 3)
+                GameLevelConfig.configureTutorialForScene(scene, TutorialNumber: 3)
             case .Tut4:
-                configureTutorialForScene(scene, TutorialNumber: 4)
+                GameLevelConfig.configureTutorialForScene(scene, TutorialNumber: 4)
                 break
             case .Level1:
-                configureLevel1ForScene(scene)
+                GameLevelConfig.configureLevel1ForScene(scene)
             case .Level2:
-                configureLevel2ForScene(scene)
+                GameLevelConfig.configureLevel2ForScene(scene)
  
             }
             
