@@ -51,34 +51,6 @@
 			remoteGlobalIDString = 2FBB755E19AC12D300203EF8;
 			remoteInfo = Curiosity;
 		};
-		2FD07D7C1AAD2AFA00286329 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2FD07D5E1AAD2AFA00286329 /* Cent.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 924F92DC195F8338003DBB60;
-			remoteInfo = Cent;
-		};
-		2FD07D7E1AAD2AFA00286329 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2FD07D5E1AAD2AFA00286329 /* Cent.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92E6688119F0B89600BB4FB8;
-			remoteInfo = CentTests;
-		};
-		2FD07D821AAD2AFA00286329 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2FD07D6D1AAD2AFA00286329 /* Dollar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92E0D03C19467C67002ACC3D;
-			remoteInfo = Dollar;
-		};
-		2FD07D841AAD2AFA00286329 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2FD07D6D1AAD2AFA00286329 /* Dollar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92E6686F19F09C6400BB4FB8;
-			remoteInfo = DollarTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -120,39 +92,6 @@
 		2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityTests.swift; sourceTree = "<group>"; };
 		2FBDB9491A5111B900B0B500 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CharacterInformation.plist; sourceTree = "<group>"; };
-		2FD07D4D1AAD2AFA00286329 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		2FD07D4E1AAD2AFA00286329 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		2FD07D501AAD2AFA00286329 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
-		2FD07D511AAD2AFA00286329 /* HowToImport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HowToImport.gif; sourceTree = "<group>"; };
-		2FD07D541AAD2AFA00286329 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		2FD07D551AAD2AFA00286329 /* Cent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cent.h; sourceTree = "<group>"; };
-		2FD07D561AAD2AFA00286329 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		2FD07D571AAD2AFA00286329 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
-		2FD07D581AAD2AFA00286329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD07D591AAD2AFA00286329 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		2FD07D5A1AAD2AFA00286329 /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
-		2FD07D5B1AAD2AFA00286329 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
-		2FD07D5C1AAD2AFA00286329 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		2FD07D5D1AAD2AFA00286329 /* Cent.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cent.podspec; sourceTree = "<group>"; };
-		2FD07D5E1AAD2AFA00286329 /* Cent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Cent.xcodeproj; sourceTree = "<group>"; };
-		2FD07D631AAD2AFA00286329 /* CentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentTests.swift; sourceTree = "<group>"; };
-		2FD07D641AAD2AFA00286329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD07D651AAD2AFA00286329 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
-		2FD07D681AAD2AFA00286329 /* AutoCurry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCurry.swift; sourceTree = "<group>"; };
-		2FD07D691AAD2AFA00286329 /* Dollar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
-		2FD07D6A1AAD2AFA00286329 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
-		2FD07D6B1AAD2AFA00286329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD07D6C1AAD2AFA00286329 /* Dollar.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dollar.podspec; sourceTree = "<group>"; };
-		2FD07D6D1AAD2AFA00286329 /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Dollar.xcodeproj; sourceTree = "<group>"; };
-		2FD07D711AAD2AFA00286329 /* CarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarExample.swift; sourceTree = "<group>"; };
-		2FD07D721AAD2AFA00286329 /* DollarPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarPerformanceTests.swift; sourceTree = "<group>"; };
-		2FD07D731AAD2AFA00286329 /* DollarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarTests.swift; sourceTree = "<group>"; };
-		2FD07D741AAD2AFA00286329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FD07D751AAD2AFA00286329 /* gen_auto_curry.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = gen_auto_curry.rb; sourceTree = "<group>"; };
-		2FD07D761AAD2AFA00286329 /* Dollar.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Dollar.xcworkspace; sourceTree = "<group>"; };
-		2FD07D771AAD2AFA00286329 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2FD07D781AAD2AFA00286329 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2FD07D791AAD2AFA00286329 /* Try.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Try.playground; sourceTree = "<group>"; };
 		2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		2FF474221A4DE67B0080AD51 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,120 +238,6 @@
 			name = Levels;
 			sourceTree = "<group>";
 		};
-		2FD07D4C1AAD2AFA00286329 /* Dollar.swift */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D4D1AAD2AFA00286329 /* .gitignore */,
-				2FD07D4E1AAD2AFA00286329 /* .travis.yml */,
-				2FD07D4F1AAD2AFA00286329 /* assets */,
-				2FD07D521AAD2AFA00286329 /* Cent */,
-				2FD07D651AAD2AFA00286329 /* CONTRIBUTING.md */,
-				2FD07D661AAD2AFA00286329 /* Dollar */,
-				2FD07D761AAD2AFA00286329 /* Dollar.xcworkspace */,
-				2FD07D771AAD2AFA00286329 /* LICENSE */,
-				2FD07D781AAD2AFA00286329 /* README.md */,
-				2FD07D791AAD2AFA00286329 /* Try.playground */,
-			);
-			path = Dollar.swift;
-			sourceTree = "<group>";
-		};
-		2FD07D4F1AAD2AFA00286329 /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D501AAD2AFA00286329 /* hero.png */,
-				2FD07D511AAD2AFA00286329 /* HowToImport.gif */,
-			);
-			path = assets;
-			sourceTree = "<group>";
-		};
-		2FD07D521AAD2AFA00286329 /* Cent */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D531AAD2AFA00286329 /* Cent */,
-				2FD07D5D1AAD2AFA00286329 /* Cent.podspec */,
-				2FD07D5E1AAD2AFA00286329 /* Cent.xcodeproj */,
-				2FD07D621AAD2AFA00286329 /* CentTests */,
-			);
-			path = Cent;
-			sourceTree = "<group>";
-		};
-		2FD07D531AAD2AFA00286329 /* Cent */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D541AAD2AFA00286329 /* Array.swift */,
-				2FD07D551AAD2AFA00286329 /* Cent.h */,
-				2FD07D561AAD2AFA00286329 /* Date.swift */,
-				2FD07D571AAD2AFA00286329 /* Dictionary.swift */,
-				2FD07D581AAD2AFA00286329 /* Info.plist */,
-				2FD07D591AAD2AFA00286329 /* Int.swift */,
-				2FD07D5A1AAD2AFA00286329 /* Range.swift */,
-				2FD07D5B1AAD2AFA00286329 /* Regex.swift */,
-				2FD07D5C1AAD2AFA00286329 /* String.swift */,
-			);
-			path = Cent;
-			sourceTree = "<group>";
-		};
-		2FD07D5F1AAD2AFA00286329 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D7D1AAD2AFA00286329 /* Cent.framework */,
-				2FD07D7F1AAD2AFA00286329 /* CentTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2FD07D621AAD2AFA00286329 /* CentTests */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D631AAD2AFA00286329 /* CentTests.swift */,
-				2FD07D641AAD2AFA00286329 /* Info.plist */,
-			);
-			path = CentTests;
-			sourceTree = "<group>";
-		};
-		2FD07D661AAD2AFA00286329 /* Dollar */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D671AAD2AFA00286329 /* Dollar */,
-				2FD07D6C1AAD2AFA00286329 /* Dollar.podspec */,
-				2FD07D6D1AAD2AFA00286329 /* Dollar.xcodeproj */,
-				2FD07D701AAD2AFA00286329 /* DollarTests */,
-				2FD07D751AAD2AFA00286329 /* gen_auto_curry.rb */,
-			);
-			path = Dollar;
-			sourceTree = "<group>";
-		};
-		2FD07D671AAD2AFA00286329 /* Dollar */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D681AAD2AFA00286329 /* AutoCurry.swift */,
-				2FD07D691AAD2AFA00286329 /* Dollar.h */,
-				2FD07D6A1AAD2AFA00286329 /* Dollar.swift */,
-				2FD07D6B1AAD2AFA00286329 /* Info.plist */,
-			);
-			path = Dollar;
-			sourceTree = "<group>";
-		};
-		2FD07D6E1AAD2AFA00286329 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D831AAD2AFA00286329 /* Dollar.framework */,
-				2FD07D851AAD2AFA00286329 /* DollarTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2FD07D701AAD2AFA00286329 /* DollarTests */ = {
-			isa = PBXGroup;
-			children = (
-				2FD07D711AAD2AFA00286329 /* CarExample.swift */,
-				2FD07D721AAD2AFA00286329 /* DollarPerformanceTests.swift */,
-				2FD07D731AAD2AFA00286329 /* DollarTests.swift */,
-				2FD07D741AAD2AFA00286329 /* Info.plist */,
-			);
-			path = DollarTests;
-			sourceTree = "<group>";
-		};
 		2FD94E3C1A4F3DF8002CE891 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,7 +265,6 @@
 		9881B86DC8D64E27B39DECCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FD07D4C1AAD2AFA00286329 /* Dollar.swift */,
 				2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */,
 				2F68C19419AC1E6F006EB529 /* CoreData.framework */,
 				1844F48898D043FD89743073 /* libPods-Curiosity.a */,
@@ -534,16 +358,6 @@
 			mainGroup = 2FBB755619AC12D300203EF8;
 			productRefGroup = 2FBB756019AC12D300203EF8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2FD07D5F1AAD2AFA00286329 /* Products */;
-					ProjectRef = 2FD07D5E1AAD2AFA00286329 /* Cent.xcodeproj */;
-				},
-				{
-					ProductGroup = 2FD07D6E1AAD2AFA00286329 /* Products */;
-					ProjectRef = 2FD07D6D1AAD2AFA00286329 /* Dollar.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2FBB755E19AC12D300203EF8 /* Curiosity */,
@@ -551,37 +365,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2FD07D7D1AAD2AFA00286329 /* Cent.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cent.framework;
-			remoteRef = 2FD07D7C1AAD2AFA00286329 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2FD07D7F1AAD2AFA00286329 /* CentTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CentTests.xctest;
-			remoteRef = 2FD07D7E1AAD2AFA00286329 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2FD07D831AAD2AFA00286329 /* Dollar.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Dollar.framework;
-			remoteRef = 2FD07D821AAD2AFA00286329 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2FD07D851AAD2AFA00286329 /* DollarTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DollarTests.xctest;
-			remoteRef = 2FD07D841AAD2AFA00286329 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2FBB755D19AC12D300203EF8 /* Resources */ = {
