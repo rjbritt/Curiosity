@@ -26,7 +26,15 @@ extension SKNode {
             archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
             let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as! CuriosityScene
             archiver.finishDecoding()
-            
+			
+			//Configure the basic stats of the scene according to the device
+			if(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad){
+				scene.size =  CGSizeMake(1024, 768)
+			}
+			else { // Will need to fine tune for iphone 4, iphone 5, and iphone 6 sizes
+				scene.size = CGSizeMake(736, 414)
+			}
+			
             return scene
         } else {
             return nil
@@ -35,6 +43,12 @@ extension SKNode {
     
 }
 
+
+func configureCameraForScene(scene:SKScene){
+	let camera = SKCameraNode()
+	scene.camera = camera
+	scene.addChild(camera)
+}
 
 
 class GameViewController: UIViewController
@@ -66,7 +80,7 @@ class GameViewController: UIViewController
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = SKSceneScaleMode.AspectFill
+            scene.scaleMode = SKSceneScaleMode.ResizeFill //SKSceneScaleMode.AspectFill
             
             scene.gameViewControllerDelegate = self
             
@@ -89,6 +103,8 @@ class GameViewController: UIViewController
                 GameLevelConfig.configureLevel2ForScene(scene)
  
             }
+			
+			scene.orientation = UIApplication.sharedApplication().statusBarOrientation
             
             skView.presentScene(scene)
         }
@@ -134,15 +150,11 @@ class GameViewController: UIViewController
     }
     
     override func shouldAutorotate() -> Bool {
-        return true
+        return false
     }
 
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return UIInterfaceOrientationMask.Landscape //AllButUpsideDown.rawValue)
-        } else {
-            return UIInterfaceOrientationMask.All
-        }
+		return UIInterfaceOrientationMask.Landscape
     }
 
     override func didReceiveMemoryWarning() {

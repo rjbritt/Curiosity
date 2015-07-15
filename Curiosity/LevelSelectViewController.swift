@@ -14,9 +14,9 @@ class LevelSelectViewController: UIViewController {
 
     var currentLevelSelectVC:LevelSelectViewController?
     
-//    @IBOutlet weak var tutButton: UIButton!
+    @IBOutlet weak var tutButton: UIButton!
     @IBOutlet weak var lvl1Button: UIButton!
-//    @IBOutlet weak var lvl2Button: UIButton!
+    @IBOutlet weak var lvl2Button: UIButton!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +30,13 @@ class LevelSelectViewController: UIViewController {
     }
     
  override func viewWillAppear(animated: Bool) {
-//        tutButton.tintColor = LevelTracker.levelIsUnlocked(.Tut1) ? view.window?.tintColor : UIColor.grayColor()
+        tutButton.tintColor = LevelTracker.levelIsUnlocked(.Tut1) ? view.window?.tintColor : UIColor.grayColor()
         lvl1Button.tintColor = LevelTracker.levelIsUnlocked(.Level1) ? view.window?.tintColor : UIColor.grayColor()
-//        lvl2Button.tintColor = LevelTracker.levelIsUnlocked(.Level2) ? view.window?.tintColor : UIColor.grayColor()
+        lvl2Button.tintColor = LevelTracker.levelIsUnlocked(.Level2) ? view.window?.tintColor : UIColor.grayColor()
 	
-//        tutButton.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Tut1)
+        tutButton.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Tut1)
 //        lvl1Button.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Level1)
-//        lvl2Button.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Level2)
+        lvl2Button.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Level2)
 
     }    // MARK: - Navigation
 
@@ -74,7 +74,7 @@ class LevelSelectViewController: UIViewController {
                 nextVC?.levelMgr.goToLevel(.Level2)
             case "Tutorial": // If tutorial is selected, only start over the tutorial if level 1 has been unlocked
                 if let _ = nextVC {
-                    nextVC?.levelMgr.goToLevel(LevelTracker.levelIsUnlocked(.Level1) ? .Tut1 : LevelTracker.highestUnlockedLevel) }
+				nextVC?.levelMgr.goToLevel(LevelTracker.levelIsUnlocked(.Level1) ? .Tut1 : LevelTracker.highestUnlockedLevel) }
 
             default:
                 break
@@ -87,6 +87,9 @@ class LevelSelectViewController: UIViewController {
     {
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
+	
+	
+
 
 }
 

@@ -179,16 +179,13 @@ class Character: SKSpriteNode
         
         let torqueX = torqueToApplyForCharacterWithVelocity(physicsBody!.velocity)
   
-		physicsBody?.applyTorque(torqueX)
-
         // Determines any side motion in air
         if (isJumping)
         {
             physicsBody?.applyImpulse(CGVectorMake(deltaX, 0))
         }
-            
         // Defaults to determining side motion on an area marked as solid
-        else if !isJumping
+        else
         {
             physicsBody?.applyTorque(torqueX)
         }

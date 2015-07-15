@@ -27,8 +27,6 @@
 		2F8B5BC31A71BAD9008C13C9 /* Tutorial2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBB1A71BAD9008C13C9 /* Tutorial2.sks */; };
 		2F8B5BC41A71BAD9008C13C9 /* Tutorial3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBC1A71BAD9008C13C9 /* Tutorial3.sks */; };
 		2F8B5BC51A71BAD9008C13C9 /* Tutorial4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBD1A71BAD9008C13C9 /* Tutorial4.sks */; };
-		2F8B5BC61A71BAD9008C13C9 /* Tutorial5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBE1A71BAD9008C13C9 /* Tutorial5.sks */; };
-		2F8B5BC71A71BAD9008C13C9 /* Tutorial6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B5BBF1A71BAD9008C13C9 /* Tutorial6.sks */; };
 		2FAD9CE11AC74A4D0097AF34 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9CE01AC74A4D0097AF34 /* Play.png */; };
 		2FAD9CE51AC799020097AF34 /* LevelSelectPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */; };
 		2FB0625C1A367E00002C812E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0625B1A367E00002C812E /* Character.swift */; };
@@ -107,8 +105,6 @@
 		2F8B5BBB1A71BAD9008C13C9 /* Tutorial2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial2.sks; path = Curiosity/Levels/Tutorial2.sks; sourceTree = "<group>"; };
 		2F8B5BBC1A71BAD9008C13C9 /* Tutorial3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial3.sks; path = Curiosity/Levels/Tutorial3.sks; sourceTree = "<group>"; };
 		2F8B5BBD1A71BAD9008C13C9 /* Tutorial4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial4.sks; path = Curiosity/Levels/Tutorial4.sks; sourceTree = "<group>"; };
-		2F8B5BBE1A71BAD9008C13C9 /* Tutorial5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial5.sks; path = Curiosity/Levels/Tutorial5.sks; sourceTree = "<group>"; };
-		2F8B5BBF1A71BAD9008C13C9 /* Tutorial6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Tutorial6.sks; path = Curiosity/Levels/Tutorial6.sks; sourceTree = "<group>"; };
 		2FAD9CE01AC74A4D0097AF34 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		2FAD9CE41AC799020097AF34 /* LevelSelectPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectPageViewController.swift; sourceTree = "<group>"; };
 		2FB0625B1A367E00002C812E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -299,8 +295,6 @@
 				2F8B5BBB1A71BAD9008C13C9 /* Tutorial2.sks */,
 				2F8B5BBC1A71BAD9008C13C9 /* Tutorial3.sks */,
 				2F8B5BBD1A71BAD9008C13C9 /* Tutorial4.sks */,
-				2F8B5BBE1A71BAD9008C13C9 /* Tutorial5.sks */,
-				2F8B5BBF1A71BAD9008C13C9 /* Tutorial6.sks */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -597,7 +591,6 @@
 				2F815DA01AAD3EC3008A0688 /* flowers.png in Resources */,
 				2F815DA21AAD3EC3008A0688 /* spark.png in Resources */,
 				2F8B5BC41A71BAD9008C13C9 /* Tutorial3.sks in Resources */,
-				2F8B5BC61A71BAD9008C13C9 /* Tutorial5.sks in Resources */,
 				2F815D9E1AAD3EC3008A0688 /* blueDayBackground.png in Resources */,
 				2F8B5BC31A71BAD9008C13C9 /* Tutorial2.sks in Resources */,
 				2F815DA31AAD3EC3008A0688 /* Tree top.png in Resources */,
@@ -612,7 +605,6 @@
 				2F815D9F1AAD3EC3008A0688 /* Curiosity.png in Resources */,
 				2F8B5BC51A71BAD9008C13C9 /* Tutorial4.sks in Resources */,
 				2FAD9CE11AC74A4D0097AF34 /* Play.png in Resources */,
-				2F8B5BC71A71BAD9008C13C9 /* Tutorial6.sks in Resources */,
 				2F2DBB1219C67799002CA7ED /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
