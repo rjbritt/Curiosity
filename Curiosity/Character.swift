@@ -93,7 +93,7 @@ class Character: SKSpriteNode
         
         if let validPath = path
         {
-			presetCharacters = NSArray(contentsOfFile: validPath);
+			presetCharacters = NSArray(contentsOfFile: validPath)
         }
         
         if let allCharacters = presetCharacters
