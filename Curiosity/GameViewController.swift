@@ -44,28 +44,15 @@ extension SKNode {
 }
 
 
-func configureCameraForScene(scene:SKScene){
-	let camera = SKCameraNode()
-	scene.camera = camera
-	scene.addChild(camera)
-}
-
-
 class GameViewController: UIViewController
 {
     var levelMgr:LevelTracker = LevelTracker()
-
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        prepareCuriosityScene()
-    }
     
     /**
     Configures the scene depending on the current level and 
     conditionally calls methods based on what level has been selected with the scene.
     */
-    func prepareCuriosityScene()
+    private func prepareCuriosityScene()
     {
         if let scene = CuriosityScene.unarchiveFromFile(levelMgr.currentLevel.rawValue) as? CuriosityScene
         {
@@ -111,44 +98,15 @@ class GameViewController: UIViewController
         
 
     }
-
-    /**
-    Ends the level. Typically used as a callback when a GameViewController is set as a delegate to any other class.
-    */
-    func endLevel()
-    {
-        //Modally presents End Level Controller
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let endLevelVC = storyboard.instantiateViewControllerWithIdentifier("EndLevelViewController") as! EndLevelViewController
-        endLevelVC.gameViewControllerDelegate = self
-        endLevelVC.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        self.presentViewController(endLevelVC, animated: true, completion: nil)
-
-    }
-    
-    /**
-    Returns the user to the level select view controller. Typically used as a callback when a GameViewController is set as a delegate to any other class.
-    */
-    func returnToLevelSelect()
-    {
-        //Dismisses this view controller
-        self.presentingViewController?.dismissViewControllerAnimated(true, completion:{
-            let skView = self.view as! SKView
-            //presenting a new nil scene triggers the previous scene's willMoveFromView
-            skView.presentScene(nil)
-        })
-
-    }
-    
-    /**
-    Advances the levelMgr's current level. Then reprepares the current scene based off the new current level. Typically used as a callback when a GameViewController is set as a delegate to any other class.
-    */
-    func loadNextLevel()
-    {
-        levelMgr.nextLevel()
-        prepareCuriosityScene()
-    }
-    
+	
+	//MARK: View Lifecycle methods
+	
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		prepareCuriosityScene()
+	}
+	
     override func shouldAutorotate() -> Bool {
         return false
     }
@@ -166,4 +124,48 @@ class GameViewController: UIViewController
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+}
+
+//MARK: Delegate Methods
+extension GameViewController {
+	/**
+	Ends the game level by presenting the view controller that is after a finished game scene and before a new game scene.
+	Typically used as a callback when a GameViewController is set as a delegate to any other class.
+	*/
+	func endLevel()
+	{
+		//Modally presents End Level Controller
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let endLevelVC = storyboard.instantiateViewControllerWithIdentifier("EndLevelViewController") as! EndLevelViewController
+		endLevelVC.gameViewControllerDelegate = self
+		endLevelVC.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+		self.presentViewController(endLevelVC, animated: true, completion: nil)
+		
+	}
+	
+	/**
+	Returns the user to the level select view controller.
+	Typically used as a callback when a GameViewController is set as a delegate to any other class.
+	*/
+	func returnToLevelSelect()
+	{
+		//Dismisses this view controller
+		self.presentingViewController?.dismissViewControllerAnimated(true, completion:{
+			let skView = self.view as! SKView
+			//presenting a new nil scene triggers the previous scene's willMoveFromView
+			skView.presentScene(nil)
+		})
+		
+	}
+	
+	/**
+	Advances the levelMgr's current level. Then reprepares the current scene based off the new current level. Typically used as a callback when a GameViewController is set as a delegate to any other class.
+	*/
+	func loadNextLevel()
+	{
+		levelMgr.nextLevel()
+		prepareCuriosityScene()
+	}
+	
+	
 }
