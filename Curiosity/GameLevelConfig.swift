@@ -79,17 +79,13 @@ class GameLevelConfig {
 		scene.characterSpriteNode = Character.presetCharacter("Curiosity")
 		replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode:scene.characterSpriteNode!)
 		
-        //Create green orb and set effect
         let greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
-        
         greenOrb.storedEffect = {
+			
             // Pan to and Raise Rock
-            
             let rockNode = scene.childNodeWithName("//hiddenRock") as? SKSpriteNode
-            if let validRock:SKSpriteNode = rockNode
-            {
-                if let camera = scene.camera
-                {
+            if let validRock:SKSpriteNode = rockNode {
+                if let camera = scene.camera {
                     scene.panCameraToLocation(CGPoint(x: validRock.position.x, y: camera.position.y), forDuration: 1, andThenWait: 1)
                 }
                 let raiseRock = SKAction.moveBy(CGVector(dx: 0, dy: validRock.size.height), duration: 1)
@@ -103,8 +99,6 @@ class GameLevelConfig {
             if let validFinish = finishNode{
                 let action = SKAction.moveBy(CGVector(dx: 0, dy: validFinish.size.height), duration: 0)
                 finishNode?.runAction(action)
-                finishNode?.physicsBody?.categoryBitMask = PhysicsCategory.Environment.rawValue
-                finishNode?.physicsBody?.collisionBitMask = PhysicsCategory.Character.rawValue
             }
             greenOrb.removeAllActions()
         }
