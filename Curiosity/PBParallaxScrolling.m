@@ -46,9 +46,6 @@ static inline CGFloat roundFloatToTwoDecimalPlaces(CGFloat num) { return floorf(
 /** Number of backgrounds in this parallax background set */
 @property (nonatomic) NSUInteger numberOfBackgrounds;
 
-/** The size of the parallax background set */
-@property (nonatomic) CGSize size;
-
 // Max speed as initialized
 @property (nonatomic, readwrite) CGFloat maxSpeed;
 

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Curiosity/PBParallaxScrolling.m"
-            timestampString = "447468749.659238"
+            timestampString = "458781390.021837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
             landmarkName = "-showBackgroundPositions"
             landmarkType = "5">
          </BreakpointContent>
