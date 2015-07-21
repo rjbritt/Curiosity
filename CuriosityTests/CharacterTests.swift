@@ -1,16 +1,15 @@
 //
-//  CuriosityTests.swift
-//  CuriosityTests
+//  CharacterTests.swift
+//  Curiosity
 //
-//  Created by Ryan Britt on 8/25/14.
-//  Copyright (c) 2014 Ryan Britt. All rights reserved.
+//  Created by RJBritt on 7/17/15.
+//  Copyright © 2015 Ryan Britt. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
-class CuriosityTests: XCTestCase {
-    
+class CharacterTests: XCTestCase {
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,17 +19,17 @@ class CuriosityTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
             // Put the code you want to measure the time of here.
         }
     }
-	
+
 }

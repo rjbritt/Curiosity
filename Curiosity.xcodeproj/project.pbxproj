@@ -40,6 +40,7 @@
 		2FBDB94D1A55CDA000B0B500 /* CharacterInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDB94C1A55CDA000B0B500 /* CharacterInformation.plist */; };
 		2FF1D15F19D7AEB80091F4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1D15E19D7AEB80091F4BD /* CoreMotion.framework */; };
 		2FF474231A4DE67B0080AD51 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2FF474221A4DE67B0080AD51 /* Podfile */; };
+		DEF89CA51B59F0A200282491 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF89CA41B59F0A200282491 /* CharacterTests.swift */; };
 		E515950B26D54C449A912F82 /* libPods-CuriosityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		44801E0E557242EA84501B08 /* libPods-CuriosityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuriosityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B9EF99F721ED9F198D014E /* Pods-Curiosity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curiosity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Curiosity/Pods-Curiosity.release.xcconfig"; sourceTree = "<group>"; };
 		64E3B1334E4DB4698341BECF /* Pods-CuriosityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuriosityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuriosityTests/Pods-CuriosityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEF89CA41B59F0A200282491 /* CharacterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
 		E8D27766BEA39922E2B3CBCA /* Pods-Curiosity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Curiosity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Curiosity/Pods-Curiosity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 		2FBB757819AC12D300203EF8 /* CuriosityTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEF89CA41B59F0A200282491 /* CharacterTests.swift */,
 				2FBB757B19AC12D300203EF8 /* CuriosityTests.swift */,
 				2FBB757919AC12D300203EF8 /* Supporting Files */,
 			);
@@ -488,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3C2E561A28FA4F00A293EA /* PBParallaxScrolling.m in Sources */,
+				DEF89CA51B59F0A200282491 /* CharacterTests.swift in Sources */,
 				2FBB757C19AC12D300203EF8 /* CuriosityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
