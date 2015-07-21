@@ -103,7 +103,6 @@ class GameLevelConfig {
             greenOrb.removeAllActions()
         }
         
-        //Replace placeholder with temp item
         replacePlaceholderNode(scene.childNodeWithName("//GreenOrb1"), withNode:greenOrb)
         scene.name = "Level 1"
         
@@ -148,6 +147,13 @@ class GameLevelConfig {
             }
         }
         return successful
+    }
+    
+    private class func panToAndRaiseSpriteNode(node:SKSpriteNode, inScene scene:CuriosityScene,withCamera camera:SKCameraNode, andWaitFor wait:NSTimeInterval) {
+        
+        scene.panCameraToLocation(CGPoint(x: node.position.x, y: camera.position.y), forDuration: 1, andThenWait: wait)
+        let raiseNode = SKAction.moveBy(CGVector(dx: 0, dy: node.size.height), duration: 1)
+        node.runAction(SKAction.sequence([SKAction.waitForDuration(1),raiseNode]))
     }
 
 }
