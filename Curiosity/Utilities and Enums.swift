@@ -22,10 +22,10 @@ enum CuriosityGameLevel:String
 }
 
 
-//Directions in the game
-enum GameDirection{
-    case Up, Down, Left, Right;
-}
+////Directions in the game
+//enum GameDirection{
+//    case Up, Down, Left, Right;
+//}
 
 /**
 Physics categories used for this game.
