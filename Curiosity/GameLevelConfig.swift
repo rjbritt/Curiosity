@@ -17,7 +17,7 @@ class GameLevelConfig {
     class func configureTutorialForScene(scene:CuriosityScene, TutorialNumber tutNumber:Int)
     {
         //Initializes a parallax background that will move with the character.
-        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+        let parallaxImageNames = NSArray(objects: "hills", "blueDayBackground")
         let size = UIImage(named:"blueDayBackground")!.size
         
         //Initialize scene properties
@@ -71,7 +71,7 @@ class GameLevelConfig {
     class func configureLevel1ForScene(scene:CuriosityScene)
     {
         //Initializes a parallax background that will move with the character.
-        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+        let parallaxImageNames = NSArray(objects: "hills", "blueDayBackground")
         let size = UIImage(named:"blueDayBackground")!.size
         
         scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)
@@ -113,7 +113,7 @@ class GameLevelConfig {
     class func configureLevel2ForScene(scene:CuriosityScene)
     {
         //Initializes a parallax background that will move with the character.
-        let parallaxImageNames:NSArray = NSArray(objects: "hills", "blueDayBackground")
+        let parallaxImageNames = NSArray(objects: "hills", "blueDayBackground")
         let size = UIImage(named:"blueDayBackground")!.size
         
         scene.parallaxBackground = PBParallaxScrolling(backgrounds:parallaxImageNames as [AnyObject], size:size, direction:kPBParallaxBackgroundDirectionRight, fastestSpeed:0.3, andSpeedDecrease:0.2)

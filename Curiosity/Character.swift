@@ -77,7 +77,9 @@ class Character: SKSpriteNode
     /**
     Returns a character configured in a particular way from the CharacterInformation plist file. Returns a nil Character
     if there isn't a definition for that character name
-    This factory method configures many different aspects of a character: name, size, physics body, jumpXMovementConstant, torqueConstant, friction, categoryBitMask, and jumpConstant. It does not set the character's default position.
+    This factory method configures many different aspects of a character:
+    name, size, physics body, jumpXMovementConstant, torqueConstant, friction, categoryBitMask, and jumpConstant.
+
     - parameter name: The name of the predefined character
     
     - returns: An optional representing the character if there are presets for one, or a nil value if there are not.
@@ -173,8 +175,7 @@ class Character: SKSpriteNode
     Commands the character to move for one frame. As the applied effects are part of the physics engine, these
     effects are not guaranteed to only last for the length of one frame.
     */
-    func move()
-    {
+    func move() {
         let deltaX = CGFloat(accelerationX * jumpXMovementConstant)
         
         let torqueX = torqueToApplyForCharacterWithVelocity(physicsBody!.velocity)

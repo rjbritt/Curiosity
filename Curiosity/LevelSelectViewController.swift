@@ -3,6 +3,8 @@
 //  Curiosity
 //
 //
+//  This VC manages the logic for the main level choices. 
+//
 //  Created by Ryan Britt on 12/27/14.
 //  Copyright (c) 2014 Ryan Britt. All rights reserved.
 //
@@ -36,7 +38,7 @@ class LevelSelectViewController: UIViewController {
 	
         tutButton.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Tut1)
 //        lvl1Button.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Level1)
-        lvl2Button.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Level2)
+//        lvl2Button.userInteractionEnabled = LevelTracker.levelIsUnlocked(.Level2)
 
     }    // MARK: - Navigation
 
@@ -68,9 +70,10 @@ class LevelSelectViewController: UIViewController {
             switch name
             {
             case "Level 1":
-				LevelTracker.unlockLevel(.Level1)
+                LevelTracker.unlockLevel(.Level1) //Temporary to allow for testing w/o going through the levels
                 nextVC?.levelMgr.goToLevel(.Level1)
             case "Level 2":
+                LevelTracker.unlockLevel(.Level2)
                 nextVC?.levelMgr.goToLevel(.Level2)
             case "Tutorial": // If tutorial is selected, only start over the tutorial if level 1 has been unlocked
                 if let _ = nextVC {
