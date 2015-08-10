@@ -37,14 +37,11 @@ class Character: SKSpriteNode
     var canJump = true
     
     //MARK: Computed Properties
-    var isFalling:Bool
-    {
-        if self.physicsBody?.velocity.dy < fallingVelocityThreshold
-        {
+    var isFalling:Bool {
+        if self.physicsBody?.velocity.dy < fallingVelocityThreshold {
             return true
         }
         return false
-        
     }
     
     var isJumping:Bool // Computed property to tell whether the character is jumping or not.

@@ -21,6 +21,12 @@ enum CuriosityGameLevel:String
     static let orderedLevels = [Tut1, Tut2, Tut3, Tut4, Level1, Level2]
 }
 
+
+////Directions in the game
+//enum GameDirection{
+//    case Up, Down, Left, Right;
+//}
+
 /**
 Physics categories used for this game.
 */
