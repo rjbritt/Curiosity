@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mYf-44-Hc5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mYf-44-Hc5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-3K-N9N">
-                                <rect key="frame" x="207.5" y="225" width="185" height="150"/>
+                                <rect key="frame" x="208" y="225" width="185" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="dRH-Sd-xyD"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curiosity 0.0.1 (Pre-Alpha)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCJ-6e-D6Y">
-                                <rect key="frame" x="199.5" y="559" width="201" height="21"/>
+                                <rect key="frame" x="200" y="559" width="201" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="X2M-ks-eyo"/>
                                     <constraint firstAttribute="width" constant="201" id="mqq-Gl-oUo"/>
@@ -140,7 +140,7 @@
                                     <action selector="returnToLevelSelect:" destination="8U1-d5-4te" eventType="touchUpInside" id="DtU-cB-cTf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-yF-a7W">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-yF-a7W">
                                 <rect key="frame" x="552" y="285" width="32" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="2rt-2D-dHC"/>

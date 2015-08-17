@@ -121,6 +121,35 @@ class GameLevelConfig {
 		replacePlaceholderNode(scene.childNodeWithName("//CHARACTER"), withNode:scene.characterSpriteNode!)
 		
         scene.name = "Level 2"
+        
+        let greenOrb = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
+        let greenOrb2 = ItemSpriteNode.orbItemWithColor(UIColor.greenColor())
+        
+        let yScalePercent = 50;
+        
+        greenOrb.storedEffect = {
+
+            //Find and scale the first tree 
+            if let treeTrunk1 = scene.childNodeWithName("//TreeTrunk1") as? SKSpriteNode {
+                if let tree1 = scene.childNodeWithName("//TreeTop1") as? SKSpriteNode {
+                    scaleTreeTrunk(treeTrunk1, toYPercent: yScalePercent, andMoveTop: tree1)
+                }
+                
+            }
+            
+            //Find and scale the second tree
+            if let treeTrunk2 =  scene.childNodeWithName("//TreeTrunk2") as? SKSpriteNode {
+                if let tree2 = scene.childNodeWithName("//TreeTop2") as? SKSpriteNode {
+                    scaleTreeTrunk(treeTrunk2, toYPercent: yScalePercent, andMoveTop: tree2)
+                }
+            }
+        }
+        
+        greenOrb2.storedEffect = {
+            
+        }
+        replacePlaceholderNode(scene.childNodeWithName("//GreenOrb1"), withNode: greenOrb)
+        replacePlaceholderNode(scene.childNodeWithName("//GreenOrb2"), withNode: greenOrb2)
     }
     
     
@@ -155,5 +184,28 @@ class GameLevelConfig {
         let raiseNode = SKAction.moveBy(CGVector(dx: 0, dy: node.size.height), duration: 1)
         node.runAction(SKAction.sequence([SKAction.waitForDuration(1),raiseNode]))
     }
+    
+    private class func scalesSKSpriteNodebyXPercent(xPercent:Int, andYPercent yPercent:Int, forDuration duration:NSTimeInterval) -> SKAction {
+        
+        let xScalar = CGFloat(xPercent) / 100.00
+        let yScalar = CGFloat(yPercent) / 100.00
+        
+        return SKAction.scaleXBy(xScalar, y:yScalar, duration: duration)
+    }
+    
+    private class func scaleTreeTrunk(trunk:SKSpriteNode, toYPercent percent:Int, andMoveTop top:SKSpriteNode){
+        let newHeight = trunk.size.height * (CGFloat(percent) / 100.00)
+        let positionDifference = trunk.position.y + (newHeight/2)
+        let newPosition = trunk.position.y - positionDifference
+        
+        let scaleTreeTrunk = scalesSKSpriteNodebyXPercent(100, andYPercent: percent, forDuration: 1)
+        let moveTrunkUp = SKAction.moveToY(newPosition, duration: 1)
+        let combination = SKAction.group([scaleTreeTrunk, moveTrunkUp])
+        let moveDown = SKAction.moveByX(0, y: -newHeight, duration: 1)
+  
+        trunk.runAction(combination)
+        top.runAction(moveDown)
+    }
+
 
 }

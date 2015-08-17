@@ -154,7 +154,7 @@ func distanceBetweenPointOne(pointOne:CGPoint, andPointTwo pointTwo:CGPoint) -> 
     return distance
 }
 
-func - (left:CGPoint, right:CGPoint) -> CGPoint
+public func - (left:CGPoint, right:CGPoint) -> CGPoint
 {
 	return CGPointMake(left.x - right.x, left.y - right.y)
 }
